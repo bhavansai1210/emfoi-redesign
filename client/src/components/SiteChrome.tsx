@@ -133,7 +133,6 @@ export function PageHero({ eyebrow, title, intro, children, variant = "standard"
   return (
     <section className={`page-hero page-hero-${variant}`}>
       <div className="page-hero-system" aria-hidden="true"><span /><span /><span /><span /><i /><i /><i /></div>
-      <span className="page-hero-folio" aria-hidden="true">EMFOI / FIELD NOTE</span>
       <MotionReveal className="site-width page-hero-grid">
         <div>
           <p className="eyebrow"><span />{eyebrow}</p>

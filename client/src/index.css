@@ -206,10 +206,9 @@ body { background-color: #fbfaf7; background-image: radial-gradient(circle at 88
 .final-cta-grid > div:first-child .eyebrow { margin-left: -20px; }
 .page-hero { position: relative; }
 .page-hero::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 5px; background: linear-gradient(90deg,#155eef 0 34%,#f26b4f 34% 39%,transparent 39%); opacity: .85; }
-.page-hero-folio { position: absolute; z-index: 1; right: max(24px,calc((100vw - 1180px) / 2)); bottom: 20px; color: #637a95; font-size: 8px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; writing-mode: vertical-rl; }
+/* FIRST-VERSION FOOTER RESTORATION — the wordmark and content columns carry the brand; no extra quadrant block or vertical folio competes with them. */
 .site-footer { position: relative; overflow: hidden; }
-.site-footer::before { content: ""; position: absolute; top: 0; right: 7%; width: 104px; height: 104px; opacity: .33; background-image: linear-gradient(90deg,#4e86db 47%,transparent 47% 53%,#f26b4f 53%),linear-gradient(#4e86db 47%,transparent 47% 53%,#f26b4f 53%); background-size: 52px 52px; }
-@media (max-width: 950px) { .hero-copy { padding-right: 0; }.dofiling-section::after,.carehigh-product-section::after,.page-hero-folio { display: none; }.trust-strip::before { width: 100%; }.site-header::after { width: 42%; } }
+@media (max-width: 950px) { .hero-copy { padding-right: 0; }.dofiling-section::after,.carehigh-product-section::after { display: none; }.trust-strip::before { width: 100%; }.site-header::after { width: 42%; } }
 @media (max-width: 560px) { .hero-supporting-copy { padding-left: 13px; }.hero-visual-index { right: 16px; bottom: 17px; padding: 8px 9px; }.hero-visual-index strong { font-size: 23px; }.trust-strip { align-content: center; padding: 12px 15px; }.trust-strip::before { display: none; }.section-heading-block,.section-split-heading > div,.contrast-copy,.proof-grid > div:first-child,.final-cta-grid > div:first-child { padding-left: 13px; }.section-heading-block .eyebrow,.section-split-heading > div .eyebrow,.contrast-copy .eyebrow,.proof-grid > div:first-child .eyebrow,.final-cta-grid > div:first-child .eyebrow { margin-left: -15px; }.hero-image-frame { clip-path: none; } }
 
 /* UX DESIGN PASS — decisive wayfinding, larger evidence surfaces, and fewer competing visual ideas. */

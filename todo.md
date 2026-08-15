@@ -170,6 +170,14 @@ The recent heavy left-border treatments were removed from hero support copy, sec
 
 The layered blue vertical bars, floating numbers, and conflicting nested borders were replaced with one ledger-style card header: audience label on the left, route number on the right, and a quiet internal divider. The mobile layout now returns the route introduction and cards to a single clear column. Desktop and 375px mobile renders are clean; TypeScript and production-build checks pass.
 
+## Footer Simplification
+
+- [x] Inspect the footer mark and field-note treatments shown in the supplied screenshots.
+- [x] Remove the vertical field-note label and oversized decorative quadrant block, then rebalance footer columns.
+- [x] Verify the cleaner footer on desktop and mobile before delivery.
+
+The oversized footer quadrant pseudo-element and page-hero `EMFOI / FIELD NOTE` folio were removed. The footer now relies on the EMFOI wordmark, four concise content columns, and the legal baseline for hierarchy. DoFiling and Capabilities desktop renders and a 375px DoFiling mobile render were checked; TypeScript and the production build pass.
+
 ## Checkpoint-Safe Public Asset Strategy
 
 - [ ] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.
