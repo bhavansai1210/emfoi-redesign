@@ -14,7 +14,6 @@ const brandMark = "/manus-storage/emfoi-signal-mark_95fe1ace.png";
 const navItems = [
   { label: "Capabilities", href: "/capabilities" },
   { label: "Industries", href: "/industries" },
-  { label: "Government", href: "/government" },
   { label: "About", href: "/about" },
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },

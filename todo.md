@@ -241,3 +241,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Audit the industry list’s current arrow-only links and define factual content boundaries for missing pages.
 - [x] Make each industry row fully clickable and add detail pages for Financial Services & Insurance and Manufacturing.
 - [x] Validate all industry click paths at desktop and mobile sizes, then save the update.
+
+## Government Navigation Simplification
+
+- [x] Confirm Government remains accessible from Industries and footer navigation before removing the redundant header item.
+- [x] Remove Government from the desktop primary navigation and mobile menu.
+- [x] Verify the simplified navigation at desktop and mobile sizes, then save the refinement.
