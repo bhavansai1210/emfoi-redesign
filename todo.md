@@ -247,3 +247,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Confirm Government remains accessible from Industries and footer navigation before removing the redundant header item.
 - [x] Remove Government from the desktop primary navigation and mobile menu.
 - [x] Verify the simplified navigation at desktop and mobile sizes, then save the refinement.
+
+## Reusable Civic Precision Design Guide
+
+- [x] Consolidate the established EMFOI visual system into practical future-use rules.
+- [x] Write `design.md` with brand, layout, typography, interaction, and page-building guidance.
+- [x] Review the guide against the current site and save the documentation update.
