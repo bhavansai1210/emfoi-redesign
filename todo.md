@@ -146,6 +146,14 @@ The homepage now carries the Civic Precision field-guide language from hero to f
 
 The designer-led pass introduces a warmer civic planning hero, stronger editorial anchor rules, field-note folios on shared page heroes, refined product-evidence framing, and a more deliberate header/footer signature. The homepage, Capabilities, and Government pages were checked full-page at desktop size, with Home and Capabilities also reviewed at a 375px mobile viewport. TypeScript and production-build validation pass; the existing bundle-size advisory remains.
 
+## UI and UX Review Pass
+
+- [x] Audit the first-screen hierarchy, navigation, CTA paths, visual density, and section scanability on desktop and mobile.
+- [x] Redesign the highest-impact interaction and information-hierarchy weaknesses without changing approved EMFOI content.
+- [x] Validate the improved primary user journeys and responsive experience before delivery.
+
+The UI and UX pass clarified the first-screen route, converted services into an explicit three-part path, enlarged capability discovery into a two-column evidence matrix, and unified product proof under one clear portfolio section. Home, Capabilities, and Contact were reviewed full-page at 1280px and 375px. TypeScript and production build checks pass; the existing bundle-size advisory remains.
+
 ## Checkpoint-Safe Public Asset Strategy
 
 - [ ] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.

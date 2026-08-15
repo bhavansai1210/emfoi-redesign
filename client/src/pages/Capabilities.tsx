@@ -51,7 +51,7 @@ function CapabilityIndex() {
       <PageHero eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices, designed to work independently or together when your program calls for expertise across technology, governance, and people." />
       <section className="paper-section capabilities-index-section">
         <div className="site-width capability-list">
-          {cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}
+          {cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore practice</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}
         </div>
       </section>
       <section className="ink-cta-section"><div className="site-width ink-cta-grid"><div><p className="eyebrow eyebrow-light"><span />How we engage</p><h2>Bring the right capability to the table.</h2></div><p>Whether you need a delivery partner, qualified talent, or a teaming conversation, we start by understanding the program and the people it serves.</p><Link href="/contact" className="button button-light">Request a capability briefing <ArrowRight size={16} /></Link></div></section>
