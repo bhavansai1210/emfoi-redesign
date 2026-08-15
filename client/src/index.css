@@ -267,3 +267,20 @@ body { background-color: #fbfaf7; background-image: radial-gradient(circle at 88
 .capability-section { padding-top: 102px; padding-bottom: 112px; }
 .product-portfolio-intro { margin-bottom: 42px; }
 @media (max-width: 560px) { .hero-supporting-copy,.section-heading-block,.section-split-heading > div,.contrast-copy,.proof-grid > div:first-child,.final-cta-grid > div:first-child { padding-left: 0; }.section-heading-block .eyebrow,.section-split-heading > div .eyebrow,.contrast-copy .eyebrow,.proof-grid > div:first-child .eyebrow,.final-cta-grid > div:first-child .eyebrow { margin-left: 0; }.audience-section { padding-top: 74px; padding-bottom: 74px; }.capability-section { padding-top: 78px; padding-bottom: 82px; } }
+
+/* AUDIENCE ROUTING REPAIR — one quiet ledger header replaces layered vertical bars, absolute steps, and nested card outlines. */
+.audience-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0; border-top: 1px solid #cfd7df; border-bottom: 1px solid #cfd7df; box-shadow: none; }
+.audience-cards > div { display: flex; min-width: 0; }
+.audience-cards > div + div { border-left: 1px solid #cfd7df; }
+.audience-card { display: flex; flex-direction: column; width: 100%; min-height: 278px; padding: 23px 27px 27px; overflow: visible; background: transparent; border: 0 !important; box-shadow: none !important; transition: background .2s cubic-bezier(.23,1,.32,1); }
+.audience-card::before { display: none; }
+.audience-card:hover { background: rgba(255,255,255,.72); box-shadow: none; }
+.audience-card-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 26px; padding-bottom: 15px; border-bottom: 1px solid #d8dfe5; }
+.audience-label { display: block; padding: 0; border: 0; color: #155eef; font-size: 10px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.audience-step,.audience-card:nth-child(2) .audience-step,.audience-card:nth-child(3) .audience-step { position: static; color: #7d8ca0; font-size: 9px; font-weight: 800; letter-spacing: .11em; }
+.audience-card h3 { max-width: 240px; margin: 30px 0 12px; color: #132c4c; font-size: clamp(21px,1.7vw,27px); line-height: 1.03; }
+.audience-card p { max-width: 265px; margin: 0; color: #617188; font-size: 13px; line-height: 1.68; }
+.audience-card .text-link { margin-top: auto; padding-top: 24px; }
+@media (max-width: 950px) { .audience-grid { grid-template-columns: 1fr; gap: 48px; } }
+@media (min-width: 561px) and (max-width: 950px) { .audience-cards > div:nth-child(3) { grid-column: 1 / -1; border-top: 1px solid #cfd7df; border-left: 0; }.audience-card { min-height: 238px; } }
+@media (max-width: 560px) { .audience-grid { gap: 35px; }.audience-cards { grid-template-columns: 1fr; }.audience-cards > div + div { border-top: 1px solid #cfd7df; border-left: 0; }.audience-card { min-height: 0; padding: 21px 0 24px; background: transparent; }.audience-card h3 { margin-top: 23px; }.audience-card .text-link { margin-top: 25px; padding-top: 0; } }

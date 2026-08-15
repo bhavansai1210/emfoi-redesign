@@ -162,6 +162,14 @@ The UI and UX pass clarified the first-screen route, converted services into an 
 
 The recent heavy left-border treatments were removed from hero support copy, section headings, contrast copy, product proof, and closing CTA content. The original lightweight eyebrow keylines remain as the sole directional cue. Home, Capabilities, and Contact were reviewed full-page at 1280px and 375px; TypeScript and production build checks pass.
 
+## Audience Routing UI Repair
+
+- [x] Inspect the supplied audience-routing screenshot and identify the markers, labels, or boundaries causing overlap.
+- [x] Rebuild the audience routing cards with a single clear marker system, aligned card edges, and uncluttered CTAs.
+- [x] Verify the repaired section on desktop and mobile before delivery.
+
+The layered blue vertical bars, floating numbers, and conflicting nested borders were replaced with one ledger-style card header: audience label on the left, route number on the right, and a quiet internal divider. The mobile layout now returns the route introduction and cards to a single clear column. Desktop and 375px mobile renders are clean; TypeScript and production-build checks pass.
+
 ## Checkpoint-Safe Public Asset Strategy
 
 - [ ] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.
