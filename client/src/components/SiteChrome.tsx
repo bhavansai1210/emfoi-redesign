@@ -99,6 +99,7 @@ export function Footer() {
           <span className="footer-heading">Explore</span>
           <Link href="/capabilities">Capabilities</Link>
           <Link href="/government">Government</Link>
+          <Link href="/healthcare">Healthcare</Link>
           <Link href="/industries">Industries</Link>
           <Link href="/dofiling">DoFiling</Link>
           <Link href="/carehigh">CareHigh</Link>

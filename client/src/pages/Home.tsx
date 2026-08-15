@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { analyticsEvent } from "@/components/ClientEnhancements";
 import { MotionReveal } from "@/components/MotionReveal";
 import { PageLayout } from "@/components/SiteChrome";
+import { PageSEO } from "@/components/PageSEO";
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import type { Variants } from "framer-motion";
 
@@ -28,7 +29,7 @@ const capabilityCards = [
 
 const audiences = [
   { label: "Government", title: "For public-sector programs", text: "Teaming and delivery support for federal, state, and local government.", href: "/government" },
-  { label: "Healthcare", title: "For care organizations", text: "Technology, AI, and staffing with healthcare realities in view.", href: "/industries" },
+  { label: "Healthcare", title: "For care organizations", text: "Technology, AI, and staffing with healthcare realities in view.", href: "/healthcare" },
   { label: "Enterprise", title: "For complex organizations", text: "Specialized capability that meets the moment without unnecessary friction.", href: "/contact" },
 ];
 
@@ -42,7 +43,7 @@ export default function Home() {
   const heroImageScrollRotate = useTransform(scrollY, [0, 720], [0, 1.2]);
   const heroImageScrollScale = useTransform(scrollY, [0, 720], [1, 1.055]);
   return (
-    <PageLayout>
+    <><PageSEO title="EMFOI | Software, AI & Staffing for Government and Healthcare" description="EMFOI delivers custom software, AI development and governance, IT consulting, and healthcare staffing for government, healthcare, and complex enterprise organizations." canonicalPath="/" /><PageLayout>
       <section className="home-hero">
         <div className="site-width home-hero-grid">
           <motion.div className="hero-copy" style={reducedMotion ? undefined : { y: heroCopyScrollY, opacity: heroCopyScrollOpacity }} initial={reducedMotion ? false : { opacity: 0, x: -48 }} animate={reducedMotion ? undefined : { opacity: 1, x: 0 }} transition={{ duration: 0.82, ease: heroEase }}>
@@ -63,7 +64,7 @@ export default function Home() {
 
       <section className="contrast-section"><div className="section-quadrant section-quadrant-contrast" aria-hidden="true"><i /><i /><i /><i /></div><div className="site-width contrast-grid"><div className="contrast-copy"><p className="eyebrow eyebrow-light"><span />The EMFOI difference</p><h2>Technology is only useful when people can <em>use it.</em></h2><p>We combine delivery discipline with human-centered thinking — helping organizations build, govern, and staff programs that hold up in the real world.</p><Link href="/about" className="text-link text-link-light">How we work <ArrowRight size={16} /></Link></div><div className="difference-list"><div><span>01</span><p><strong>Accessibility is a delivery standard.</strong> We bring a Section 508 and WCAG-aware perspective to user experience.</p></div><div><span>02</span><p><strong>Governance is part of the build.</strong> AI work considers risk, bias, documentation, and monitoring from the start.</p></div><div><span>03</span><p><strong>Teaming is practical.</strong> We support agencies and primes as a direct partner, subcontractor, or teaming partner.</p></div></div></div></section>
 
-      <section className="proof-section"><div className="section-quadrant proof-quadrant" aria-hidden="true"><i /><i /><i /><i /></div><div className="site-width proof-grid"><div><p className="eyebrow"><span />How we show up</p><h2>Direct when it matters. Ready to partner when it helps.</h2></div><div className="proof-cards"><article><span className="proof-icon"><Check size={18} /></span><h3>Government & public sector</h3><p>Support for federal and state government as a prime, subcontractor, and teaming partner.</p><Link href="/government">Explore government <ChevronRight size={16} /></Link></article><article><span className="proof-icon"><Sparkles size={18} /></span><h3>Regulated & healthcare environments</h3><p>Practical attention to usability, responsible AI, and staffing for programs with complex needs.</p><Link href="/industries">Explore industries <ChevronRight size={16} /></Link></article></div></div></section>
+      <section className="proof-section"><div className="section-quadrant proof-quadrant" aria-hidden="true"><i /><i /><i /><i /></div><div className="site-width proof-grid"><div><p className="eyebrow"><span />How we show up</p><h2>Direct when it matters. Ready to partner when it helps.</h2></div><div className="proof-cards"><article><span className="proof-icon"><Check size={18} /></span><h3>Government & public sector</h3><p>Support for federal and state government as a prime, subcontractor, and teaming partner.</p><Link href="/government">Explore government <ChevronRight size={16} /></Link></article><article><span className="proof-icon"><Sparkles size={18} /></span><h3>Healthcare programs & organizations</h3><p>Practical attention to usable systems, responsible AI, and healthcare staffing for complex care environments.</p><Link href="/healthcare">Explore healthcare <ChevronRight size={16} /></Link></article></div></div></section>
 
       <section className="product-portfolio-section">
         <MotionReveal className="site-width" variant="slide"><div className="product-portfolio-intro"><div><p className="eyebrow"><span />Product evidence</p><h2>Two focused products. One delivery standard.</h2></div><p>EMFOI turns operational complexity into useful, durable workflow experiences — from legal casework to care coordination.</p></div></MotionReveal>
@@ -74,6 +75,6 @@ export default function Home() {
       </section>
 
       <section className="final-cta-section"><div className="section-quadrant final-cta-quadrant" aria-hidden="true"><i /><i /><i /><i /></div><div className="site-width final-cta-grid"><div><p className="eyebrow"><span />A clear next step</p><h2>Bring your next program into focus.</h2></div><div><p>Tell us what you are solving for. We will help identify the capability, talent, or teaming path that makes sense.</p><Link href="/contact" className="button button-primary">Start a conversation <ArrowRight size={17} /></Link></div></div></section>
-    </PageLayout>
+    </PageLayout></>
   );
 }

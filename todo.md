@@ -104,7 +104,7 @@ The oversized duplicate JPEG and PNG files were removed from the static project,
 
 - [x] Assemble all original EMFOI image assets into one ZIP archive in project-managed public storage.
 - [x] Confirm the archive is valid, the static public folder remains checkpoint-safe, and no live asset reference changes.
-- [ ] Save the archive-inclusive project checkpoint.
+- [x] Save the archive-inclusive project checkpoint.
 
 The complete eight-file archive is available at `/manus-storage/emfoi-image-backup_c87c1f92.zip`. It passed ZIP integrity validation. A public-folder manifest at `client/public/asset-backup/README.md` records the archive location and SHA-256 checksum without copying its 21.9 MB payload back into the static project.
 
@@ -180,6 +180,14 @@ The oversized footer quadrant pseudo-element and page-hero `EMFOI / FIELD NOTE` 
 
 ## Checkpoint-Safe Public Asset Strategy
 
-- [ ] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.
-- [ ] Update the public backup manifest to distinguish optimized project copies from the original managed ZIP archive.
-- [ ] Remove only the oversized duplicate project backups, validate the resulting asset inventory, and save the completed designer-led revision.
+- [x] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.
+- [x] Update the public backup manifest to distinguish optimized project copies from the original managed ZIP archive.
+- [x] Remove only the oversized duplicate project backups, validate the resulting asset inventory, and save the completed designer-led revision.
+
+## US Public-Data SEO Improvement Pass
+
+- [x] Identify relevant SEO research capabilities and verify that public-data research is sufficient for an evidence-led improvement pass.
+- [x] Collect public evidence from EMFOI, its indexed footprint, and directly comparable US-market competitors.
+- [x] Document public-data limitations and translate verified findings into a prioritized keyword and content opportunity map.
+- [x] Implement the highest-impact technical SEO, internal-discovery, and metadata improvements supported by the evidence.
+- [x] Validate the implementation, record the SEO findings, and save a checkpoint.

@@ -17,6 +17,7 @@ function Router() {
     <Route path="/government" component={InfoPage} />
     <Route path="/capability-statement" component={InfoPage} />
     <Route path="/capabilities-statement" component={InfoPage} />
+    <Route path="/healthcare" component={InfoPage} />
     <Route path="/industries" component={InfoPage} />
     <Route path="/about" component={InfoPage} />
     <Route path="/dofiling" component={InfoPage} />

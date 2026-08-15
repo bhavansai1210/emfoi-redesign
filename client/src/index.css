@@ -283,3 +283,36 @@ body { background-color: #fbfaf7; background-image: radial-gradient(circle at 88
 @media (max-width: 950px) { .audience-grid { grid-template-columns: 1fr; gap: 48px; } }
 @media (min-width: 561px) and (max-width: 950px) { .audience-cards > div:nth-child(3) { grid-column: 1 / -1; border-top: 1px solid #cfd7df; border-left: 0; }.audience-card { min-height: 238px; } }
 @media (max-width: 560px) { .audience-grid { gap: 35px; }.audience-cards { grid-template-columns: 1fr; }.audience-cards > div + div { border-top: 1px solid #cfd7df; border-left: 0; }.audience-card { min-height: 0; padding: 21px 0 24px; background: transparent; }.audience-card h3 { margin-top: 23px; }.audience-card .text-link { margin-top: 25px; padding-top: 0; } }
+
+/* CIVIC PRECISION — healthcare hub uses quiet editorial structure, warm paper space, and blue-led discovery links. */
+.healthcare-intro-grid { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:clamp(38px,7vw,110px); align-items:start; }
+.healthcare-intro-grid h2 { max-width:520px; }
+.healthcare-intro-grid .large-copy { margin:0; max-width:620px; }
+.healthcare-capability-section { padding:108px 0 116px; }
+.healthcare-capability-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); border-top:1px solid #cfd7df; border-left:1px solid #cfd7df; }
+.healthcare-capability-card { display:grid; grid-template-columns:42px minmax(0,1fr) auto; gap:18px; align-items:start; min-height:210px; padding:28px 26px 30px; color:#132c4c; background:transparent; border-right:1px solid #cfd7df; border-bottom:1px solid #cfd7df; transition:background .2s cubic-bezier(.23,1,.32,1),color .2s cubic-bezier(.23,1,.32,1); }
+.healthcare-capability-card:hover { color:#155eef; background:rgba(255,255,255,.78); }
+.healthcare-capability-card > span { color:#155eef; font-size:10px; font-weight:800; letter-spacing:.12em; }
+.healthcare-capability-card h3 { margin:0 0 12px; color:inherit; font-family:"DM Serif Display",serif; font-size:clamp(24px,2vw,31px); line-height:1.04; }
+.healthcare-capability-card p { max-width:345px; margin:0; color:#617188; font-size:13px; line-height:1.68; }
+.healthcare-capability-card svg { margin-top:4px; color:#155eef; }
+@media (max-width:760px) { .healthcare-intro-grid { grid-template-columns:1fr; gap:24px; }.healthcare-capability-section { padding:78px 0 82px; }.healthcare-capability-grid { grid-template-columns:1fr; }.healthcare-capability-card { min-height:0; padding:24px 0; border-right:0; }.healthcare-capability-card > span { padding-top:4px; } }
+
+/* CIVIC PRECISION — audience-specific maps turn the quadrant into a route coordinate, not decorative wallpaper. */
+.buyer-dossier-strip,.care-route-map { display:grid; grid-template-columns:68px repeat(3,minmax(0,1fr)); gap:0; margin-top:-1px; background:#fbfaf7; border-top:1px solid #cfd7df; border-bottom:1px solid #cfd7df; }
+.buyer-dossier-strip > div:not(:first-child),.care-route-map > div:not(:first-child) { min-height:86px; padding:19px 20px 17px; border-left:1px solid #cfd7df; }
+.buyer-dossier-strip span,.care-route-map span { display:block; margin-bottom:8px; color:#155eef; font-size:9px; font-weight:800; letter-spacing:.11em; }
+.buyer-dossier-strip p,.care-route-map p { margin:0; color:#617188; font-size:12px; line-height:1.48; }
+.buyer-dossier-mark,.care-route-mark,.governance-map-mark { display:grid; grid-template-columns:repeat(2,11px); grid-template-rows:repeat(2,11px); gap:2px; place-content:center; }
+.buyer-dossier-mark i,.care-route-mark i,.governance-map-mark i { display:block; width:11px; height:11px; border:1px solid #155eef; }
+.buyer-dossier-mark i:nth-child(2),.care-route-mark i:nth-child(3),.governance-map-mark i:nth-child(2) { background:#155eef; }
+.buyer-dossier-mark i:nth-child(4),.care-route-mark i:nth-child(4),.governance-map-mark i:nth-child(4) { background:#f26b4f; border-color:#f26b4f; }
+.governance-evidence-map { padding:78px 0 82px; }
+.governance-map-heading { display:grid; grid-template-columns:68px minmax(0,1fr); gap:18px; align-items:start; padding-bottom:31px; border-bottom:1px solid #cfd7df; }
+.governance-map-heading h2 { max-width:520px; margin:0; }
+.governance-map-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-left:1px solid #cfd7df; }
+.governance-map-steps > div { min-height:175px; padding:25px 23px; border-right:1px solid #cfd7df; border-bottom:1px solid #cfd7df; }
+.governance-map-steps span { display:block; margin-bottom:34px; color:#155eef; font-size:10px; font-weight:800; letter-spacing:.11em; }
+.governance-map-steps h3 { margin:0 0 9px; color:#132c4c; font-family:"DM Serif Display",serif; font-size:26px; line-height:1; }
+.governance-map-steps p { margin:0; color:#617188; font-size:13px; line-height:1.62; }
+@media (max-width:760px) { .buyer-dossier-strip,.care-route-map { grid-template-columns:52px minmax(0,1fr); }.buyer-dossier-strip > div:not(:first-child),.care-route-map > div:not(:first-child) { min-height:0; padding:18px 0 18px 18px; border-left:0; border-bottom:1px solid #cfd7df; }.buyer-dossier-strip > div:last-child,.care-route-map > div:last-child { border-bottom:0; }.governance-evidence-map { padding:62px 0 66px; }.governance-map-heading { grid-template-columns:52px minmax(0,1fr); padding-bottom:25px; }.governance-map-steps { grid-template-columns:1fr; }.governance-map-steps > div { min-height:0; padding:22px 18px; }.governance-map-steps span { margin-bottom:16px; } }
