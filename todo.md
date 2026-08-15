@@ -229,3 +229,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Audit all page-hero quadrant/logo pattern variations shown across the site.
 - [x] Standardize the pattern’s scale, position, stroke, and color treatment through the shared hero system.
 - [x] Verify representative page heroes at desktop and mobile sizes, then save the refinement.
+
+## Healthcare Delivery-Mix Spacing
+
+- [x] Identify the spacing relationship between the delivery strip and focused delivery-mix section.
+- [x] Add responsive vertical separation above the focused delivery-mix section.
+- [x] Verify the Healthcare hierarchy at desktop and mobile sizes, then save the refinement.
