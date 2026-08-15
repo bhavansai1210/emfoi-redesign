@@ -48,35 +48,59 @@ function IndustriesPage() {
 
 const industryDetails = {
   financial: {
+    kind: "financial",
     eyebrow: "Financial Services & Insurance",
     title: "Technology delivery for complex, regulated operations.",
-    intro: "EMFOI supports financial services and insurance organizations with custom software, practical AI governance, IT consulting, and focused technology capacity around the work in front of the team.",
-    focusTitle: "Keep delivery grounded in the operating context.",
-    focusCopy: "Complex environments call for systems that are usable, governed with care, and supported by the right technical capacity. EMFOI brings a focused delivery mix to help teams move from a defined need to practical next steps.",
-    items: ["Custom software and UX for defined operational workflows.", "Practical AI implementation with risk, documentation, and oversight in view.", "IT consulting and staff augmentation for focused delivery capacity."],
+    intro: "EMFOI supports financial services and insurance organizations where approval paths, audit-ready decisions, and operational handoffs need technology delivery that remains clear and usable.",
+    image: "/manus-storage/emfoi-financial-operations-evidence_03eaace5.jpg",
+    imageAlt: "Operational planning materials and technology workspace for a regulated delivery team",
+    contextLabel: "Regulated workflow dossier",
+    contextTitle: "Track the handoffs before they become risk.",
+    contextCopy: "Map the decisions, exceptions, approvals, and ownership transitions around an operational workflow before defining the technology response.",
+    focusTitle: "Keep delivery grounded in the regulated workflow.",
+    focusCopy: "Regulated operations depend on more than a working interface. They need clear approval ownership, documented decision paths, and technical capacity that fits the delivery window. EMFOI starts with that operating context, then defines practical software, governance, or staffing support.",
+    items: ["Custom software and UX for defined workflows with approval and exception paths in view.", "Practical AI implementation with documentation, oversight, and accountable decisions in view.", "IT consulting and staff augmentation for specific delivery windows and system handoffs."],
+    rail: [
+      { label: "01 / CONTROL OWNER", text: "Identify who owns each approval, exception, and decision." },
+      { label: "02 / WORKFLOW TRACE", text: "Surface the system handoffs and documentation that shape the work." },
+      { label: "03 / DELIVERY WINDOW", text: "Match software, governance, or capacity to the defined need." },
+    ],
+    principlesTitle: "A delivery posture for regulated handoffs.",
     principles: [
-      { number: "01", title: "Workflow clarity", text: "Start with the people, systems, and operational handoffs that shape the work." },
-      { number: "02", title: "Practical governance", text: "Keep accountability and documented decision-making in view as technology changes." },
-      { number: "03", title: "Focused capacity", text: "Add the software, advisory, or staffing support that fits the immediate delivery need." },
+      { number: "01", title: "Traceable workflow", text: "Start with the people, systems, decisions, and exception paths that shape the work." },
+      { number: "02", title: "Audit-ready governance", text: "Keep accountability and documented decision-making visible as technology changes." },
+      { number: "03", title: "Defined capacity", text: "Add the software, advisory, or staffing support that fits the actual delivery window." },
     ],
   },
   manufacturing: {
+    kind: "manufacturing",
     eyebrow: "Manufacturing",
     title: "Technology support shaped around the work that keeps operations moving.",
-    intro: "EMFOI supports manufacturing organizations with practical software, AI governance, IT consulting, and specialized technology capacity for the operational realities in front of the team.",
-    focusTitle: "Build around the workflow, then support the work to come.",
-    focusCopy: "Operational environments need technology that people can use and teams can maintain. EMFOI helps connect software delivery, responsible AI implementation, and focused capacity to the work that needs support now.",
-    items: ["Usable software and UX for operational teams and workflows.", "AI development and governance with oversight, documentation, and risk in view.", "IT consulting and staff augmentation when specialized capacity is needed."],
+    intro: "EMFOI supports manufacturing organizations where shop-floor dependencies, systems handoffs, and specialized technology capacity shape how reliably operations can move.",
+    image: "/manus-storage/emfoi-manufacturing-operations-evidence_29b1da20.jpg",
+    imageAlt: "Operations specialist using a tablet alongside a manufacturing production line",
+    contextLabel: "Operational floor map",
+    contextTitle: "Follow the handoff from floor to system.",
+    contextCopy: "Start where the work happens: the people, equipment, shift changes, systems dependencies, and information that must stay in sync.",
+    focusTitle: "Build around the workflow, then support operational continuity.",
+    focusCopy: "Operations rely on technology that people can use, teams can maintain, and delivery plans can support without interrupting the work. EMFOI connects software delivery, AI governance, and focused technical capacity to the specific workflow that needs attention.",
+    items: ["Usable software and UX for operational teams, shop-floor workflows, and system dependencies.", "AI development and governance with accountable oversight, documentation, and risk in view.", "IT consulting and staff augmentation when specialized technical capacity is needed around a handoff."],
+    rail: [
+      { label: "01 / FLOOR SIGNAL", text: "Observe the real task, shift handoff, and operational dependency." },
+      { label: "02 / SYSTEM LINK", text: "Map the tools and information that must remain connected." },
+      { label: "03 / DELIVERY SUPPORT", text: "Apply software, governance, or capacity to the defined constraint." },
+    ],
+    principlesTitle: "A delivery posture for operational continuity.",
     principles: [
-      { number: "01", title: "Operational context", text: "Start with the real workflow, system dependencies, and people involved in the work." },
+      { number: "01", title: "Floor context", text: "Start with the task, system dependency, and people who keep the operation moving." },
       { number: "02", title: "Usable delivery", text: "Focus on software and technical decisions that remain practical for the team using them." },
-      { number: "03", title: "Delivery support", text: "Connect advisory, implementation, and focused staffing around a defined operational need." },
+      { number: "03", title: "Continuity support", text: "Connect advisory, implementation, and focused staffing around a critical operational handoff." },
     ],
   },
 } as const;
 
 function IndustryDetailPage({ detail }: { detail: (typeof industryDetails)[keyof typeof industryDetails] }) {
-  return <PageLayout><PageHero eyebrow={detail.eyebrow} title={detail.title} intro={detail.intro}><Link href="/contact" className="button button-primary">Discuss an industry need <ArrowRight size={16} /></Link></PageHero><section className="detail-copy-section"><div className="site-width detail-copy-grid"><div><p className="eyebrow"><span />Delivery focus</p><h2>{detail.focusTitle}</h2></div><div><p className="large-copy">{detail.focusCopy}</p><ul className="check-list">{detail.items.map((item) => <li key={item}><Check size={17} />{item}</li>)}</ul></div></div></section><section className="paper-section"><div className="site-width industry-principles"><div><p className="eyebrow"><span />How we frame the work</p><h2>A focused delivery posture.</h2></div><div className="industry-principle-grid">{detail.principles.map((principle) => <article key={principle.number}><span>{principle.number}</span><h3>{principle.title}</h3><p>{principle.text}</p></article>)}</div></div></section><section className="site-width industry-detail-cta"><div><p className="eyebrow"><span />Start a focused conversation</p><h2>Bring the work in front of your team.</h2></div><Link href="/contact" className="button button-primary">Contact EMFOI <ArrowRight size={16} /></Link></section></PageLayout>;
+  return <PageLayout><PageHero eyebrow={detail.eyebrow} title={detail.title} intro={detail.intro}><Link href="/contact" className="button button-secondary">Discuss an industry need <ArrowRight size={16} /></Link></PageHero><section className={`paper-section industry-evidence-section industry-evidence-${detail.kind}`}><div className="site-width industry-evidence-panel"><div><p className="eyebrow"><span />{detail.contextLabel}</p><h2>{detail.contextTitle}</h2><p>{detail.contextCopy}</p><div className="industry-context-rail" aria-label={`${detail.eyebrow} operating context`}>{detail.rail.map((point) => <div key={point.label}><span>{point.label}</span><p>{point.text}</p></div>)}</div></div><figure><img src={detail.image} alt={detail.imageAlt} loading="lazy" /><figcaption>EMFOI / {detail.eyebrow}</figcaption></figure></div></section><section className="detail-copy-section"><div className="site-width detail-copy-grid"><div><p className="eyebrow"><span />Delivery focus</p><h2>{detail.focusTitle}</h2></div><div><p className="large-copy">{detail.focusCopy}</p><ul className="check-list">{detail.items.map((item) => <li key={item}><Check size={17} />{item}</li>)}</ul></div></div></section><section className="paper-section"><div className="site-width industry-principles"><div><p className="eyebrow"><span />How we frame the work</p><h2>{detail.principlesTitle}</h2></div><div className="industry-principle-grid">{detail.principles.map((principle) => <article key={principle.number}><span>{principle.number}</span><h3>{principle.title}</h3><p>{principle.text}</p></article>)}</div></div></section><section className="site-width industry-detail-cta"><div><p className="eyebrow"><span />Start a focused conversation</p><h2>Bring the work in front of your team.</h2></div><Link href="/contact" className="button button-primary">Contact EMFOI <ArrowRight size={16} /></Link></section></PageLayout>;
 }
 
 function HealthcarePage() {

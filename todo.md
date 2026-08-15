@@ -206,6 +206,13 @@ The oversized footer quadrant pseudo-element and page-hero `EMFOI / FIELD NOTE` 
 
 Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/Do-Filling-Logo_tgwgu5.png` (3899 × 1149 PNG), displaying the approved blue mark and black “Do Filing” wordmark on a light field.
 
+## Visual Evidence and Card-Hover Enhancement
+
+- [x] Audit text-heavy homepage and industry modules, then assign a restrained visual treatment to the areas where it improves scanning.
+- [x] Prepare distinct editorial evidence assets for IT delivery, public-sector programs, financial operations, and manufacturing operations.
+- [x] Add responsive image-backed evidence panels and blueprint-pattern hover states without diluting the Civic Precision system.
+- [x] Validate desktop and mobile balance, run the production build, and save the completed enhancement.
+
 ## Contact Form Custom Select
 
 - [x] Inspect the current inquiry-type field and use the existing accessible select component where appropriate.
@@ -256,6 +263,13 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 
 ## Industries Listing Alignment
 
-- [ ] Inspect the Industry row grid against the page container and identify the misaligned columns.
-- [ ] Align the number, content, and arrow columns to a single consistent industry-list grid.
+- [x] Inspect the Industry row grid against the page container and identify the misaligned columns.
+- [x] Align the number, content, and arrow columns to a single consistent industry-list grid.
 - [x] Verify desktop and mobile Industries alignment, then save the refinement.
+
+## Visual Evidence and Card-Hover Enhancement
+
+- [ ] Audit text-heavy pages and select visual evidence treatments that support—not decorate—the content.
+- [ ] Prepare distinct visual assets for selected software, AI, staffing, and industry panels.
+- [ ] Add responsive image-backed panels and restrained hover interactions without weakening readability.
+- [ ] Validate representative pages at desktop and mobile sizes, then save the enhancement.
