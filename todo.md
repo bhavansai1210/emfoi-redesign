@@ -154,6 +154,14 @@ The designer-led pass introduces a warmer civic planning hero, stronger editoria
 
 The UI and UX pass clarified the first-screen route, converted services into an explicit three-part path, enlarged capability discovery into a two-column evidence matrix, and unified product proof under one clear portfolio section. Home, Capabilities, and Contact were reviewed full-page at 1280px and 375px. TypeScript and production build checks pass; the existing bundle-size advisory remains.
 
+## First-Version Style Restoration
+
+- [x] Identify every overused left-side text accent introduced by later design passes.
+- [x] Restore the cleaner first-version editorial spacing and subtle-keyline treatment while preserving important UI clarity improvements.
+- [x] Validate the restrained visual system on desktop and mobile before delivery.
+
+The recent heavy left-border treatments were removed from hero support copy, section headings, contrast copy, product proof, and closing CTA content. The original lightweight eyebrow keylines remain as the sole directional cue. Home, Capabilities, and Contact were reviewed full-page at 1280px and 375px; TypeScript and production build checks pass.
+
 ## Checkpoint-Safe Public Asset Strategy
 
 - [ ] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.
