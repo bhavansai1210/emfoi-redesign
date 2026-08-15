@@ -197,3 +197,11 @@ The oversized footer quadrant pseudo-element and page-hero `EMFOI / FIELD NOTE` 
 - [x] Identify every shared blue-and-coral horizontal divider treatment used across the redesign.
 - [x] Remove the decorative divider lines while preserving page spacing, navigation structure, and accessibility.
 - [x] Validate representative pages and save the cleaned visual refinement.
+
+## DoFiling Logo Replacement
+
+- [x] Confirm the supplied DoFiling logo and identify every current product-logo touchpoint.
+- [x] Replace the existing DoFiling logo with the approved supplied asset.
+- [x] Verify the updated logo at responsive sizes and save the refinement.
+
+Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/Do-Filling-Logo_tgwgu5.png` (3899 × 1149 PNG), displaying the approved blue mark and black “Do Filing” wordmark on a light field.
