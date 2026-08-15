@@ -191,3 +191,9 @@ The oversized footer quadrant pseudo-element and page-hero `EMFOI / FIELD NOTE` 
 - [x] Document public-data limitations and translate verified findings into a prioritized keyword and content opportunity map.
 - [x] Implement the highest-impact technical SEO, internal-discovery, and metadata improvements supported by the evidence.
 - [x] Validate the implementation, record the SEO findings, and save a checkpoint.
+
+## Divider-Line Cleanup
+
+- [x] Identify every shared blue-and-coral horizontal divider treatment used across the redesign.
+- [x] Remove the decorative divider lines while preserving page spacing, navigation structure, and accessibility.
+- [x] Validate representative pages and save the cleaned visual refinement.
