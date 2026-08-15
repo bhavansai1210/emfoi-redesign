@@ -217,3 +217,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Reproduce the reported click-through issue from the homepage and identify the affected navigation or control.
 - [x] Confirm the published route and custom-select flows; no code repair was required after reproduction testing.
 - [x] Validate representative homepage click paths and save the investigation record.
+
+## Route Scroll Restoration
+
+- [x] Identify the shared route-change lifecycle point for scroll restoration.
+- [x] Reset to the top of the destination page on each internal navigation change.
+- [x] Validate desktop and mobile route transitions, then save the fix.

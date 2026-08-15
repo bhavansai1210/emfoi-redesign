@@ -9,3 +9,7 @@
 The published homepage **Capabilities** header link was activated through the browser and successfully routed from `/` to `/capabilities`. The page title, URL, and rendered capability-index content all updated correctly. This rules out a general homepage header-link failure on the currently published deployment.
 
 The homepage **Contact** tab was also activated and successfully routed from `/` to `/contact`. On that page, the custom Inquiry Type select opened on pointer activation, advanced from “Government / Teaming” to “Staffing (IT)” with the Arrow Down key, and committed the choice with Enter. No browser-console errors were present during the tested route and select interactions.
+
+## Route scroll restoration validation
+
+The homepage was scrolled below the hero before activating the **About** header navigation link. The resulting About route opened with `Pixels above viewport: 0` and showed the beginning of the About hero, confirming that internal route changes now reset to the top of the destination page rather than preserving the previous viewport position.

@@ -2,15 +2,27 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { Route, Switch } from "wouter";
+import { useEffect } from "react";
+import { Route, Switch, useLocation } from "wouter";
 import Home from "./pages/Home";
 import Capabilities from "./pages/Capabilities";
 import InfoPage from "./pages/InfoPage";
 import NotFound from "./pages/NotFound";
 
 /** CIVIC PRECISION — a light, accessible route system with global enterprise navigation. */
+function RouteScrollReset() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => window.scrollTo(0, 0));
+    return () => window.cancelAnimationFrame(frame);
+  }, [location]);
+
+  return null;
+}
+
 function Router() {
-  return <Switch>
+  return <><RouteScrollReset /><Switch>
     <Route path="/" component={Home} />
     <Route path="/capabilities/:slug" component={Capabilities} />
     <Route path="/capabilities" component={Capabilities} />
@@ -28,7 +40,7 @@ function Router() {
     <Route path="/insights" component={InfoPage} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
-  </Switch>;
+  </Switch></>;
 }
 
 export default function App() {
