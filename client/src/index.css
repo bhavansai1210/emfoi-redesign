@@ -300,6 +300,16 @@ body { background-color: #fbfaf7; background-image: radial-gradient(circle at 88
 @media (max-width:760px) { .healthcare-intro-grid { grid-template-columns:1fr; gap:24px; }.healthcare-capability-section { padding:78px 0 82px; }.healthcare-capability-grid { grid-template-columns:1fr; }.healthcare-capability-card { min-height:0; padding:24px 0; border-right:0; }.healthcare-capability-card > span { padding-top:4px; } }
 
 /* CIVIC PRECISION — audience-specific maps turn the quadrant into a route coordinate, not decorative wallpaper. */
+.contact-topic-field { position:relative; }
+.contact-topic-field .contact-topic-select { width:100%; height:auto; min-height:43px; padding:12px 13px; color:#173158; background:#fff; border:1px solid #c5cfdb; border-radius:3px; box-shadow:none; font-family:"Manrope",sans-serif; font-size:13px; font-weight:600; letter-spacing:0; text-transform:none; }
+.contact-topic-field .contact-topic-select:hover { border-color:#8da6c1; }
+.contact-topic-field .contact-topic-select:focus-visible { border-color:#155eef; box-shadow:0 0 0 3px rgba(21,94,239,.1); outline:none; }
+.contact-topic-field .contact-topic-select svg { width:16px; height:16px; color:#155eef; opacity:1; transition:transform .18s cubic-bezier(.23,1,.32,1); }
+.contact-topic-field .contact-topic-select[data-state="open"] svg { transform:rotate(180deg); }
+.contact-topic-content { z-index:80; padding:5px; color:#173158; background:#fffdfa; border:1px solid #b8c7d4; border-radius:3px; box-shadow:8px 10px 0 rgba(16,33,58,.1); font-family:"Manrope",sans-serif; }
+.contact-topic-content [data-slot="select-item"] { min-height:35px; padding:8px 32px 8px 11px; border-radius:2px; color:#23405f; font-size:12px; font-weight:700; letter-spacing:0; }
+.contact-topic-content [data-slot="select-item"][data-highlighted] { color:#155eef; background:#eaf1ff; }
+.contact-topic-content [data-slot="select-item"] span { color:#155eef; }
 .buyer-dossier-strip,.care-route-map { display:grid; grid-template-columns:68px repeat(3,minmax(0,1fr)); gap:0; margin-top:-1px; background:#fbfaf7; border-top:1px solid #cfd7df; border-bottom:1px solid #cfd7df; }
 .buyer-dossier-strip > div:not(:first-child),.care-route-map > div:not(:first-child) { min-height:86px; padding:19px 20px 17px; border-left:1px solid #cfd7df; }
 .buyer-dossier-strip span,.care-route-map span { display:block; margin-bottom:8px; color:#155eef; font-size:9px; font-weight:800; letter-spacing:.11em; }

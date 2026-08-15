@@ -4,6 +4,7 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { analyticsEvent } from "@/components/ClientEnhancements";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const options = [
   "Government / Teaming",
@@ -49,7 +50,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
         {!compact && <label><span>Organization</span><input name="organization" autoComplete="organization" placeholder="Organization name" /></label>}
         {!compact && <label><span>Phone <em>optional</em></span><input name="phone" type="tel" autoComplete="tel" placeholder="Phone number" /></label>}
       </div>
-      <label><span>How can we help?</span><select value={topic} onChange={(e) => setTopic(e.target.value)} aria-label="Inquiry type">{options.map((option) => <option key={option}>{option}</option>)}</select></label>
+      <label className="contact-topic-field"><span id="inquiry-type-label">How can we help?</span><Select value={topic} onValueChange={setTopic}><SelectTrigger className="contact-topic-select" aria-labelledby="inquiry-type-label"><SelectValue /></SelectTrigger><SelectContent className="contact-topic-content" position="popper" align="start">{options.map((option) => <SelectItem key={option} value={option}>{option}</SelectItem>)}</SelectContent></Select></label>
       <label><span>Message</span><textarea name="message" required placeholder="Tell us about the program, role, or outcome you need support with." rows={compact ? 3 : 5} /></label>
       <div className="form-footer"><p>Submitting opens a pre-addressed email to <a href="mailto:info@emfoi.com">info@emfoi.com</a>. EMFOI uses the details you provide only to respond to this inquiry; read the <a href="/privacy">privacy notice</a>.</p><button className="button button-primary" type="submit">Start the conversation <ArrowRight size={16} /></button></div>
     </form>

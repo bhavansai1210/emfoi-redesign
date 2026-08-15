@@ -205,3 +205,9 @@ The oversized footer quadrant pseudo-element and page-hero `EMFOI / FIELD NOTE` 
 - [x] Verify the updated logo at responsive sizes and save the refinement.
 
 Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/Do-Filling-Logo_tgwgu5.png` (3899 × 1149 PNG), displaying the approved blue mark and black “Do Filing” wordmark on a light field.
+
+## Contact Form Custom Select
+
+- [x] Inspect the current inquiry-type field and use the existing accessible select component where appropriate.
+- [x] Replace the native inquiry-type dropdown with an accessible Civic Precision custom select.
+- [x] Validate keyboard, pointer, and mobile interaction, then save the refinement.
