@@ -107,3 +107,47 @@ The oversized duplicate JPEG and PNG files were removed from the static project,
 - [ ] Save the archive-inclusive project checkpoint.
 
 The complete eight-file archive is available at `/manus-storage/emfoi-image-backup_c87c1f92.zip`. It passed ZIP integrity validation. A public-folder manifest at `client/public/asset-backup/README.md` records the archive location and SHA-256 checksum without copying its 21.9 MB payload back into the static project.
+
+## User-Requested Public Image Restoration
+
+- [x] Copy all original EMFOI image backups into `client/public/asset-backup/`.
+- [x] Verify the public backup folder contains the complete original image set and record the resulting checkpoint limitation.
+
+All eight original image assets are now present in `client/public/asset-backup/`, together with the public archive manifest. The backup folder is approximately 23 MB. Live content continues to use the existing `/manus-storage/` image URLs, except for the intentional local Herndon map. Because the backup images exceed the checkpoint media limit, a new project checkpoint cannot be saved unless they are moved out of `client/public/` again.
+
+## GitHub Image Synchronization Check
+
+- [x] Inspect the connected GitHub repository for the full public image-backup set.
+- [x] Compare the repository inventory against the local requested image set and report the result.
+
+GitHub `main` currently contains only `README.md`, `carehigh-logo.svg`, and `emfoi-herndon-location-map.png` in `client/public/asset-backup/`. The six restored large JPG and PNG backups are present locally but are not on GitHub because their size prevents the required project checkpoint from completing.
+
+## Dedicated Project Assets Requirement
+
+- [x] Create a dedicated project assets directory containing every original EMFOI image.
+- [x] Synchronize the complete asset inventory to the connected GitHub repository using a repository-compatible approach.
+- [x] Verify GitHub contains every original image asset.
+
+The complete original asset set is maintained in `client/public/asset-backup/` locally and on GitHub `main`: CareHigh SVG, six EMFOI JPG/PNG files, and the Herndon location map. The GitHub inventory now exactly matches the local folder inventory.
+
+## Premium Experience Refinement
+
+- [x] Review the current home-page composition, typography, rhythm, and motion for high-impact premium refinements.
+- [x] Apply a cohesive Civic Precision enhancement pass without altering approved facts or core routes.
+- [x] Verify the refined experience on desktop and mobile, then complete production validation.
+
+The homepage now carries the Civic Precision field-guide language from hero to footer: recurring quadrant geometry, blueprint keylines, parent-branded product evidence panels, reduced-motion-aware reveal variants, and stronger paper/ink depth. Full-page renders were checked at 1280px and 375px; TypeScript and the production build pass, with only the existing bundle-size advisory.
+
+## Designer-Led Experience Pass
+
+- [x] Audit the homepage and representative secondary pages for composition, section pacing, whitespace, and visual hierarchy.
+- [x] Strengthen the EMFOI visual language through more deliberate typography, surfaces, image treatments, and interaction moments.
+- [x] Validate the desktop and mobile experience, then save and report the finished revision.
+
+The designer-led pass introduces a warmer civic planning hero, stronger editorial anchor rules, field-note folios on shared page heroes, refined product-evidence framing, and a more deliberate header/footer signature. The homepage, Capabilities, and Government pages were checked full-page at desktop size, with Home and Capabilities also reviewed at a 375px mobile viewport. TypeScript and production-build validation pass; the existing bundle-size advisory remains.
+
+## Checkpoint-Safe Public Asset Strategy
+
+- [ ] Create optimized WebP backup copies for each original JPEG and PNG asset under the project media limit.
+- [ ] Update the public backup manifest to distinguish optimized project copies from the original managed ZIP archive.
+- [ ] Remove only the oversized duplicate project backups, validate the resulting asset inventory, and save the completed designer-led revision.
