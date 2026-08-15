@@ -235,3 +235,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Identify the spacing relationship between the delivery strip and focused delivery-mix section.
 - [x] Add responsive vertical separation above the focused delivery-mix section.
 - [x] Verify the Healthcare hierarchy at desktop and mobile sizes, then save the refinement.
+
+## Industry Navigation and Detail Pages
+
+- [x] Audit the industry list’s current arrow-only links and define factual content boundaries for missing pages.
+- [x] Make each industry row fully clickable and add detail pages for Financial Services & Insurance and Manufacturing.
+- [x] Validate all industry click paths at desktop and mobile sizes, then save the update.

@@ -11,10 +11,10 @@ import { PageSEO } from "@/components/PageSEO";
 import "./contact-map.css";
 
 const industryData = [
-  { number: "01", title: "Healthcare", text: "Healthcare IT, responsible AI, and staffing support for health systems and government health programs." },
-  { number: "02", title: "Government / Public Sector", text: "Custom software, staffing, and teaming posture built for federal, state, and local programs." },
-  { number: "03", title: "Financial Services & Insurance", text: "Technology and delivery support for complex, regulated operational environments." },
-  { number: "04", title: "Manufacturing", text: "Practical systems and specialized IT capacity for organizations where operations matter." },
+  { number: "01", title: "Healthcare", text: "Healthcare IT, responsible AI, and staffing support for health systems and government health programs.", href: "/healthcare" },
+  { number: "02", title: "Government / Public Sector", text: "Custom software, staffing, and teaming posture built for federal, state, and local programs.", href: "/government" },
+  { number: "03", title: "Financial Services & Insurance", text: "Technology and delivery support for complex, regulated operational environments.", href: "/industries/financial-services-insurance" },
+  { number: "04", title: "Manufacturing", text: "Practical systems and specialized IT capacity for organizations where operations matter.", href: "/industries/manufacturing" },
 ];
 
 const pageSeo = {
@@ -23,6 +23,8 @@ const pageSeo = {
   "/capabilities-statement": { title: "Capability Statement | EMFOI", description: "Review EMFOI’s current capabilities in custom software, AI governance, IT consulting, staff augmentation, and healthcare staffing for government and enterprise buyers.", canonicalPath: "/capability-statement", breadcrumbs: [{ name: "Capability Statement", path: "/capability-statement" }] },
   "/healthcare": { title: "Healthcare Technology, AI Governance & Staffing | EMFOI", description: "EMFOI supports care organizations and government health programs with custom software, practical AI governance, IT consulting, and healthcare staffing.", canonicalPath: "/healthcare", breadcrumbs: [{ name: "Healthcare", path: "/healthcare" }] },
   "/industries": { title: "Healthcare, Government & Regulated Industry Solutions | EMFOI", description: "EMFOI brings software, AI governance, IT consulting, and staffing support to healthcare, public-sector, financial services, and manufacturing organizations.", canonicalPath: "/industries", breadcrumbs: [{ name: "Industries", path: "/industries" }] },
+  "/industries/financial-services-insurance": { title: "Financial Services & Insurance Technology Delivery | EMFOI", description: "EMFOI supports financial services and insurance organizations with custom software, AI governance, IT consulting, and staffing for complex operational environments.", canonicalPath: "/industries/financial-services-insurance", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Financial Services & Insurance", path: "/industries/financial-services-insurance" }] },
+  "/industries/manufacturing": { title: "Manufacturing Technology Delivery & IT Capacity | EMFOI", description: "EMFOI supports manufacturing organizations with practical software, AI governance, IT consulting, and specialized technology capacity for operational work.", canonicalPath: "/industries/manufacturing", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Manufacturing", path: "/industries/manufacturing" }] },
   "/about": { title: "About EMFOI | Government, Healthcare & Enterprise Delivery", description: "Learn about EMFOI, a Herndon, Virginia-based software, AI, consulting, and staffing partner for government, healthcare, and enterprise programs.", canonicalPath: "/about", breadcrumbs: [{ name: "About EMFOI", path: "/about" }] },
   "/dofiling": { title: "DoFiling by EMFOI | Immigration Case Management Platform", description: "DoFiling is EMFOI’s cloud workspace for immigration case workflows, questionnaires, document handling, attorneys, and employers.", canonicalPath: "/dofiling", breadcrumbs: [{ name: "DoFiling", path: "/dofiling" }] },
   "/carehigh": { title: "CareHigh by EMFOI | Dental Referral Management", description: "CareHigh is EMFOI software for dental teams that helps track referrals, support follow-up, and keep care workflows visible.", canonicalPath: "/carehigh", breadcrumbs: [{ name: "CareHigh", path: "/carehigh" }] },
@@ -41,7 +43,40 @@ function CapabilityStatementPage() {
 }
 
 function IndustriesPage() {
-  return <PageLayout><PageHero eyebrow="Industries" title="Capability that respects the context around it." intro="EMFOI supports organizations operating in healthcare, public service, and complex enterprise environments where delivery must be both technically sound and practically usable." /><section className="site-width industry-list">{industryData.map((industry) => <article key={industry.title}><span>{industry.number}</span><div><h2>{industry.title}</h2><p>{industry.text}</p></div><Link href={industry.title === "Healthcare" ? "/healthcare" : industry.title.includes("Government") ? "/government" : "/contact"} aria-label={`Discuss ${industry.title}`}><ChevronRight size={23} /></Link></article>)}</section><section className="paper-section industry-note"><div className="site-width industry-note-grid"><div><p className="eyebrow"><span />Common thread</p><h2>Every industry brings its own version of high-stakes work.</h2></div><p>We adapt our delivery model to the operational environment, then connect design, technical discipline, governance, and talent to help the work move forward.</p></div></section></PageLayout>;
+  return <PageLayout><PageHero eyebrow="Industries" title="Capability that respects the context around it." intro="EMFOI supports organizations operating in healthcare, public service, and complex enterprise environments where delivery must be both technically sound and practically usable." /><section className="site-width industry-list">{industryData.map((industry) => <Link key={industry.title} href={industry.href} className="industry-list-row" aria-label={`Explore ${industry.title}`}><span>{industry.number}</span><div><h2>{industry.title}</h2><p>{industry.text}</p></div><span className="industry-row-arrow" aria-hidden="true"><ChevronRight size={23} /></span></Link>)}</section><section className="paper-section industry-note"><div className="site-width industry-note-grid"><div><p className="eyebrow"><span />Common thread</p><h2>Every industry brings its own version of high-stakes work.</h2></div><p>We adapt our delivery model to the operational environment, then connect design, technical discipline, governance, and talent to help the work move forward.</p></div></section></PageLayout>;
+}
+
+const industryDetails = {
+  financial: {
+    eyebrow: "Financial Services & Insurance",
+    title: "Technology delivery for complex, regulated operations.",
+    intro: "EMFOI supports financial services and insurance organizations with custom software, practical AI governance, IT consulting, and focused technology capacity around the work in front of the team.",
+    focusTitle: "Keep delivery grounded in the operating context.",
+    focusCopy: "Complex environments call for systems that are usable, governed with care, and supported by the right technical capacity. EMFOI brings a focused delivery mix to help teams move from a defined need to practical next steps.",
+    items: ["Custom software and UX for defined operational workflows.", "Practical AI implementation with risk, documentation, and oversight in view.", "IT consulting and staff augmentation for focused delivery capacity."],
+    principles: [
+      { number: "01", title: "Workflow clarity", text: "Start with the people, systems, and operational handoffs that shape the work." },
+      { number: "02", title: "Practical governance", text: "Keep accountability and documented decision-making in view as technology changes." },
+      { number: "03", title: "Focused capacity", text: "Add the software, advisory, or staffing support that fits the immediate delivery need." },
+    ],
+  },
+  manufacturing: {
+    eyebrow: "Manufacturing",
+    title: "Technology support shaped around the work that keeps operations moving.",
+    intro: "EMFOI supports manufacturing organizations with practical software, AI governance, IT consulting, and specialized technology capacity for the operational realities in front of the team.",
+    focusTitle: "Build around the workflow, then support the work to come.",
+    focusCopy: "Operational environments need technology that people can use and teams can maintain. EMFOI helps connect software delivery, responsible AI implementation, and focused capacity to the work that needs support now.",
+    items: ["Usable software and UX for operational teams and workflows.", "AI development and governance with oversight, documentation, and risk in view.", "IT consulting and staff augmentation when specialized capacity is needed."],
+    principles: [
+      { number: "01", title: "Operational context", text: "Start with the real workflow, system dependencies, and people involved in the work." },
+      { number: "02", title: "Usable delivery", text: "Focus on software and technical decisions that remain practical for the team using them." },
+      { number: "03", title: "Delivery support", text: "Connect advisory, implementation, and focused staffing around a defined operational need." },
+    ],
+  },
+} as const;
+
+function IndustryDetailPage({ detail }: { detail: (typeof industryDetails)[keyof typeof industryDetails] }) {
+  return <PageLayout><PageHero eyebrow={detail.eyebrow} title={detail.title} intro={detail.intro}><Link href="/contact" className="button button-primary">Discuss an industry need <ArrowRight size={16} /></Link></PageHero><section className="detail-copy-section"><div className="site-width detail-copy-grid"><div><p className="eyebrow"><span />Delivery focus</p><h2>{detail.focusTitle}</h2></div><div><p className="large-copy">{detail.focusCopy}</p><ul className="check-list">{detail.items.map((item) => <li key={item}><Check size={17} />{item}</li>)}</ul></div></div></section><section className="paper-section"><div className="site-width industry-principles"><div><p className="eyebrow"><span />How we frame the work</p><h2>A focused delivery posture.</h2></div><div className="industry-principle-grid">{detail.principles.map((principle) => <article key={principle.number}><span>{principle.number}</span><h3>{principle.title}</h3><p>{principle.text}</p></article>)}</div></div></section><section className="site-width industry-detail-cta"><div><p className="eyebrow"><span />Start a focused conversation</p><h2>Bring the work in front of your team.</h2></div><Link href="/contact" className="button button-primary">Contact EMFOI <ArrowRight size={16} /></Link></section></PageLayout>;
 }
 
 function HealthcarePage() {
@@ -91,6 +126,8 @@ export default function InfoPage() {
     : location === "/capability-statement" || location === "/capabilities-statement" ? <CapabilityStatementPage />
     : location === "/healthcare" ? <HealthcarePage />
     : location === "/industries" ? <IndustriesPage />
+    : location === "/industries/financial-services-insurance" ? <IndustryDetailPage detail={industryDetails.financial} />
+    : location === "/industries/manufacturing" ? <IndustryDetailPage detail={industryDetails.manufacturing} />
     : location === "/about" ? <AboutPage />
     : location === "/dofiling" ? <DoFilingPage />
     : location === "/carehigh" ? <CareHighPage />
