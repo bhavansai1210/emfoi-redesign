@@ -269,7 +269,14 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 
 ## Visual Evidence and Card-Hover Enhancement
 
-- [ ] Audit text-heavy pages and select visual evidence treatments that support—not decorate—the content.
-- [ ] Prepare distinct visual assets for selected software, AI, staffing, and industry panels.
-- [ ] Add responsive image-backed panels and restrained hover interactions without weakening readability.
-- [ ] Validate representative pages at desktop and mobile sizes, then save the enhancement.
+- [x] Audit text-heavy pages and select visual evidence treatments that support—not decorate—the content.
+- [x] Prepare distinct visual assets for selected software, AI, staffing, and industry panels.
+- [x] Add responsive image-backed panels and restrained hover interactions without weakening readability.
+- [x] Validate representative pages at desktop and mobile sizes, then save the enhancement.
+
+## Content Background and Capability Presentation Refresh
+
+- [x] Review the supplied reference and identify the repetitive section rhythm to break.
+- [x] Generate distinct content-related background visuals for selected homepage and supporting content areas.
+- [x] Redesign the four homepage capability cards into a more varied, image-led editorial presentation.
+- [x] Validate the revised hierarchy at desktop and mobile sizes, then save the refresh.
