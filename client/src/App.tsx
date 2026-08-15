@@ -16,11 +16,14 @@ function Router() {
     <Route path="/capabilities" component={Capabilities} />
     <Route path="/government" component={InfoPage} />
     <Route path="/capability-statement" component={InfoPage} />
+    <Route path="/capabilities-statement" component={InfoPage} />
     <Route path="/industries" component={InfoPage} />
     <Route path="/about" component={InfoPage} />
     <Route path="/dofiling" component={InfoPage} />
+    <Route path="/carehigh" component={InfoPage} />
     <Route path="/careers" component={InfoPage} />
     <Route path="/contact" component={InfoPage} />
+    <Route path="/privacy" component={InfoPage} />
     <Route path="/insights" component={InfoPage} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />

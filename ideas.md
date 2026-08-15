@@ -67,3 +67,5 @@ The EMFOI mark is a bold, text-free four-part signal: three structural cobalt sq
 ## Style Decisions
 
 Every major page should use a recognizable EMFOI system motif — quadrant geometry, blueprint keylines, a document-map composition, or a numbered evidence rail — so the visual identity is legible even without the logo. Signal Blue is reserved for actions, navigation state, key numerals, and system geometry; broad surfaces should primarily remain warm paper, deep ink, or mineral tones. Secondary-page heroes should use audience-specific field-guide structures, rather than repeating one visual rhythm.
+
+Public-facing policy and utility pages must read as final civic documents: complete, plainspoken, and trust-preserving, with no internal caveats or launch-process language. Product portfolio sections may incorporate product cues, but the EMFOI parent system — warm paper, deep ink navy, Signal Blue, quadrant geometry, and fine keylines — remains visually dominant. Audience routing should read as a field-guide orientation rail rather than a generic card collection.

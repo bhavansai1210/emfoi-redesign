@@ -2,9 +2,12 @@
  * CIVIC PRECISION — global EMFOI navigation and footer.
  * Warm paper canvas, ink-blue structure, Signal Blue calls to action, and purposeful geometry.
  */
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Linkedin, Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
+import { CookiePreferences } from "@/components/ClientEnhancements";
+import { MotionReveal } from "@/components/MotionReveal";
 
 const brandMark = "/manus-storage/emfoi-signal-mark_95fe1ace.png";
 
@@ -14,6 +17,7 @@ const navItems = [
   { label: "Government", href: "/government" },
   { label: "About", href: "/about" },
   { label: "Insights", href: "/insights" },
+  { label: "Contact", href: "/contact" },
 ];
 
 function NavLink({ href, children, onClick }: { href: string; children: React.ReactNode; onClick?: () => void }) {
@@ -24,6 +28,13 @@ function NavLink({ href, children, onClick }: { href: string; children: React.Re
       {children}
     </Link>
   );
+}
+
+function SocialPlatformIcon({ platform }: { platform: "linkedin" | "facebook" | "instagram" | "x" }) {
+  if (platform === "linkedin") return <Linkedin size={18} aria-hidden="true" />;
+  if (platform === "facebook") return <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.65 21v-8h2.68l.4-3.12h-3.08V7.89c0-.9.25-1.52 1.55-1.52H16.9V3.58c-.3-.04-1.34-.13-2.55-.13-2.52 0-4.25 1.54-4.25 4.37v2.06H7.25V13h2.86v8h3.54Z" /></svg>;
+  if (platform === "instagram") return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.4" y="3.4" width="17.2" height="17.2" rx="4.8" fill="none" stroke="currentColor" strokeWidth="1.9" /><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="1.9" /><circle cx="17.55" cy="6.55" r="1.15" fill="currentColor" /></svg>;
+  return <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 3.5h2.9l-6.35 7.25L23 20.5h-5.86l-4.58-5.98L7.32 20.5H4.4l6.79-7.76L4 3.5h6.01l4.14 5.47L18.9 3.5Zm-1.03 15.2h1.62L9.13 5.2H7.4L17.87 18.7Z" /></svg>;
 }
 
 export function Header() {
@@ -56,14 +67,16 @@ export function Header() {
           </div>
         </div>
       </header>
+      <AnimatePresence initial={false}>
       {open && (
-        <div className="mobile-menu" aria-label="Mobile navigation">
+        <motion.div className="mobile-menu" aria-label="Mobile navigation" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}>
           <div className="site-width mobile-menu-inner">
             {navItems.map((item) => <NavLink key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</NavLink>)}
             <Link href="/contact" className="button button-primary mobile-cta" onClick={() => setOpen(false)}>Request a capability briefing <ArrowUpRight size={16} /></Link>
           </div>
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </>
   );
 }
@@ -80,6 +93,7 @@ export function Footer() {
           </Link>
           <p>Software, AI, and staffing partners for government and healthcare.</p>
           <a href="mailto:info@emfoi.com" className="footer-email">info@emfoi.com <ArrowUpRight size={15} /></a>
+          <div className="footer-social"><span className="footer-social-label">Connect with EMFOI</span><div className="footer-social-icons"><a className="footer-social-icon-button footer-social-icon-button-active" href="https://www.linkedin.com/company/emfoi/" target="_blank" rel="noreferrer" aria-label="Follow EMFOI on LinkedIn" title="LinkedIn"><SocialPlatformIcon platform="linkedin" /></a><span className="footer-social-icon-button footer-social-icon-button-pending" role="img" aria-label="EMFOI Facebook profile link pending confirmation" title="Facebook profile link pending confirmation"><SocialPlatformIcon platform="facebook" /></span><span className="footer-social-icon-button footer-social-icon-button-pending" role="img" aria-label="EMFOI Instagram profile link pending confirmation" title="Instagram profile link pending confirmation"><SocialPlatformIcon platform="instagram" /></span><span className="footer-social-icon-button footer-social-icon-button-pending" role="img" aria-label="EMFOI X profile link pending confirmation" title="X profile link pending confirmation"><SocialPlatformIcon platform="x" /></span></div><span className="footer-social-note">LinkedIn · Facebook · Instagram · X</span></div>
         </div>
         <div className="footer-column">
           <span className="footer-heading">Explore</span>
@@ -87,6 +101,7 @@ export function Footer() {
           <Link href="/government">Government</Link>
           <Link href="/industries">Industries</Link>
           <Link href="/dofiling">DoFiling</Link>
+          <Link href="/carehigh">CareHigh</Link>
         </div>
         <div className="footer-column">
           <span className="footer-heading">Company</span>
@@ -105,8 +120,8 @@ export function Footer() {
       <div className="site-width footer-bottom">
         <span>© {new Date().getFullYear()} EMFOI, Inc. — a Delaware corporation established 2013.</span>
         <div className="footer-legal">
-          <span title="Legal copy to be supplied before launch">Privacy Policy</span>
-          <span title="Legal copy to be supplied before launch">Terms & Conditions</span>
+          <Link href="/privacy">Privacy notice</Link>
+          <button className="footer-legal-button" onClick={() => window.dispatchEvent(new Event("emfoi:open-cookie-preferences"))}>Manage cookies</button>
           <span>Accessibility</span>
         </div>
       </div>
@@ -118,7 +133,7 @@ export function PageHero({ eyebrow, title, intro, children, variant = "standard"
   return (
     <section className={`page-hero page-hero-${variant}`}>
       <div className="page-hero-system" aria-hidden="true"><span /><span /><span /><span /><i /><i /><i /></div>
-      <div className="site-width page-hero-grid">
+      <MotionReveal className="site-width page-hero-grid">
         <div>
           <p className="eyebrow"><span />{eyebrow}</p>
           <h1>{title}</h1>
@@ -127,11 +142,11 @@ export function PageHero({ eyebrow, title, intro, children, variant = "standard"
           <p>{intro}</p>
           {children}
         </div>
-      </div>
+      </MotionReveal>
     </section>
   );
 }
 
 export function PageLayout({ children }: { children: React.ReactNode }) {
-  return <div className="site-frame"><Header /><main>{children}</main><Footer /></div>;
+  return <div className="site-frame"><Header /><main>{children}</main><Footer /><CookiePreferences /></div>;
 }
