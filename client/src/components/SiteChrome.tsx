@@ -133,7 +133,7 @@ export function Footer() {
 export function PageHero({ eyebrow, title, intro, children, variant = "standard" }: { eyebrow: string; title: string; intro: string; children?: React.ReactNode; variant?: "standard" | "data" | "contact" | "statement" | "product" }) {
   return (
     <section className={`page-hero page-hero-${variant}`}>
-      <div className="page-hero-system" aria-hidden="true"><span /><span /><span /><span /><i /><i /><i /></div>
+      <div className="page-hero-system" aria-hidden="true"><span /><span /><span /><span /></div>
       <MotionReveal className="site-width page-hero-grid">
         <div>
           <p className="eyebrow"><span />{eyebrow}</p>

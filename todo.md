@@ -223,3 +223,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Identify the shared route-change lifecycle point for scroll restoration.
 - [x] Reset to the top of the destination page on each internal navigation change.
 - [x] Validate desktop and mobile route transitions, then save the fix.
+
+## Page-Hero Quadrant Pattern Consistency
+
+- [x] Audit all page-hero quadrant/logo pattern variations shown across the site.
+- [x] Standardize the pattern’s scale, position, stroke, and color treatment through the shared hero system.
+- [x] Verify representative page heroes at desktop and mobile sizes, then save the refinement.
