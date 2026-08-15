@@ -99,3 +99,11 @@ The homepage capability rail was restored by normalizing the stagger-wrapper gri
 - [x] Confirm the live `/manus-storage/` asset references remain unchanged and save the final checkpoint.
 
 The oversized duplicate JPEG and PNG files were removed from the static project, while the live image URLs remain on `/manus-storage/`. The self-hosted Herndon contact map and CareHigh SVG backup remain in place because they are within the checkpoint-size limit and are still referenced by the site.
+
+## Public Image Backup Archive
+
+- [x] Assemble all original EMFOI image assets into one ZIP archive in project-managed public storage.
+- [x] Confirm the archive is valid, the static public folder remains checkpoint-safe, and no live asset reference changes.
+- [ ] Save the archive-inclusive project checkpoint.
+
+The complete eight-file archive is available at `/manus-storage/emfoi-image-backup_c87c1f92.zip`. It passed ZIP integrity validation. A public-folder manifest at `client/public/asset-backup/README.md` records the archive location and SHA-256 checksum without copying its 21.9 MB payload back into the static project.
