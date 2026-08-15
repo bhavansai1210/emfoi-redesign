@@ -314,11 +314,14 @@ body { background-color: #fbfaf7; background-image: radial-gradient(circle at 88
 .governance-map-steps span { display:block; margin-bottom:34px; color:#155eef; font-size:10px; font-weight:800; letter-spacing:.11em; }
 .governance-map-steps h3 { margin:0 0 9px; color:#132c4c; font-family:"DM Serif Display",serif; font-size:26px; line-height:1; }
 .governance-map-steps p { margin:0; color:#617188; font-size:13px; line-height:1.62; }
-.industry-list .industry-list-row { display:grid; width:auto; height:auto; grid-template-columns:75px minmax(0,1fr) auto; align-items:center; gap:25px; padding:30px 18px; color:inherit; border:0; border-top:1px solid #cbd4de; border-radius:0; text-decoration:none; transition:background .2s,padding .2s,color .2s; }
+.industry-list .industry-list-row { display:grid; width:auto; height:auto; grid-template-columns:75px minmax(0,1fr) auto; align-items:center; justify-items:stretch; gap:25px; padding:30px 18px; color:inherit; border:0; border-top:1px solid #cbd4de; border-radius:0; text-decoration:none; transition:background .2s,padding .2s,color .2s; }
 .industry-list .industry-list-row:last-child { border-bottom:1px solid #cbd4de; }
 .industry-list .industry-list-row:hover { padding-left:28px; background:#eaf1ff; }
 .industry-list .industry-list-row:focus-visible { outline:3px solid rgba(21,94,239,.35); outline-offset:-3px; background:#eaf1ff; }
 .industry-list .industry-list-row > span:first-child { color:#155eef; font-size:11px; font-weight:800; letter-spacing:.1em; }
+.industry-list .industry-list-row > span:first-child { justify-self:start; }
+.industry-list .industry-list-row > div { justify-self:stretch; text-align:left; }
+.industry-list .industry-list-row .industry-row-arrow { justify-self:end; }
 .industry-row-arrow { display:grid; width:40px; height:40px; place-items:center; color:#155eef; border:1px solid #99a9bc; border-radius:50%; transition:background .2s,color .2s,transform .2s; }
 .industry-list-row:hover .industry-row-arrow { color:#fff; background:#155eef; transform:translateX(3px); }
 .industry-principles { padding:88px 0 96px; }

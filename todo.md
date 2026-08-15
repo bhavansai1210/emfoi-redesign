@@ -253,3 +253,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Consolidate the established EMFOI visual system into practical future-use rules.
 - [x] Write `design.md` with brand, layout, typography, interaction, and page-building guidance.
 - [x] Review the guide against the current site and save the documentation update.
+
+## Industries Listing Alignment
+
+- [ ] Inspect the Industry row grid against the page container and identify the misaligned columns.
+- [ ] Align the number, content, and arrow columns to a single consistent industry-list grid.
+- [x] Verify desktop and mobile Industries alignment, then save the refinement.
