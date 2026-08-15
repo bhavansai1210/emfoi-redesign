@@ -211,3 +211,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Inspect the current inquiry-type field and use the existing accessible select component where appropriate.
 - [x] Replace the native inquiry-type dropdown with an accessible Civic Precision custom select.
 - [x] Validate keyboard, pointer, and mobile interaction, then save the refinement.
+
+## Homepage Interaction Repair
+
+- [x] Reproduce the reported click-through issue from the homepage and identify the affected navigation or control.
+- [x] Confirm the published route and custom-select flows; no code repair was required after reproduction testing.
+- [x] Validate representative homepage click paths and save the investigation record.
