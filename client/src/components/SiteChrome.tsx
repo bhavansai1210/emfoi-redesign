@@ -129,7 +129,7 @@ export function Footer() {
   );
 }
 
-export function PageHero({ eyebrow, title, intro, children, variant = "standard" }: { eyebrow: string; title: string; intro: string; children?: React.ReactNode; variant?: "standard" | "data" | "contact" | "statement" | "product" }) {
+export function PageHero({ eyebrow, title, intro, children, variant = "standard" }: { eyebrow: string; title: string; intro: string; children?: React.ReactNode; variant?: "standard" | "data" | "contact" | "statement" | "product" | "practice" | "record" }) {
   return (
     <section className={`page-hero page-hero-${variant}`}>
       <div className="page-hero-system" aria-hidden="true"><span /><span /><span /><span /></div>

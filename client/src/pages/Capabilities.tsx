@@ -49,7 +49,7 @@ const cards = [
 function CapabilityIndex() {
   return (
     <><PageSEO title="Capabilities | Software, AI, IT Consulting & Healthcare Staffing | EMFOI" description="Explore EMFOI capabilities in custom software and UX, AI development and governance, IT consulting and staff augmentation, and healthcare staffing." canonicalPath="/capabilities" breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }]} /><PageLayout>
-      <PageHero eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices, designed to work independently or together when your program calls for expertise across technology, governance, and people." />
+      <PageHero variant="practice" eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices, designed to work independently or together when your program calls for expertise across technology, governance, and people." />
       <section className="paper-section capabilities-index-section">
         <div className="site-width capability-list">
           <div className="capability-dossier-rail" aria-label="Capability practice dossier">
