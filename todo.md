@@ -292,3 +292,10 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Review the client-logo presentation and identify the unnecessary numbering layer.
 - [x] Remove the numbers and strengthen logo scale, spacing, hover response, and visual rhythm.
 - [x] Validate the refined client section on desktop and mobile, then save the update.
+
+## Capabilities and Industries Listing Uniformity
+
+- [x] Compare the active-row treatment, column alignment, and action controls across both listing pages.
+- [x] Apply one shared Civic Precision active-state treatment and consistent number/content/arrow grid.
+- [x] Add functional field-guide coordinates so Capabilities reads as a practice dossier and Industries as operating-context routes.
+- [x] Validate desktop and mobile parity, then save the alignment refinement.

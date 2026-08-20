@@ -52,6 +52,10 @@ function CapabilityIndex() {
       <PageHero eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices, designed to work independently or together when your program calls for expertise across technology, governance, and people." />
       <section className="paper-section capabilities-index-section">
         <div className="site-width capability-list">
+          <div className="capability-dossier-rail" aria-label="Capability practice dossier">
+            <div className="capability-dossier-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Practice dossier</span><strong>Four coordinates for a connected delivery model.</strong></div></div>
+            <div className="capability-dossier-map">{cards.map((card) => <div key={card.slug}><span>{card.number}</span><b>{card.title.replace(" & ", " / ")}</b></div>)}</div>
+          </div>
           {cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore practice</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}
         </div>
       </section>
