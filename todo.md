@@ -286,3 +286,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Prepare the supplied approved client logos as clean, individually usable web assets.
 - [x] Add a dedicated client-evidence section to the homepage, excluding the EMFOI self-logo.
 - [x] Validate the logo treatment on desktop and mobile, then save the update.
+
+## Client Grid Presentation Refinement
+
+- [x] Review the client-logo presentation and identify the unnecessary numbering layer.
+- [x] Remove the numbers and strengthen logo scale, spacing, hover response, and visual rhythm.
+- [x] Validate the refined client section on desktop and mobile, then save the update.
