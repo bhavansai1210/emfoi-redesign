@@ -60,7 +60,7 @@ export function Header() {
           </nav>
           <div className="header-actions">
             <Link href="/contact" className="button button-primary header-cta">Request a briefing <ArrowUpRight size={15} strokeWidth={2.25} /></Link>
-            <button className="mobile-menu-button" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} onClick={() => setOpen(!open)}>
+            <button className="mobile-menu-button" aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>
               {open ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
@@ -68,12 +68,12 @@ export function Header() {
       </header>
       <AnimatePresence initial={false}>
       {open && (
-        <motion.div className="mobile-menu" aria-label="Mobile navigation" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}>
+        <motion.nav id="mobile-navigation" className="mobile-menu" aria-label="Mobile navigation" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}>
           <div className="site-width mobile-menu-inner">
             {navItems.map((item) => <NavLink key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</NavLink>)}
             <Link href="/contact" className="button button-primary mobile-cta" onClick={() => setOpen(false)}>Request a capability briefing <ArrowUpRight size={16} /></Link>
           </div>
-        </motion.div>
+        </motion.nav>
       )}
       </AnimatePresence>
     </>
@@ -122,7 +122,7 @@ export function Footer() {
         <div className="footer-legal">
           <Link href="/privacy">Privacy notice</Link>
           <button className="footer-legal-button" onClick={() => window.dispatchEvent(new Event("emfoi:open-cookie-preferences"))}>Manage cookies</button>
-          <span>Accessibility</span>
+          <a href="mailto:info@emfoi.com?subject=Accessibility%20support%20request">Accessibility</a>
         </div>
       </div>
     </footer>

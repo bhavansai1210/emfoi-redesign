@@ -299,3 +299,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Apply one shared Civic Precision active-state treatment and consistent number/content/arrow grid.
 - [x] Add functional field-guide coordinates so Capabilities reads as a practice dossier and Industries as operating-context routes.
 - [x] Validate desktop and mobile parity, then save the alignment refinement.
+
+## Full-Site Quality Assurance and Remediation
+
+- [x] Audit all primary and secondary routes for visual, navigation, and interaction issues.
+- [x] Verify responsive layouts, keyboard usability, core metadata, and browser-console health.
+- [x] Resolve actionable issues, run a production build, and save the verified update.
