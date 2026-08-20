@@ -312,3 +312,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Create polished case-study and team-section layouts that clearly await approved source content.
 - [x] Add refined client-card hover and loading transitions with reduced-motion support.
 - [x] Implement, validate, and save the content-ready layouts and interaction update.
+
+## Editable Case-Study Collection
+
+- [x] Define neutral, editable card fields that avoid unapproved client names, outcomes, and metrics.
+- [x] Build a polished multi-card case-study collection on the homepage.
+- [x] Validate desktop and mobile presentation, then save the update.
