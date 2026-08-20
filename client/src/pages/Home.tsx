@@ -33,6 +33,15 @@ const audiences = [
   { label: "Enterprise", title: "For complex organizations", text: "Specialized capability that meets the moment without unnecessary friction.", href: "/contact" },
 ];
 
+const clientLogos = [
+  { name: "Intel Technology Provider", image: "/manus-storage/intel-technology-provider_96843177.png" },
+  { name: "Capital One", image: "/manus-storage/capital-one_90dc3726.png" },
+  { name: "Accenture", image: "/manus-storage/accenture_c1aaa1d5.png" },
+  { name: "Universal Service Administrative Company", image: "/manus-storage/universal-service-administrative-company_204e487f.png" },
+  { name: "Caterpillar", image: "/manus-storage/caterpillar_4bc0fca9.png" },
+  { name: "Oportun", image: "/manus-storage/oportun_3c9a9fde.png" },
+];
+
 export default function Home() {
   const reducedMotion = useReducedMotion();
   const { scrollY } = useScroll();
@@ -59,6 +68,8 @@ export default function Home() {
       </section>
 
       <section className="audience-section"><MotionReveal className="site-width audience-grid"><div className="section-heading-block"><p className="eyebrow"><span />Start with your context</p><h2>Where the mission meets the work.</h2><p>Different environments have different stakes. Choose the path that best fits the work in front of you.</p></div><motion.div className="audience-cards" aria-label="Choose an EMFOI audience pathway" variants={scrollGroup} initial={reducedMotion ? false : "hidden"} whileInView={reducedMotion ? undefined : "visible"} viewport={{ once: true, amount: 0.26 }}>{audiences.map((audience, index) => <motion.div key={audience.label} variants={scrollItem}><Link href={audience.href} className="audience-card"><div className="audience-card-header"><span className="audience-label">{audience.label}</span><span className="audience-step">0{index + 1}</span></div><h3>{audience.title}</h3><p>{audience.text}</p><span className="text-link">Explore <ArrowRight size={15} /></span></Link></motion.div>)}</motion.div></MotionReveal></section>
+
+      <section className="client-evidence-section"><MotionReveal className="site-width"><div className="client-evidence-intro"><div><p className="eyebrow"><span />Selected client relationships</p><h2>Work grounded in real operating environments.</h2></div><p>EMFOI has supported organizations across technology, financial services, public-sector administration, and enterprise operations.</p></div><motion.div className="client-logo-grid" aria-label="Selected EMFOI clients" variants={scrollGroup} initial={reducedMotion ? false : "hidden"} whileInView={reducedMotion ? undefined : "visible"} viewport={{ once: true, amount: 0.2 }}>{clientLogos.map((client, index) => <motion.div className="client-logo-cell" key={client.name} variants={scrollItem}><span>{String(index + 1).padStart(2, "0")}</span><img src={client.image} alt={`${client.name} logo`} loading="lazy" /></motion.div>)}</motion.div><p className="client-evidence-note">Client marks are shown for identification only and remain the property of their respective owners.</p></MotionReveal></section>
 
       <section className="capability-section"><MotionReveal className="site-width"><div className="section-split-heading capability-intro"><div><p className="eyebrow"><span />Our capabilities</p><h2>Focused expertise.<br /><em>Connected delivery.</em></h2></div><p>Four focused practices, arranged around the realities of modern programs: systems, governance, people, and service.</p></div><motion.div className="home-capability-grid" variants={scrollGroup} initial={reducedMotion ? false : "hidden"} whileInView={reducedMotion ? undefined : "visible"} viewport={{ once: true, amount: 0.18 }}>{capabilityCards.map((card) => <motion.div key={card.number} variants={scrollItem}><Link href={card.href} className="home-capability-card"><div className="capability-visual" aria-hidden="true"><img src={card.image} alt="" loading="lazy" /><span /></div><div className="capability-card-content"><div className="card-topline"><span>{card.number} / {card.discipline}</span><MoveUpRight size={18} /></div><div className="capability-copy"><h3>{card.title}</h3><p>{card.text}</p></div><span className="card-rule" /></div></Link></motion.div>)}</motion.div></MotionReveal></section>
 

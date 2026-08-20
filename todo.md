@@ -280,3 +280,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Generate distinct content-related background visuals for selected homepage and supporting content areas.
 - [x] Redesign the four homepage capability cards into a more varied, image-led editorial presentation.
 - [x] Validate the revised hierarchy at desktop and mobile sizes, then save the refresh.
+
+## Approved Client Evidence Section
+
+- [x] Prepare the supplied approved client logos as clean, individually usable web assets.
+- [x] Add a dedicated client-evidence section to the homepage, excluding the EMFOI self-logo.
+- [x] Validate the logo treatment on desktop and mobile, then save the update.
