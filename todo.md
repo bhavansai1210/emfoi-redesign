@@ -305,3 +305,10 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Audit all primary and secondary routes for visual, navigation, and interaction issues.
 - [x] Verify responsive layouts, keyboard usability, core metadata, and browser-console health.
 - [x] Resolve actionable issues, run a production build, and save the verified update.
+
+## Content-Ready Case Studies, Team Layouts, and Client Motion
+
+- [x] Define content-ready states that do not invent client work, outcomes, team members, or profile information.
+- [x] Create polished case-study and team-section layouts that clearly await approved source content.
+- [x] Add refined client-card hover and loading transitions with reduced-motion support.
+- [x] Implement, validate, and save the content-ready layouts and interaction update.
