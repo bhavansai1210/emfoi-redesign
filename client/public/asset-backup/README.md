@@ -27,21 +27,6 @@ The nine logo files currently loaded by the published EMFOI website are also pre
 | Archive SHA-256 | `d6e3c4372ab0c359c71af94a1171b33f6b8a7711ce63b7c01bf6f8c7a109eb26` |
 | Integrity records | `SOURCE_URLS.txt` and `SHA256SUMS.txt` inside the ZIP |
 
-## Generated visual evidence and delivery-role portraits
-
-Six generated source images are preserved outside the deployable static project at `/home/ubuntu/webdev-static-assets/emfoi-generated-visual-evidence-2026-08-26/` and are served to the website from managed storage. They support the Capabilities practice dossier, Industries operating-context route, Insights field-notes desk, and the clearly labeled illustrative delivery-role cards on the About page.
-
-| Source asset | Website use |
-|---|---|
-| `emfoi-capabilities-practice-dossier.jpg` | Capabilities practice fieldwork panel |
-| `emfoi-industries-operational-context.jpg` | Industries operating-context fieldwork panel |
-| `emfoi-insights-field-notes.jpg` | Insights field-notes desk panel |
-| `emfoi-role-portrait-leadership.jpg` | Illustrative leadership role card |
-| `emfoi-role-portrait-delivery.jpg` | Illustrative program-delivery role card |
-| `emfoi-role-portrait-practice.jpg` | Illustrative focused-capability role card |
-
-> These role portraits are editorial illustrations for delivery disciplines; they do not represent named EMFOI employees or publish unapproved biographies.
-
 ## Verified inventory
 
 | Asset group | Files preserved |

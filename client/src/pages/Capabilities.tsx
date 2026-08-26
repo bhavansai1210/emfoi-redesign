@@ -56,7 +56,6 @@ function CapabilityIndex() {
             <div className="capability-dossier-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Practice dossier</span><strong>Four coordinates for a connected delivery model.</strong></div></div>
             <div className="capability-dossier-map">{cards.map((card) => <div key={card.slug}><span>{card.number}</span><b>{card.title.replace(" & ", " / ")}</b></div>)}</div>
           </div>
-          <figure className="practice-evidence-panel"><img src="/manus-storage/emfoi-capabilities-practice-dossier_b750dabc.jpg" alt="Illustrative delivery team reviewing a program dossier" loading="lazy" /><figcaption><span>Practice fieldwork</span><p>Delivery decisions are strongest when technology, governance, and people are considered together.</p></figcaption></figure>
           {cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore practice</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}
         </div>
       </section>
