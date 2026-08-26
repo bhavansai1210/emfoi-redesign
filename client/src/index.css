@@ -731,3 +731,61 @@ body,button,input,textarea,select,.button,.nav-link { font-family:var(--emfoi-fo
   .legal-reference-card h2 { font-size:36px; }
   .legal-reference-card p { font-size:13px; }
 }
+
+
+/* IMAGE FIT CORRECTION — keep source composition visible across editorial frames instead of forcing every asset into the same crop. */
+.hero-image-frame img { object-position: 64% 50%; }
+
+/* The narrow desktop tiles were cropping wide 16:9 evidence into tall slivers. Give the media a full-width band and let the copy carry the lower half. */
+.home-capability-grid > div:nth-child(2) .home-capability-card,
+.home-capability-grid > div:nth-child(3) .home-capability-card { grid-template-columns: 1fr; grid-template-rows: minmax(132px, 44%) 1fr; }
+.home-capability-grid > div:nth-child(2) .capability-visual,
+.home-capability-grid > div:nth-child(3) .capability-visual { grid-column: 1; grid-row: 1; min-width: 0; }
+.home-capability-grid > div:nth-child(2) .capability-card-content,
+.home-capability-grid > div:nth-child(3) .capability-card-content { grid-column: 1; grid-row: 2; }
+.home-capability-grid > div:nth-child(1) .capability-visual::before { opacity: .74; background: linear-gradient(90deg, rgba(251,250,247,.56) 0%, rgba(251,250,247,.34) 34%, rgba(251,250,247,.10) 68%, rgba(251,250,247,.01) 100%); }
+.home-capability-grid > div:nth-child(4) .capability-visual::before { background: linear-gradient(90deg, rgba(16,33,58,.08), rgba(251,250,247,.3)); }
+.home-capability-grid > div:nth-child(2) .capability-visual img { object-position: 56% 50%; }
+.home-capability-grid > div:nth-child(3) .capability-visual img { object-position: 58% 50%; }
+
+/* Generated dossier images are mostly 4:3; a 3:2 frame reduces vertical loss while retaining the editorial panel geometry. */
+.industry-evidence-panel figure { aspect-ratio: 3 / 2; }
+.practice-evidence-panel img,
+.industry-list > .industry-evidence-panel img,
+.insights-evidence-panel img { min-height: 0; object-position: center 50%; }
+.practice-evidence-panel img { object-position: 68% 50%; }
+.industry-list > .industry-evidence-panel img { object-position: 58% 50%; }
+.insights-evidence-panel img { object-position: 55% 50%; }
+
+/* Portrait sources are 4:5; preserve the original head-and-shoulder composition instead of widening the mobile frame. */
+.team-profile-portrait { aspect-ratio: 4 / 5; }
+.team-profile-portrait img { object-position: center 42%; }
+.team-profile-card:nth-child(1) .team-profile-portrait img { object-position: 52% 38%; }
+.team-profile-card:nth-child(2) .team-profile-portrait img { object-position: 45% 40%; }
+.team-profile-card:nth-child(3) .team-profile-portrait img { object-position: 56% 38%; }
+
+.contact-map-shell { overflow: hidden; border: 1px solid #d6dee5; background: #eef2f3; }
+.contact-office-map { display: block; width: 100%; height: auto; max-height: 340px; object-fit: contain; }
+
+@media (max-width: 950px) {
+  .home-capability-grid > div:nth-child(2) .home-capability-card,
+  .home-capability-grid > div:nth-child(3) .home-capability-card { grid-template-rows: minmax(126px, 42%) 1fr; }
+  .hero-image-frame img { object-position: 66% 50%; }
+}
+
+@media (max-width: 560px) {
+  .hero-image-frame img { object-position: 68% 50%; }
+  .home-capability-grid > div:nth-child(1) .capability-visual::before { opacity: .22; background: linear-gradient(180deg, rgba(16,33,58,.01) 0%, rgba(16,33,58,.14) 58%, rgba(251,250,247,.66) 100%); }
+  .home-capability-grid > div:nth-child(2) .home-capability-card,
+  .home-capability-grid > div:nth-child(3) .home-capability-card { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+  .home-capability-grid > div:nth-child(2) .capability-visual,
+  .home-capability-grid > div:nth-child(3) .capability-visual { grid-column: auto; grid-row: auto; }
+  .home-capability-grid > div:nth-child(2) .capability-card-content,
+  .home-capability-grid > div:nth-child(3) .capability-card-content { grid-column: auto; grid-row: auto; }
+  .practice-evidence-panel img,
+  .industry-list > .industry-evidence-panel img,
+  .insights-evidence-panel img { height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+  .industry-evidence-panel figure { aspect-ratio: 4 / 3; }
+  .team-profile-portrait { aspect-ratio: 4 / 5; }
+  .contact-office-map { max-height: none; }
+}

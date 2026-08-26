@@ -414,3 +414,10 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Add accessible Terms & Conditions routing and confirm footer/legal navigation parity.
 - [x] Verify all parity updates on desktop and mobile, including route starts, links, TypeScript, tests, and production build.
 - [x] Add and run a focused Vitest content-parity test covering the expanded service taxonomy, industry routes, Why Us, and Terms navigation.
+
+
+## Image Fit Correction
+
+- [x] Audit all image-bearing routes and shared image classes for incorrect cropping, stretching, focal points, and mobile sizing.
+- [x] Correct image object-fit, object-position, aspect-ratio, and responsive media treatment without changing the source assets.
+- [x] Verify representative desktop and mobile pages plus tests, TypeScript, and production build after the image-fit corrections.
