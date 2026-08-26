@@ -436,17 +436,6 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 The redesign now follows the Part A instructions: the homepage hero, subheads, and capability cards match the required pillar drafts; the Government page includes the specific experience framework and teaming CTA; the About page reflects the corporate story and leadership profile; global SEO includes Organization and LocalBusiness structured data; and contact details include the Herndon office and auto-reply confirmation.
 
 
-## Premium Website Refinement
-
-- [ ] Optimize mobile header to be more compact and less button-heavy.
-- [ ] Enhance card hover and focus states with subtle depth and motion.
-- [ ] Improve vertical rhythm and whitespace across all routes.
-- [ ] Refine About page leadership section for better integration.
-- [ ] Audit and fix ARIA labels and focus management for accessibility.
-- [ ] Verify sitemap.xml and robots.txt generation and serving.
-- [ ] Optimize image loading (eager vs lazy) for performance.
-- [ ] Add subtle micro-interactions for form submissions and button clicks.
-
 
 ## Premium Website Refinement (Designer-Led Refinement Pass)
 
