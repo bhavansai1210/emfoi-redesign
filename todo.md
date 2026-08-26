@@ -373,3 +373,11 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [ ] Reframe public case-study and team sections as finished capability structures without approval-state language.
 - [ ] Differentiate Capabilities, Industries, About, and Contact openings with purpose-specific field-guide framing.
 - [ ] Validate desktop/mobile hierarchy and save the corrected typography system.
+
+## Local-Run Asset Synchronization
+
+- [x] Add a versioned local asset manifest covering every live EMFOI image and logo.
+- [x] Add a reproducible sync command that downloads the managed assets for local development.
+- [x] Keep synced binaries outside the deployable project by default and document the optional local public-folder target.
+- [x] Verify local asset availability while production continues using managed-storage URLs.
+
