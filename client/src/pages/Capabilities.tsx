@@ -6,6 +6,8 @@ import { Link, useLocation } from "wouter";
 import { PageHero, PageLayout } from "@/components/SiteChrome";
 import { MotionReveal } from "@/components/MotionReveal";
 import { PageSEO } from "@/components/PageSEO";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const capabilityData = {
   "custom-software-ux": {
@@ -100,17 +102,37 @@ const practiceCards = cards.filter((card) => card.group === "practice");
 const serviceCards = cards.filter((card) => card.group === "service");
 
 function CapabilityIndex() {
+  const dossierRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".dossier-map-item", {
+        scrollTrigger: {
+          trigger: ".capability-dossier-map",
+          start: "top 85%",
+          once: true
+        },
+        opacity: 0,
+        x: -20,
+        stagger: 0.05,
+        duration: 0.8,
+        ease: "power3.out"
+      });
+    }, dossierRef);
+    return () => ctx.revert();
+  }, []);
+
   return (
     <><PageSEO title="EMFOI Capabilities | Software, AI & Staffing for Government and Healthcare" description="Explore EMFOI capabilities in custom software and UX, AI development and governance, IT consulting, staffing, cyber security, managed services, cloud, network connectivity, ERP, and IT modernization." canonicalPath="/capabilities" breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }]} /><PageLayout>
       <PageHero variant="practice" eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices and six connected service lines, designed to work independently or together when your program calls for expertise across technology, governance, operations, and people." ><Link href="/capability-statement" className="button button-primary">Download capability statement <Download size={16} /></Link></PageHero>
-      <section className="paper-section capabilities-index-section">
+      <section className="paper-section capabilities-index-section" ref={dossierRef}>
         <div className="site-width capability-list">
-          <MotionReveal className="capability-dossier-rail" aria-label="Capability practice dossier" variant="slide">
+          <div className="capability-dossier-rail" aria-label="Capability practice dossier" data-aos="fade-right">
             <div className="capability-dossier-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Practice dossier</span><strong>Ten coordinates for a connected delivery model.</strong></div></div>
             <div className="capability-dossier-map">{cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="dossier-map-item"><span>{card.number}</span><b>{card.title.replace(" & ", " / ")}</b></Link>)}</div>
-          </MotionReveal>
-          <figure className="practice-evidence-panel"><img src="/manus-storage/emfoi-capabilities-practice-dossier_b750dabc.jpg" alt="Illustrative delivery team reviewing a program dossier" loading="lazy" /><figcaption><span>Practice fieldwork</span><p>Delivery decisions are strongest when technology, governance, operations, and people are considered together.</p></figcaption></figure>
-          <div className="capability-index-group"><div className="capability-index-group-heading"><div><p className="eyebrow"><span />Core practices</p><h2>Start with the primary delivery need.</h2></div><p>These four practices describe the center of EMFOI’s current software, AI, consulting, and staffing work.</p></div>{practiceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore practice</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}</div>
+          </div>
+          <figure className="practice-evidence-panel" data-aos="fade-up"><img src="/manus-storage/emfoi-capabilities-practice-dossier_b750dabc.jpg" alt="Illustrative delivery team reviewing a program dossier" loading="lazy" /><figcaption><span>Practice fieldwork</span><p>Delivery decisions are strongest when technology, governance, operations, and people are considered together.</p></figcaption></figure>
+          <div className="capability-index-group" data-aos="fade-up"><div className="capability-index-group-heading"><div><p className="eyebrow"><span />Core practices</p><h2>Start with the primary delivery need.</h2></div><p>These four practices describe the center of EMFOI’s current software, AI, consulting, and staffing work.</p></div>{practiceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore practice</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}</div>
           <div className="capability-index-group capability-service-line-group"><div className="capability-index-group-heading"><div><p className="eyebrow"><span />Connected service lines</p><h2>Bring the surrounding systems into view.</h2></div><p>The broader EMFOI service taxonomy is preserved here as focused routes for security, operations, infrastructure, enterprise systems, and modernization.</p></div>{serviceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore service line</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}</div>
           <p className="capability-taxonomy-note">Web and mobile development are represented within Custom Software &amp; UX; AI/ML and software development are represented within the AI and custom software practices.</p>
         </div>

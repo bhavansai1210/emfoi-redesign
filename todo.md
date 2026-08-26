@@ -464,3 +464,12 @@ The website now follows a clear 3–30–3 messaging hierarchy: the hero deliver
 
 - [x] Replace the artificial "3-MINUTE REVIEW" label on the About page with natural "Company overview" language.
 - [x] Verify the responsive layout and scan-path after the label correction.
+
+
+## 3–30–3 Motion Enhancement
+
+- [x] Audit homepage messaging sequence against GSAP, AOS, and motion.dev opportunities.
+- [x] Implement purposeful scroll and entrance motion to reinforce the 3–30–3 hierarchy.
+- [x] Verify accessibility, reduced motion, and responsive behavior for all new interactions.
+
+The homepage and primary routes now feature purposeful GSAP and AOS interactions that reinforce the 3–30–3 messaging flow. All motion is accessible, supports reduced-motion preferences, and has been verified on desktop and mobile. All tests and production build checks pass.
