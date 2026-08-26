@@ -473,3 +473,14 @@ The website now follows a clear 3–30–3 messaging hierarchy: the hero deliver
 - [x] Verify accessibility, reduced motion, and responsive behavior for all new interactions.
 
 The homepage and primary routes now feature purposeful GSAP and AOS interactions that reinforce the 3–30–3 messaging flow. All motion is accessible, supports reduced-motion preferences, and has been verified on desktop and mobile. All tests and production build checks pass.
+
+
+## Alignment Correction
+
+- [x] Audit the supplied screenshots against the current website routes and identify specific alignment mismatches.
+- [x] Normalize container widths, editorial columns, and card grids to ensure consistent vertical alignment.
+- [x] Fix section spacing, heading alignment, and footer column layout.
+- [x] Repair responsive alignment issues on mobile and tablet viewports.
+- [x] Verify the corrected alignment across all routes with visual checks, tests, and production build.
+
+Alignment inconsistencies across About, Industries, and Capabilities routes have been corrected using a normalized editorial grid. Footer columns and mobile spacing have been repaired for consistent visual rhythm. All visual, unit-test, and production build checks pass.

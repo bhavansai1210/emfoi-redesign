@@ -49,7 +49,7 @@ describe("approved EMFOI content parity", () => {
   it("surfaces Mission, Why Us, and legal navigation", () => {
     expect(infoPage).toContain("Our mission");
     expect(infoPage).toContain("Our core values");
-    expect(infoPage).toContain("People, purpose, and process.");
+    expect(infoPage).toContain("People, Purpose, and Process");
     expect(infoPage).toContain("function WhyUsPage()");
     expect(infoPage).toContain("function TermsConditionsPage()");
     expect(siteChrome).toContain('href="/why-us"');
