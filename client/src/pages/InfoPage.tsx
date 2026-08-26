@@ -23,6 +23,7 @@ const pageSeo = {
   "/capabilities-statement": { title: "Capability Statement | EMFOI", description: "Review EMFOI’s current capabilities in custom software, AI governance, IT consulting, staff augmentation, and healthcare staffing for government and enterprise buyers.", canonicalPath: "/capability-statement", breadcrumbs: [{ name: "Capability Statement", path: "/capability-statement" }] },
   "/healthcare": { title: "Healthcare Technology, AI Governance & Staffing | EMFOI", description: "EMFOI supports care organizations and government health programs with custom software, practical AI governance, IT consulting, and healthcare staffing.", canonicalPath: "/healthcare", breadcrumbs: [{ name: "Healthcare", path: "/healthcare" }] },
   "/industries": { title: "Healthcare, Government & Regulated Industry Solutions | EMFOI", description: "EMFOI brings software, AI governance, IT consulting, and staffing support to healthcare, public-sector, financial services, and manufacturing organizations.", canonicalPath: "/industries", breadcrumbs: [{ name: "Industries", path: "/industries" }] },
+  "/industries/financial-services": { title: "Financial Services & Insurance Technology Delivery | EMFOI", description: "EMFOI supports financial services and insurance organizations with custom software, AI governance, IT consulting, and staffing for complex operational environments.", canonicalPath: "/industries/financial-services-insurance", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Financial Services & Insurance", path: "/industries/financial-services-insurance" }] },
   "/industries/financial-services-insurance": { title: "Financial Services & Insurance Technology Delivery | EMFOI", description: "EMFOI supports financial services and insurance organizations with custom software, AI governance, IT consulting, and staffing for complex operational environments.", canonicalPath: "/industries/financial-services-insurance", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Financial Services & Insurance", path: "/industries/financial-services-insurance" }] },
   "/industries/manufacturing": { title: "Manufacturing Technology Delivery & IT Capacity | EMFOI", description: "EMFOI supports manufacturing organizations with practical software, AI governance, IT consulting, and specialized technology capacity for operational work.", canonicalPath: "/industries/manufacturing", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Manufacturing", path: "/industries/manufacturing" }] },
   "/about": { title: "About EMFOI | Government, Healthcare & Enterprise Delivery", description: "Learn about EMFOI, a Herndon, Virginia-based software, AI, consulting, and staffing partner for government, healthcare, and enterprise programs.", canonicalPath: "/about", breadcrumbs: [{ name: "About EMFOI", path: "/about" }] },
@@ -135,7 +136,12 @@ function PrivacyPage() {
 }
 
 function InsightsPage() {
-  return <PageLayout><PageHero eyebrow="Insights" title="Useful perspective, when it is ready to be useful." intro="EMFOI is replacing legacy theme content with a focused insights program covering accessible design, responsible AI, government delivery, healthcare staffing, and technology operations." /><section className="site-width empty-insights"><FileText size={32} /><p className="eyebrow"><span />Editorial program in progress</p><h2>Real insight deserves real experience behind it.</h2><p>New articles will be published here as EMFOI develops content that reflects current, approved expertise. Legacy demo posts and case studies are intentionally not part of this new library.</p><Link href="/contact" className="text-link">Request a conversation instead <ArrowRight size={16} /></Link></section></PageLayout>;
+  const inquiryAreas = [
+    { number: "01", title: "Accessible systems", text: "How usable software, thoughtful UX, and delivery discipline keep people connected to essential work." },
+    { number: "02", title: "Responsible AI", text: "How governance, documentation, and accountable decisions make AI implementation more practical." },
+    { number: "03", title: "Operational delivery", text: "How teams connect software, specialist capacity, and program context around high-stakes work." },
+  ];
+  return <PageLayout><PageHero variant="practice" eyebrow="Insights" title="Questions worth carrying into the work." intro="EMFOI shares practical perspective on accessible systems, responsible AI, government delivery, healthcare staffing, and technology operations." /><section className="site-width insights-ledger"><div className="insights-ledger-intro"><FileText size={30} /><div><p className="eyebrow"><span />EMFOI field notes</p><h2>Perspective organized around the decisions that matter.</h2></div></div><div className="insights-inquiry-grid">{inquiryAreas.map((area) => <article key={area.number}><span>{area.number}</span><h3>{area.title}</h3><p>{area.text}</p></article>)}</div><div className="insights-ledger-action"><p>Looking for a perspective on a program, product, staffing, or teaming decision?</p><Link href="/contact" className="text-link">Start a focused conversation <ArrowRight size={16} /></Link></div></section></PageLayout>;
 }
 
 function CareersPage() {
@@ -155,7 +161,7 @@ export default function InfoPage() {
     : location === "/capability-statement" || location === "/capabilities-statement" ? <CapabilityStatementPage />
     : location === "/healthcare" ? <HealthcarePage />
     : location === "/industries" ? <IndustriesPage />
-    : location === "/industries/financial-services-insurance" ? <IndustryDetailPage detail={industryDetails.financial} />
+    : location === "/industries/financial-services-insurance" || location === "/industries/financial-services" ? <IndustryDetailPage detail={industryDetails.financial} />
     : location === "/industries/manufacturing" ? <IndustryDetailPage detail={industryDetails.manufacturing} />
     : location === "/about" ? <AboutPage />
     : location === "/dofiling" ? <DoFilingPage />

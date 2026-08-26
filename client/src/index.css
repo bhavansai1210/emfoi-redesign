@@ -589,3 +589,51 @@ body,button,input,textarea,select,.button,.nav-link { font-family:var(--emfoi-fo
 .eyebrow,.section-label,.section-kicker,.card-kicker,.capability-kicker,.footer-heading,.utility-bar,.nav-link,.button,.field-guide-quadrant + div > span,.capability-dossier-key > div > span,.industry-context-map-key > div > span,.case-study-draft-context,.case-study-draft-fields dt,.team-profile-mark span,.team-profile-status { font-family:var(--emfoi-font-interface); font-variation-settings:"wght" 800; }
 .site-frame main p,.site-frame main li,.site-frame main dd,.site-frame main dt { font-family:var(--emfoi-font-interface); }
 @media (max-width:560px) { .site-frame main h1 { letter-spacing:-.038em; line-height:1; }.site-frame main h2 { letter-spacing:-.03em; line-height:1.03; } }
+
+/* CIVIC PRECISION — fieldwork imagery must remain legible evidence: intentional focal points, clean media bands, and no shallow mobile crops. */
+.home-capability-grid > div:nth-child(1) .capability-visual img { object-position:72% 50%; }
+.home-capability-grid > div:nth-child(2) .capability-visual img { object-position:58% 48%; }
+.home-capability-grid > div:nth-child(3) .capability-visual img { object-position:62% 50%; }
+.home-capability-grid > div:nth-child(4) .capability-visual img { object-position:50% 42%; }
+.home-capability-grid > div:nth-child(1) .capability-visual::before { background:linear-gradient(90deg,rgba(251,250,247,.98) 0%,rgba(251,250,247,.92) 37%,rgba(251,250,247,.38) 67%,rgba(251,250,247,.06) 100%); }
+.home-capability-grid > div:nth-child(4) .capability-visual::before { opacity:.58; }
+.capability-visual img { filter:saturate(.84) contrast(1.02) brightness(1.02); }
+.home-capability-card:hover .capability-visual img { filter:saturate(1) contrast(1.04) brightness(1.01); }
+.proof-card-media { aspect-ratio:16 / 9; }
+.proof-card-media img { object-position:center 45%; }
+.capability-image-wrap { min-height:0; aspect-ratio:6 / 5; }
+.capability-image-wrap img { object-position:center 48%; filter:saturate(.87) contrast(1.02); }
+.industry-evidence-panel figure { min-height:0; aspect-ratio:16 / 10; }
+.industry-evidence-financial .industry-evidence-panel img { object-position:55% 48%; }
+.industry-evidence-manufacturing .industry-evidence-panel img { object-position:50% 45%; }
+
+@media (max-width:560px) {
+  .home-capability-card,.home-capability-card:nth-child(3),.home-capability-grid > div:nth-child(4) .home-capability-card { display:flex; flex-direction:column; min-height:0; }
+  .capability-visual,.home-capability-grid > div:nth-child(3) .capability-visual { position:relative; flex:none; grid-column:auto; grid-row:auto; width:100%; height:218px; min-height:218px; }
+  .capability-visual img { position:absolute; object-position:center 45%; }
+  .home-capability-grid > div:nth-child(1) .capability-visual img { object-position:68% 48%; }
+  .home-capability-grid > div:nth-child(4) .capability-visual img { object-position:center 36%; }
+  .capability-visual::before,.home-capability-grid > div:nth-child(1) .capability-visual::before,.home-capability-grid > div:nth-child(4) .capability-visual::before { opacity:.22; background:linear-gradient(180deg,rgba(16,33,58,.04),rgba(16,33,58,.24)); }
+  .capability-card-content,.home-capability-grid > div:nth-child(1) .capability-card-content,.home-capability-grid > div:nth-child(3) .capability-card-content { display:block; grid-column:auto; grid-row:auto; width:100%; min-height:0; padding:24px 20px 23px; background:#fbfaf7; }
+  .capability-copy { margin-top:32px; }
+  .home-capability-card h3 { max-width:340px; font-size:30px; }
+  .home-capability-grid > div:nth-child(1) .home-capability-card h3 { font-size:34px; }
+  .proof-card-media { aspect-ratio:4 / 3; }
+  .capability-image-wrap { min-height:0; aspect-ratio:4 / 3; }
+  .industry-evidence-panel figure { min-height:0; aspect-ratio:4 / 3; }
+  .industry-evidence-panel img { object-position:center 46%; }
+}
+
+/* CIVIC PRECISION — the Insights route uses a completed inquiry ledger, keeping the public page useful without claiming unpublished evidence. */
+.insights-ledger { padding:96px 0 112px; }
+.insights-ledger-intro { display:grid; grid-template-columns:72px minmax(0,1fr); gap:20px; align-items:start; max-width:760px; }
+.insights-ledger-intro > svg { color:#155eef; margin-top:6px; }
+.insights-ledger-intro h2 { max-width:620px; margin:0; font-size:clamp(40px,4vw,57px); }
+.insights-inquiry-grid { display:grid; grid-template-columns:repeat(3,1fr); margin-top:42px; border-top:1px solid #cbd4de; border-left:1px solid #cbd4de; }
+.insights-inquiry-grid article { min-height:238px; padding:23px; border-right:1px solid #cbd4de; border-bottom:1px solid #cbd4de; }
+.insights-inquiry-grid span { color:#155eef; font-size:10px; font-weight:800; letter-spacing:.1em; }
+.insights-inquiry-grid h3 { margin:64px 0 11px; color:#10213a; font-size:23px; }
+.insights-inquiry-grid p { margin:0; color:#5e7085; font-size:12px; line-height:1.75; }
+.insights-ledger-action { display:flex; justify-content:space-between; align-items:center; gap:28px; padding:27px 0 0; border-bottom:1px solid #cbd4de; }
+.insights-ledger-action p { max-width:510px; margin:0; color:#455b75; font-size:14px; line-height:1.65; }
+@media (max-width:560px) { .insights-ledger { padding:66px 0 82px; }.insights-ledger-intro { grid-template-columns:1fr; gap:15px; }.insights-ledger-intro h2 { font-size:38px; }.insights-inquiry-grid { grid-template-columns:1fr; margin-top:30px; }.insights-inquiry-grid article { min-height:0; padding:20px; }.insights-inquiry-grid h3 { margin:37px 0 9px; font-size:25px; }.insights-ledger-action { align-items:flex-start; flex-direction:column; gap:12px; padding:24px 0; } }

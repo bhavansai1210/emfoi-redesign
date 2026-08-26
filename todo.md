@@ -6,6 +6,16 @@
 
 ## Live Logo Backup and GitHub Delivery
 
+## Responsive Photo-Fit Correction
+
+- [x] Audit all image-backed cards, hero panels, and evidence sections at desktop and mobile sizes.
+- [x] Correct image container ratios, `object-fit` behavior, and focal-point positioning where photos crop poorly.
+- [x] Validate representative pages and publish the responsive image-fit correction.
+
+Initial audit findings: the homepage capability mosaic relied on shallow, low-contrast image windows that did not communicate the fieldwork imagery clearly at desktop or mobile sizes. On small screens, image-led industry evidence panels compressed into narrow crops that needed dedicated full-width media bands. Standard page-hero artwork and the manufacturing desktop image panel retained their intended focal point.
+
+Correction outcome: desktop and mobile photo panels now use explicit fieldwork focal points, clearer image treatment, consistent editorial ratios, and separate full-width mobile media bands. The related financial-services alias now resolves to the completed industry dossier, and the public Insights route has been reframed as a finished inquiry ledger without status or migration language. Production build passed after the update.
+
 - [x] Download every logo currently served by the live EMFOI site into an external local backup folder.
 - [x] Verify the downloaded files against the live logo URLs and create a compact archive.
 - [x] Push the downloadable logo archive to the connected GitHub repository.
