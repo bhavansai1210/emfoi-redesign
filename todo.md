@@ -1,5 +1,14 @@
 # Asset Backup Tasks
 
+## Managed Storage Asset Backup Refresh
+
+- [x] Inventory every image and logo currently referenced from managed storage.
+- [x] Refresh a complete local backup collection outside the deployable static project.
+- [x] Update the public asset manifest with the verified inventory and archive location.
+- [x] Confirm live `/manus-storage/` references remain unchanged and publish the manifest update.
+
+All 21 active managed images and logos are preserved at `/home/ubuntu/webdev-static-assets/emfoi-managed-assets-2026-08-26/` and in `/manus-storage/emfoi-managed-assets-2026-08-26_eb9405ca.zip`. The lightweight public manifest records the inventory and SHA-256 checksum without copying large media into the deployable static project.
+
 - [x] Identify the images currently used by the EMFOI website.
 - [x] Copy source image files into `client/public/asset-backup/` without changing live site references.
 - [x] Verify the backup folder contains the complete visual asset set.
