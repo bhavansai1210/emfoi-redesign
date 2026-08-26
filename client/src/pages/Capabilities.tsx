@@ -4,6 +4,7 @@
 import { ArrowRight, Check, ChevronRight, Download } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { PageHero, PageLayout } from "@/components/SiteChrome";
+import { MotionReveal } from "@/components/MotionReveal";
 import { PageSEO } from "@/components/PageSEO";
 
 const capabilityData = {
@@ -104,10 +105,10 @@ function CapabilityIndex() {
       <PageHero variant="practice" eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices and six connected service lines, designed to work independently or together when your program calls for expertise across technology, governance, operations, and people." ><Link href="/capability-statement" className="button button-primary">Download capability statement <Download size={16} /></Link></PageHero>
       <section className="paper-section capabilities-index-section">
         <div className="site-width capability-list">
-          <div className="capability-dossier-rail" aria-label="Capability practice dossier">
+          <MotionReveal className="capability-dossier-rail" aria-label="Capability practice dossier" variant="slide">
             <div className="capability-dossier-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Practice dossier</span><strong>Ten coordinates for a connected delivery model.</strong></div></div>
-            <div className="capability-dossier-map">{cards.map((card) => <div key={card.slug}><span>{card.number}</span><b>{card.title.replace(" & ", " / ")}</b></div>)}</div>
-          </div>
+            <div className="capability-dossier-map">{cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="dossier-map-item"><span>{card.number}</span><b>{card.title.replace(" & ", " / ")}</b></Link>)}</div>
+          </MotionReveal>
           <figure className="practice-evidence-panel"><img src="/manus-storage/emfoi-capabilities-practice-dossier_b750dabc.jpg" alt="Illustrative delivery team reviewing a program dossier" loading="lazy" /><figcaption><span>Practice fieldwork</span><p>Delivery decisions are strongest when technology, governance, operations, and people are considered together.</p></figcaption></figure>
           <div className="capability-index-group"><div className="capability-index-group-heading"><div><p className="eyebrow"><span />Core practices</p><h2>Start with the primary delivery need.</h2></div><p>These four practices describe the center of EMFOI’s current software, AI, consulting, and staffing work.</p></div>{practiceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore practice</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}</div>
           <div className="capability-index-group capability-service-line-group"><div className="capability-index-group-heading"><div><p className="eyebrow"><span />Connected service lines</p><h2>Bring the surrounding systems into view.</h2></div><p>The broader EMFOI service taxonomy is preserved here as focused routes for security, operations, infrastructure, enterprise systems, and modernization.</p></div>{serviceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Explore service line</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ArrowRight size={20} /></span></Link>)}</div>

@@ -71,6 +71,29 @@ export function CookiePreferences() {
     return () => window.removeEventListener("emfoi:open-cookie-preferences", openPreferences);
   }, [consent?.analytics]);
 
+  useEffect(() => {
+    if (!preferencesOpen) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setPreferencesOpen(false);
+      if (event.key === "Tab") {
+        const focusable = document.querySelectorAll('.cookie-modal button, .cookie-modal input');
+        const first = focusable[0] as HTMLElement;
+        const last = focusable[focusable.length - 1] as HTMLElement;
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    const firstButton = document.querySelector('.cookie-modal .icon-button') as HTMLElement;
+    firstButton?.focus();
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [preferencesOpen]);
+
   const saveConsent = (analytics: boolean) => {
     const next = { analytics, updatedAt: new Date().toISOString() };
     window.localStorage.setItem(consentKey, JSON.stringify(next));
