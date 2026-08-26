@@ -2,6 +2,15 @@
 
 ## Managed Storage Asset Backup Refresh
 
+## Missing Logo Remediation
+
+- [x] Audit source code, public backup folders, and repository history for logo assets not included in the latest archive.
+- [x] Add every omitted logo to the deployment-safe managed backup collection.
+- [x] Refresh the archive and public manifest with the corrected logo inventory.
+- [x] Verify each retained logo file and publish the correction.
+
+The corrected collection retains all 21 active managed assets plus two distinct original EMFOI signal-mark source files: `/manus-storage/emfoi-managed-assets-and-logos-2026-08-26_83ccbbc8.zip`.
+
 - [x] Inventory every image and logo currently referenced from managed storage.
 - [x] Refresh a complete local backup collection outside the deployable static project.
 - [x] Update the public asset manifest with the verified inventory and archive location.
