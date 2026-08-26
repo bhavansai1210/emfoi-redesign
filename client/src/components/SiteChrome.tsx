@@ -106,6 +106,7 @@ export function Footer() {
         <div className="footer-column">
           <span className="footer-heading">Company</span>
           <Link href="/about">About EMFOI</Link>
+          <Link href="/why-us">Why us</Link>
           <Link href="/careers">Careers</Link>
           <Link href="/insights">Insights</Link>
           <Link href="/contact">Contact</Link>
@@ -121,6 +122,7 @@ export function Footer() {
         <span>© {new Date().getFullYear()} EMFOI, Inc. — a Delaware corporation established 2013.</span>
         <div className="footer-legal">
           <Link href="/privacy">Privacy notice</Link>
+          <Link href="/terms-conditions">Terms &amp; Conditions</Link>
           <button className="footer-legal-button" onClick={() => window.dispatchEvent(new Event("emfoi:open-cookie-preferences"))}>Manage cookies</button>
           <a href="mailto:info@emfoi.com?subject=Accessibility%20support%20request">Accessibility</a>
         </div>

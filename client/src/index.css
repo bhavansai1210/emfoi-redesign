@@ -679,3 +679,55 @@ body,button,input,textarea,select,.button,.nav-link { font-family:var(--emfoi-fo
 .industry-list > .industry-evidence-panel > img { position:relative; inset:auto; min-height:316px; height:100%; }
 .industry-list > .industry-evidence-panel > figcaption { position:relative; left:auto; bottom:auto; display:flex; min-height:316px; color:#10213a; background:linear-gradient(145deg,#edf3f6 0%,#fbfaf7 82%); }
 @media (max-width:760px) { .industry-list > .industry-evidence-panel > img,.industry-list > .industry-evidence-panel > figcaption { min-height:0; }.industry-list > .industry-evidence-panel > img { height:248px; } }
+
+
+/* CIVIC PRECISION — parity sections keep legacy taxonomy legible without turning the site into a service catalog. */
+.capability-index-group { margin-top:clamp(66px,8vw,108px); }
+.capability-index-group-heading { display:grid; grid-template-columns:minmax(0,1fr) minmax(260px,.55fr); align-items:end; gap:clamp(30px,8vw,120px); margin-bottom:30px; }
+.capability-index-group-heading h2 { max-width:560px; margin:0; color:#10213a; font-size:clamp(35px,4vw,55px); line-height:.98; }
+.capability-index-group-heading > p { max-width:380px; margin:0 0 4px; color:#5d7083; font-size:13px; line-height:1.7; }
+.capability-service-line-group { padding-top:clamp(38px,5vw,68px); border-top:1px solid #cbd4de; }
+.capability-taxonomy-note { max-width:700px; margin:25px 0 0; color:#6a7d91; font-size:11px; line-height:1.65; }
+.about-mission-section { margin-top:clamp(45px,7vw,92px); padding:clamp(66px,8vw,108px) 0; background:#eef3f4; border-top:1px solid #cbd6df; border-bottom:1px solid #cbd6df; }
+.about-mission-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(300px,.72fr); gap:clamp(42px,9vw,148px); align-items:start; }
+.about-mission-grid h2 { max-width:560px; margin:0; color:#10213a; font-size:clamp(39px,4.6vw,64px); line-height:.96; }
+.about-mission-grid > div:last-child { padding-top:8px; }
+.about-mission-grid > div:last-child p { max-width:520px; margin:0; color:#52677c; font-size:14px; line-height:1.75; }
+.about-mission-grid > div:last-child .large-copy { margin-bottom:20px; color:#31475d; font-size:clamp(18px,1.8vw,23px); line-height:1.45; }
+.why-us-section { padding:clamp(78px,9vw,128px) 0; background:#fbfaf7; }
+.why-us-intro,.people-purpose-heading { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,.55fr); align-items:end; gap:clamp(38px,8vw,120px); margin-bottom:44px; }
+.why-us-intro h2,.people-purpose-heading h2 { max-width:620px; margin:0; color:#10213a; font-size:clamp(40px,4.5vw,62px); line-height:.97; }
+.why-us-intro > p,.people-purpose-heading > p { max-width:390px; margin:0 0 3px; color:#5d7083; font-size:13px; line-height:1.72; }
+.why-us-grid,.people-purpose-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-top:1px solid #c6d1dc; border-left:1px solid #c6d1dc; background:#c6d1dc; gap:1px; }
+.why-us-grid article,.people-purpose-grid article { min-height:220px; padding:24px; background:#f6f8f7; }
+.why-us-grid article > span,.people-purpose-grid article > span { color:#155eef; font-size:10px; font-weight:800; letter-spacing:.12em; }
+.why-us-grid h3,.people-purpose-grid h3 { margin:52px 0 11px; color:#10213a; font-family:"DM Serif Display",Georgia,serif; font-size:28px; font-weight:400; line-height:1.04; }
+.why-us-grid p,.people-purpose-grid p { max-width:300px; margin:0; color:#5b6f83; font-size:12px; line-height:1.68; }
+.people-purpose-section { padding:clamp(76px,9vw,126px) 0; }
+.people-purpose-heading { margin-bottom:37px; }
+.people-purpose-grid article { min-height:190px; background:#eef3f4; }
+.people-purpose-grid h3 { margin-top:43px; }
+.legal-reference-section { padding:clamp(76px,10vw,142px) 0; }
+.legal-reference-card { display:grid; grid-template-columns:42px minmax(0,680px); gap:28px; align-items:start; padding:32px 0 36px; border-top:1px solid #c5d0db; border-bottom:1px solid #c5d0db; }
+.legal-reference-card > svg { color:#155eef; margin-top:3px; }
+.legal-reference-card h2 { max-width:600px; margin:0 0 22px; color:#10213a; font-size:clamp(35px,4vw,54px); line-height:.99; }
+.legal-reference-card p { max-width:650px; margin:0 0 17px; color:#5a6e82; font-size:14px; line-height:1.72; }
+.legal-reference-card p:last-child { margin-bottom:0; }
+.legal-reference-card a { color:#155eef; font-weight:800; text-underline-offset:3px; }
+@media (max-width:850px) {
+  .capability-index-group-heading,.about-mission-grid,.why-us-intro,.people-purpose-heading { grid-template-columns:1fr; gap:23px; }
+  .capability-index-group-heading > p,.why-us-intro > p,.people-purpose-heading > p { max-width:560px; }
+  .why-us-grid,.people-purpose-grid { grid-template-columns:1fr 1fr; }
+  .why-us-grid article,.people-purpose-grid article { min-height:205px; }
+}
+@media (max-width:560px) {
+  .capability-index-group { margin-top:56px; }
+  .capability-index-group-heading h2,.why-us-intro h2,.people-purpose-heading h2 { font-size:37px; }
+  .capability-index-group-heading > p,.why-us-intro > p,.people-purpose-heading > p { font-size:12px; }
+  .why-us-grid,.people-purpose-grid { grid-template-columns:1fr; }
+  .why-us-grid article,.people-purpose-grid article { min-height:0; padding:22px 20px 25px; }
+  .why-us-grid h3,.people-purpose-grid h3 { margin-top:34px; }
+  .legal-reference-card { grid-template-columns:1fr; gap:18px; padding:25px 0 30px; }
+  .legal-reference-card h2 { font-size:36px; }
+  .legal-reference-card p { font-size:13px; }
+}

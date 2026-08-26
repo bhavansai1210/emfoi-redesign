@@ -396,3 +396,21 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Publish the ZIP as a downloadable private GitHub release asset and keep the deployable project lightweight.
 - [x] Document the restore command and verify the archive contents and checksum.
 
+
+## Current EMFOI Website Parity Audit
+
+- [x] Inspect the current live EMFOI website and record its navigation, services, industries, products, contact details, proof points, and calls to action.
+- [x] Cross-check present-site content against the redesign route by route and identify meaningful omissions or unclear representations.
+- [x] Add only verified, user-approved parity corrections and validate the updated redesign.
+
+
+
+## Approved Content Parity Integration
+
+- [x] Add verified legacy EMFOI service categories to the Civic Precision Capabilities taxonomy: Cyber Security, Managed Services, Cloud Services, Network Connectivity, ERP Solutions, and IT Modernization.
+- [x] Add the remaining verified legacy industry categories to the Civic Precision Industries taxonomy: Food, Startups, Consulting Providers, Non-Profit, AI, and Other.
+- [x] Add the live-site institutional content that does not rely on unapproved metrics: Mission, core values, and the Why Us People/Purpose/Process framework.
+- [x] Add the verified consultation process and contact/location details where parity is missing, while preserving the current safer email handling.
+- [x] Add accessible Terms & Conditions routing and confirm footer/legal navigation parity.
+- [x] Verify all parity updates on desktop and mobile, including route starts, links, TypeScript, tests, and production build.
+- [x] Add and run a focused Vitest content-parity test covering the expanded service taxonomy, industry routes, Why Us, and Terms navigation.

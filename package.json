@@ -11,6 +11,7 @@
     "assets:sync": "node scripts/sync-assets.mjs",
     "assets:sync:external": "node scripts/sync-assets.mjs --external",
     "check": "tsc --noEmit",
+    "test": "vitest run",
     "format": "prettier --write ."
   },
   "dependencies": {

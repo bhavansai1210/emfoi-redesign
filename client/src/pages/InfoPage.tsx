@@ -11,10 +11,16 @@ import { PageSEO } from "@/components/PageSEO";
 import "./contact-map.css";
 
 const industryData = [
-  { number: "01", title: "Healthcare", text: "Healthcare IT, responsible AI, and staffing support for health systems and government health programs.", href: "/healthcare" },
-  { number: "02", title: "Government / Public Sector", text: "Custom software, staffing, and teaming posture built for federal, state, and local programs.", href: "/government" },
-  { number: "03", title: "Financial Services & Insurance", text: "Technology and delivery support for complex, regulated operational environments.", href: "/industries/financial-services-insurance" },
-  { number: "04", title: "Manufacturing", text: "Practical systems and specialized IT capacity for organizations where operations matter.", href: "/industries/manufacturing" },
+  { number: "01", title: "Healthcare", text: "Healthcare IT, responsible AI, and staffing support for health systems and government health programs.", href: "/healthcare", signal: "Care delivery" },
+  { number: "02", title: "Government / Public Sector", text: "Custom software, staffing, and teaming posture built for federal, state, and local programs.", href: "/government", signal: "Mission continuity" },
+  { number: "03", title: "Financial Services & Insurance", text: "Technology and delivery support for complex, regulated operational environments.", href: "/industries/financial-services-insurance", signal: "Regulated workflow" },
+  { number: "04", title: "Manufacturing", text: "Practical systems and specialized IT capacity for organizations where operations matter.", href: "/industries/manufacturing", signal: "Operational flow" },
+  { number: "05", title: "Food", text: "Technology support for production, fulfillment, and delivery workflows where timing and availability matter.", href: "/industries/food", signal: "Production flow" },
+  { number: "06", title: "Startups", text: "Focused software, advisory, and technical capacity for teams building a product or operating model.", href: "/industries/startups", signal: "Build velocity" },
+  { number: "07", title: "Consulting Providers", text: "Technology support for consulting teams that need dependable systems, connectivity, and delivery capacity.", href: "/industries/consulting-providers", signal: "Client delivery" },
+  { number: "08", title: "Non-Profit", text: "Scalable, cost-conscious technology support that keeps mission-focused teams moving.", href: "/industries/non-profit", signal: "Mission focus" },
+  { number: "09", title: "AI", text: "Practical AI application and governance for teams exploring a more useful, accountable system.", href: "/industries/ai", signal: "Applied intelligence" },
+  { number: "10", title: "Other", text: "A focused starting point for software and IT needs that do not fit a single industry category.", href: "/industries/other", signal: "Defined need" },
 ];
 
 const pageSeo = {
@@ -22,11 +28,19 @@ const pageSeo = {
   "/capability-statement": { title: "Capability Statement | EMFOI", description: "Review EMFOI’s current capabilities in custom software, AI governance, IT consulting, staff augmentation, and healthcare staffing for government and enterprise buyers.", canonicalPath: "/capability-statement", breadcrumbs: [{ name: "Capability Statement", path: "/capability-statement" }] },
   "/capabilities-statement": { title: "Capability Statement | EMFOI", description: "Review EMFOI’s current capabilities in custom software, AI governance, IT consulting, staff augmentation, and healthcare staffing for government and enterprise buyers.", canonicalPath: "/capability-statement", breadcrumbs: [{ name: "Capability Statement", path: "/capability-statement" }] },
   "/healthcare": { title: "Healthcare Technology, AI Governance & Staffing | EMFOI", description: "EMFOI supports care organizations and government health programs with custom software, practical AI governance, IT consulting, and healthcare staffing.", canonicalPath: "/healthcare", breadcrumbs: [{ name: "Healthcare", path: "/healthcare" }] },
-  "/industries": { title: "Healthcare, Government & Regulated Industry Solutions | EMFOI", description: "EMFOI brings software, AI governance, IT consulting, and staffing support to healthcare, public-sector, financial services, and manufacturing organizations.", canonicalPath: "/industries", breadcrumbs: [{ name: "Industries", path: "/industries" }] },
+  "/industries": { title: "Healthcare, Government & Industry Solutions | EMFOI", description: "EMFOI brings software, AI governance, IT consulting, staffing, and technology services to healthcare, public-sector, regulated, operational, and mission-focused organizations.", canonicalPath: "/industries", breadcrumbs: [{ name: "Industries", path: "/industries" }] },
+  "/industries/food": { title: "Food Industry Technology Support | EMFOI", description: "EMFOI supports food-industry production, fulfillment, and delivery workflows with practical technology and IT capacity.", canonicalPath: "/industries/food", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Food", path: "/industries/food" }] },
+  "/industries/startups": { title: "Startup Software & Technology Support | EMFOI", description: "EMFOI helps startup teams shape software, advisory, and technical capacity around the product and operating model they are building.", canonicalPath: "/industries/startups", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Startups", path: "/industries/startups" }] },
+  "/industries/consulting-providers": { title: "Technology Support for Consulting Providers | EMFOI", description: "EMFOI supports consulting providers with dependable systems, connectivity, and delivery capacity.", canonicalPath: "/industries/consulting-providers", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Consulting Providers", path: "/industries/consulting-providers" }] },
+  "/industries/non-profit": { title: "Non-Profit Technology Support | EMFOI", description: "EMFOI provides scalable, cost-conscious technology support for mission-focused non-profit organizations.", canonicalPath: "/industries/non-profit", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Non-Profit", path: "/industries/non-profit" }] },
+  "/industries/ai": { title: "AI Solutions for Organizations | EMFOI", description: "EMFOI helps organizations explore practical AI application and governance around a defined operational need.", canonicalPath: "/industries/ai", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "AI", path: "/industries/ai" }] },
+  "/industries/other": { title: "Technology Solutions for Emerging Needs | EMFOI", description: "EMFOI provides a focused starting point for software and IT needs outside a single industry category.", canonicalPath: "/industries/other", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Other", path: "/industries/other" }] },
   "/industries/financial-services": { title: "Financial Services & Insurance Technology Delivery | EMFOI", description: "EMFOI supports financial services and insurance organizations with custom software, AI governance, IT consulting, and staffing for complex operational environments.", canonicalPath: "/industries/financial-services-insurance", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Financial Services & Insurance", path: "/industries/financial-services-insurance" }] },
   "/industries/financial-services-insurance": { title: "Financial Services & Insurance Technology Delivery | EMFOI", description: "EMFOI supports financial services and insurance organizations with custom software, AI governance, IT consulting, and staffing for complex operational environments.", canonicalPath: "/industries/financial-services-insurance", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Financial Services & Insurance", path: "/industries/financial-services-insurance" }] },
   "/industries/manufacturing": { title: "Manufacturing Technology Delivery & IT Capacity | EMFOI", description: "EMFOI supports manufacturing organizations with practical software, AI governance, IT consulting, and specialized technology capacity for operational work.", canonicalPath: "/industries/manufacturing", breadcrumbs: [{ name: "Industries", path: "/industries" }, { name: "Manufacturing", path: "/industries/manufacturing" }] },
   "/about": { title: "About EMFOI | Government, Healthcare & Enterprise Delivery", description: "Learn about EMFOI, a Herndon, Virginia-based software, AI, consulting, and staffing partner for government, healthcare, and enterprise programs.", canonicalPath: "/about", breadcrumbs: [{ name: "About EMFOI", path: "/about" }] },
+  "/why-us": { title: "Why EMFOI | Personal Service, Technical Capability & Partnership", description: "Learn how EMFOI brings client-oriented service, technical competence, ownership, problem-solving, and transparency to technology delivery.", canonicalPath: "/why-us", breadcrumbs: [{ name: "Why EMFOI", path: "/why-us" }] },
+  "/terms-conditions": { title: "Terms & Conditions | EMFOI", description: "Review the current EMFOI Terms & Conditions and related website-use information.", canonicalPath: "/terms-conditions", breadcrumbs: [{ name: "Terms & Conditions", path: "/terms-conditions" }] },
   "/dofiling": { title: "DoFiling by EMFOI | Immigration Case Management Platform", description: "DoFiling is EMFOI’s cloud workspace for immigration case workflows, questionnaires, document handling, attorneys, and employers.", canonicalPath: "/dofiling", breadcrumbs: [{ name: "DoFiling", path: "/dofiling" }] },
   "/carehigh": { title: "CareHigh by EMFOI | Dental Referral Management", description: "CareHigh is EMFOI software for dental teams that helps track referrals, support follow-up, and keep care workflows visible.", canonicalPath: "/carehigh", breadcrumbs: [{ name: "CareHigh", path: "/carehigh" }] },
   "/careers": { title: "Careers | EMFOI", description: "Learn about future opportunities at EMFOI across technology, consulting, and healthcare staffing.", canonicalPath: "/careers", breadcrumbs: [{ name: "Careers", path: "/careers" }], noindex: true },
@@ -44,7 +58,7 @@ function CapabilityStatementPage() {
 }
 
 function IndustriesPage() {
-  return <PageLayout><PageHero eyebrow="Industries" title="Capability that respects the context around it." intro="EMFOI supports organizations operating in healthcare, public service, and complex enterprise environments where delivery must be both technically sound and practically usable." /><section className="site-width industry-list"><div className="industry-context-route-map" aria-label="Operating context routes"><div className="industry-context-map-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Operating-context routes</span><strong>Start with the condition that shapes the work.</strong></div></div><div className="industry-context-route-cells">{industryData.map((industry) => <div key={industry.href}><span>{industry.number}</span><b>{industry.title === "Government / Public Sector" ? "Mission continuity" : industry.title === "Financial Services & Insurance" ? "Regulated workflow" : industry.title === "Healthcare" ? "Care delivery" : "Operational flow"}</b></div>)}</div></div><figure className="industry-evidence-panel"><img src="/manus-storage/emfoi-industries-operational-context_b1a250f2.jpg" alt="Illustrative operations briefing with planning materials and workflow mapping" loading="lazy" /><figcaption><span>Operating-context fieldwork</span><p>Start with the workflow, handoffs, and conditions that shape the delivery decision.</p></figcaption></figure>{industryData.map((industry) => <Link key={industry.title} href={industry.href} className="industry-list-row" aria-label={`Explore ${industry.title}`}><span>{industry.number}</span><div><h2>{industry.title}</h2><p>{industry.text}</p></div><span className="industry-row-arrow" aria-hidden="true"><ChevronRight size={23} /></span></Link>)}</section><section className="paper-section industry-note"><div className="site-width industry-note-grid"><div><p className="eyebrow"><span />Common thread</p><h2>Every industry brings its own version of high-stakes work.</h2></div><p>We adapt our delivery model to the operational environment, then connect design, technical discipline, governance, and talent to help the work move forward.</p></div></section></PageLayout>;
+  return <PageLayout><PageHero eyebrow="Industries" title="Capability that respects the context around it." intro="EMFOI supports organizations operating in healthcare, public service, and complex enterprise environments where delivery must be both technically sound and practically usable." /><section className="site-width industry-list"><div className="industry-context-route-map" aria-label="Operating context routes"><div className="industry-context-map-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Operating-context routes</span><strong>Start with the condition that shapes the work.</strong></div></div><div className="industry-context-route-cells">{industryData.map((industry) => <div key={industry.href}><span>{industry.number}</span><b>{industry.signal}</b></div>)}</div></div><figure className="industry-evidence-panel"><img src="/manus-storage/emfoi-industries-operational-context_b1a250f2.jpg" alt="Illustrative operations briefing with planning materials and workflow mapping" loading="lazy" /><figcaption><span>Operating-context fieldwork</span><p>Start with the workflow, handoffs, and conditions that shape the delivery decision.</p></figcaption></figure>{industryData.map((industry) => <Link key={industry.title} href={industry.href} className="industry-list-row" aria-label={`Explore ${industry.title}`}><span>{industry.number}</span><div><h2>{industry.title}</h2><p>{industry.text}</p></div><span className="industry-row-arrow" aria-hidden="true"><ChevronRight size={23} /></span></Link>)}</section><section className="paper-section industry-note"><div className="site-width industry-note-grid"><div><p className="eyebrow"><span />Common thread</p><h2>Every industry brings its own version of high-stakes work.</h2></div><p>We adapt our delivery model to the operational environment, then connect design, technical discipline, governance, and talent to help the work move forward.</p></div></section></PageLayout>;
 }
 
 const industryDetails = {
@@ -98,6 +112,156 @@ const industryDetails = {
       { number: "03", title: "Continuity support", text: "Connect advisory, implementation, and focused staffing around a critical operational handoff." },
     ],
   },
+  food: {
+    kind: "food",
+    eyebrow: "Food",
+    title: "Technology support for production and delivery that cannot drift.",
+    intro: "EMFOI supports food-industry organizations where production, availability, fulfillment, and delivery timing shape the technology need.",
+    image: "/manus-storage/emfoi-manufacturing-operations-evidence_29b1da20.jpg",
+    imageAlt: "Illustrative operations specialist reviewing a production workflow",
+    contextLabel: "Production flow dossier",
+    contextTitle: "Keep production, information, and delivery connected.",
+    contextCopy: "Map the process from production through fulfillment, then identify the system handoffs and operational signals that need clearer support.",
+    focusTitle: "Support the workflow behind the delivered product.",
+    focusCopy: "Food-industry work depends on coordinated timing and dependable information. EMFOI helps teams frame software, enterprise systems, connectivity, and technical support around the production and delivery flow already in motion.",
+    items: ["Workflow and system mapping for production, fulfillment, and delivery operations.", "Usable software and ERP-related support for teams working across operational handoffs.", "Focused IT consulting and staffing capacity for defined technology needs."],
+    rail: [
+      { label: "01 / PRODUCTION", text: "Understand the task, timing, and information created at the source." },
+      { label: "02 / FULFILLMENT", text: "Trace the systems and people coordinating availability and movement." },
+      { label: "03 / DELIVERY", text: "Support the handoff that keeps the customer-facing work on track." },
+    ],
+    principlesTitle: "A delivery posture for time-sensitive operations.",
+    principles: [
+      { number: "01", title: "Process first", text: "Start with the operational sequence instead of assuming the system is the whole problem." },
+      { number: "02", title: "Information in motion", text: "Make the handoffs and ownership around critical information easier to understand." },
+      { number: "03", title: "Practical support", text: "Match technology and capacity to the workflow’s actual timing and constraints." },
+    ],
+  },
+  startups: {
+    kind: "startups",
+    eyebrow: "Startups",
+    title: "A focused technology partner for teams building what comes next.",
+    intro: "EMFOI supports startup teams with custom software, product experience, advisory support, and technical capacity around a defined product or operating need.",
+    image: "/manus-storage/emfoi-software-ux_277c53ba.jpg",
+    imageAlt: "Illustrative product team reviewing software and user-experience work",
+    contextLabel: "Build-stage fieldwork",
+    contextTitle: "Turn a product question into a usable next step.",
+    contextCopy: "Start with the customer, workflow, and delivery constraint that need clarity, then shape the product and technical response around that evidence.",
+    focusTitle: "Build the right thing with the right level of support.",
+    focusCopy: "Early teams often need more than a development handoff. EMFOI brings product thinking, accessible UX, engineering, AI perspective, and focused technical capacity together around the stage and scope of the work.",
+    items: ["Product discovery, UI/UX, and accessible interface design.", "Web, mobile, and custom software development for defined product needs.", "Technical advisory and staff augmentation for focused delivery windows."],
+    rail: [
+      { label: "01 / USER NEED", text: "Clarify who depends on the product and what the workflow asks of them." },
+      { label: "02 / PRODUCT SHAPE", text: "Translate the question into a usable, testable experience." },
+      { label: "03 / DELIVERY CAPACITY", text: "Add the right engineering or advisory support for the next stage." },
+    ],
+    principlesTitle: "A delivery posture for build-stage decisions.",
+    principles: [
+      { number: "01", title: "Useful before ornate", text: "Prioritize the experience and system behavior that the user actually needs." },
+      { number: "02", title: "Scope with intent", text: "Keep the technical response aligned with the product question and delivery window." },
+      { number: "03", title: "Capacity when needed", text: "Bring in focused expertise without forcing a team into an oversized model." },
+    ],
+  },
+  consulting: {
+    kind: "consulting",
+    eyebrow: "Consulting Providers",
+    title: "Dependable technology support for teams delivering expertise to clients.",
+    intro: "EMFOI supports consulting providers that need dependable systems, connectivity, and technical capacity to keep client delivery moving.",
+    image: "/manus-storage/emfoi-hero-civic-systems_d308c3fa.jpg",
+    imageAlt: "Illustrative consulting and systems planning workspace",
+    contextLabel: "Client-delivery map",
+    contextTitle: "Protect the work between the brief and the result.",
+    contextCopy: "Understand the internal systems, network conditions, and delivery handoffs that affect a consulting team’s ability to serve its clients.",
+    focusTitle: "Make technology a steadier part of client delivery.",
+    focusCopy: "Consulting providers carry deadlines, collaboration needs, and client expectations at the same time. EMFOI helps frame the practical technology and capacity issues that can create downtime, slow transactions, or missed handoffs.",
+    items: ["Network and connectivity considerations for distributed client work.", "Managed services and support coordination around day-to-day operations.", "Staff augmentation and technical advisory for delivery peaks or defined needs."],
+    rail: [
+      { label: "01 / CLIENT COMMITMENT", text: "Identify the delivery promise that the technology environment must support." },
+      { label: "02 / INTERNAL FLOW", text: "Surface the systems and handoffs creating friction for the team." },
+      { label: "03 / SUPPORT MODEL", text: "Choose the advisory, service, or capacity response that fits." },
+    ],
+    principlesTitle: "A delivery posture for client-facing teams.",
+    principles: [
+      { number: "01", title: "Reliability matters", text: "Treat the network, systems, and support model as part of the client experience." },
+      { number: "02", title: "Capacity is contextual", text: "Add expertise around a delivery need rather than defaulting to a fixed staffing pattern." },
+      { number: "03", title: "Clear handoffs", text: "Keep ownership and communication visible when work crosses teams and systems." },
+    ],
+  },
+  "non-profit": {
+    kind: "non-profit",
+    eyebrow: "Non-Profit",
+    title: "Technology support that keeps mission-focused teams moving.",
+    intro: "EMFOI supports non-profit organizations with scalable, cost-conscious technology planning, implementation, and operational support.",
+    image: "/manus-storage/emfoi-industries-operational-context_b1a250f2.jpg",
+    imageAlt: "Illustrative mission-focused operations planning workspace",
+    contextLabel: "Mission operations dossier",
+    contextTitle: "Make the technology serve the mission.",
+    contextCopy: "Start with the people, programs, and constraints that define the mission, then shape the technology response around the work that must keep moving.",
+    focusTitle: "Choose practical technology for the capacity you have.",
+    focusCopy: "Mission-focused teams need technology that is useful, supportable, and proportionate to their available time and resources. EMFOI brings software, cloud, connectivity, consulting, and staffing perspectives to that reality.",
+    items: ["Technology planning grounded in program and mission workflows.", "Cloud, connectivity, and managed-support considerations for lean teams.", "Accessible software and focused technical capacity for defined needs."],
+    rail: [
+      { label: "01 / MISSION", text: "Clarify the service, program, or community outcome the system must support." },
+      { label: "02 / CAPACITY", text: "Work within the team’s resources, skills, and operational bandwidth." },
+      { label: "03 / PRACTICAL PATH", text: "Choose the smallest useful next step that can be supported over time." },
+    ],
+    principlesTitle: "A delivery posture for mission-focused organizations.",
+    principles: [
+      { number: "01", title: "Mission before machinery", text: "Keep the organization’s purpose visible in every technology decision." },
+      { number: "02", title: "Sustainable support", text: "Favor systems and service models the team can understand and maintain." },
+      { number: "03", title: "Scale with care", text: "Build a practical path that can grow as the mission and capacity grow." },
+    ],
+  },
+  ai: {
+    kind: "ai",
+    eyebrow: "AI",
+    title: "Move from AI curiosity to a responsible, useful next step.",
+    intro: "EMFOI helps organizations explore AI applications and governance around a defined workflow, operational question, or product need.",
+    image: "/manus-storage/emfoi-ai-governance_8c4ea3e7.jpg",
+    imageAlt: "Illustrative team reviewing AI governance and operational questions",
+    contextLabel: "Applied intelligence map",
+    contextTitle: "Start with the work, not the label.",
+    contextCopy: "Clarify the decision, user, information, and operating condition before choosing whether AI is the right response.",
+    focusTitle: "Pair experimentation with accountability.",
+    focusCopy: "An AI initiative is strongest when its use case is specific and its governance is practical. EMFOI connects solution development with risk, bias, documentation, oversight, and the team responsible for ongoing use.",
+    items: ["AI and machine-learning solution development for defined use cases.", "Risk, bias, documentation, oversight, and monitoring considerations.", "Accessible interfaces and workflow design around human decisions."],
+    rail: [
+      { label: "01 / QUESTION", text: "Define the operational decision or user need that matters." },
+      { label: "02 / CONTROL", text: "Consider information, risk, bias, accountability, and oversight." },
+      { label: "03 / USE", text: "Design the system and operating practice around the real environment." },
+    ],
+    principlesTitle: "A delivery posture for practical AI.",
+    principles: [
+      { number: "01", title: "Specific use case", text: "Anchor AI work to a defined workflow, decision, and group of users." },
+      { number: "02", title: "Visible accountability", text: "Keep documentation, oversight, and responsible ownership in view." },
+      { number: "03", title: "Human context", text: "Design around the people who interpret, challenge, and act on the output." },
+    ],
+  },
+  other: {
+    kind: "other",
+    eyebrow: "Other",
+    title: "A clear starting point for technology needs that do not fit one label.",
+    intro: "EMFOI offers a focused starting point for software and IT projects that span categories or need a more tailored delivery conversation.",
+    image: "/manus-storage/emfoi-hero-civic-systems_d308c3fa.jpg",
+    imageAlt: "Illustrative cross-functional technology planning workspace",
+    contextLabel: "Open brief",
+    contextTitle: "Name the condition before naming the solution.",
+    contextCopy: "Bring the workflow, system, team, or delivery constraint into view so the next step can be shaped around the actual need.",
+    focusTitle: "Find the useful path through an unclassified need.",
+    focusCopy: "Not every technology need begins with a neat category. EMFOI can start with the operating context, then connect the appropriate mix of software, AI, consulting, staffing, security, cloud, or modernization support.",
+    items: ["Discovery and technical framing around a defined business or program need.", "A connected view of software, infrastructure, governance, and people.", "A focused next step that can be discussed with the right EMFOI capability."],
+    rail: [
+      { label: "01 / CONDITION", text: "Describe what is not working, changing, or ready to be built." },
+      { label: "02 / CONSTRAINT", text: "Make the users, systems, timeline, and ownership visible." },
+      { label: "03 / RESPONSE", text: "Shape a focused capability conversation around the evidence." },
+    ],
+    principlesTitle: "A delivery posture for emerging needs.",
+    principles: [
+      { number: "01", title: "Listen first", text: "Let the operating context shape the technology conversation." },
+      { number: "02", title: "Connect the pieces", text: "Bring software, systems, governance, and capacity into one view." },
+      { number: "03", title: "Make the next step clear", text: "Leave the team with a useful decision rather than unnecessary complexity." },
+    ],
+  },
 } as const;
 
 function IndustryDetailPage({ detail }: { detail: (typeof industryDetails)[keyof typeof industryDetails] }) {
@@ -120,7 +284,28 @@ function AboutPage() {
     { number: "02", type: "Delivery", title: "Program delivery", text: "Coordinate work across people, systems, and program requirements with a practical operating rhythm.", image: "/manus-storage/emfoi-role-portrait-delivery_54b0d31c.jpg", alt: "Editorial portrait representing an EMFOI program-delivery engagement role" },
     { number: "03", type: "Practice expertise", title: "Focused capability", text: "Bring the right software, governance, staffing, or healthcare capability to the work in front of the program.", image: "/manus-storage/emfoi-role-portrait-practice_d8301bce.jpg", alt: "Editorial portrait representing an EMFOI focused-capability engagement role" },
   ];
-  return <PageLayout><PageHero variant="record" eyebrow="About EMFOI" title="A focused partner for work that needs to hold up." intro="EMFOI, Inc. is a Delaware corporation established in 2013 and headquartered in Herndon, Virginia. We deliver custom software, AI development and governance, IT consulting and staffing, and healthcare staffing to government and enterprise clients." /><section className="site-width about-story"><div><p className="eyebrow"><span />Our story</p><h2>Built around delivery, not unnecessary scale.</h2></div><div><p className="large-copy">Over more than a decade, EMFOI has staffed teams on federal programs, delivered IT consultants to enterprise clients through prime vendors, and built its own software product, DoFiling, for legal professionals.</p><p>We believe a credible partner is clear about what it knows, careful about what it claims, and ready to contribute where the work needs it. That perspective guides how we build teams, software, and long-term relationships.</p></div></section><section className="paper-section values-section"><div className="site-width"><p className="eyebrow"><span />What guides us</p><div className="values-grid"><article><span>01</span><h3>Clarity over noise</h3><p>We make complex work understandable, from program framing to product experience.</p></article><article><span>02</span><h3>Care in the details</h3><p>Accessibility, responsible governance, and quality are part of delivery rather than later additions.</p></article><article><span>03</span><h3>Partnership in practice</h3><p>We work directly or alongside primes with a team-first posture and a clear role.</p></article></div></div></section><section className="paper-section team-profile-section"><MotionReveal className="site-width"><div className="team-profile-intro"><div><p className="eyebrow"><span />How we organize delivery</p><h2>Direction, delivery, and specialized practice.</h2></div><p>EMFOI brings the appropriate roles together around the work: clear direction, attentive delivery coordination, and the focused capability the program needs.</p></div><p className="team-profile-visual-note">Illustrative role portraits — individual EMFOI biographies are added only with approved information.</p><div className="team-profile-grid">{teamProfileSlots.map((profile) => <article className="team-profile-card" key={profile.number}><figure className="team-profile-portrait"><img src={profile.image} alt={profile.alt} loading="lazy" /></figure><div className="team-profile-mark"><UsersRound size={18} /><span>{profile.number}</span></div><p>{profile.type}</p><h3>{profile.title}</h3><p>{profile.text}</p><span className="team-profile-status">Engagement role</span></article>)}</div></MotionReveal></section><section className="ink-cta-section"><div className="site-width ink-cta-grid"><div><p className="eyebrow eyebrow-light"><span />Build with us</p><h2>Bring expertise to the work that matters.</h2></div><p>Explore career opportunities or begin a conversation with the EMFOI team.</p><Link href="/careers" className="button button-light">Explore careers <ArrowRight size={16} /></Link></div></section></PageLayout>;
+  return <PageLayout><PageHero variant="record" eyebrow="About EMFOI" title="A focused partner for work that needs to hold up." intro="EMFOI, Inc. is a Delaware corporation established in 2013 and headquartered in Herndon, Virginia. We deliver custom software, AI development and governance, IT consulting and staffing, and healthcare staffing to government and enterprise clients." /><section className="site-width about-story"><div><p className="eyebrow"><span />Our story</p><h2>Built around delivery, not unnecessary scale.</h2></div><div><p className="large-copy">Over more than a decade, EMFOI has staffed teams on federal programs, delivered IT consultants to enterprise clients through prime vendors, and built its own software product, DoFiling, for legal professionals.</p><p>We believe a credible partner is clear about what it knows, careful about what it claims, and ready to contribute where the work needs it. That perspective guides how we build teams, software, and long-term relationships.</p></div></section><section className="paper-section about-mission-section"><div className="site-width about-mission-grid"><div><p className="eyebrow"><span />Our mission</p><h2>Bring personal service and practical technology together.</h2></div><div><p className="large-copy">EMFOI’s mission is to pair the personal service of a focused technology partner with the reach and capability needed for complex work.</p><p>We aim to make technology easier to understand, more useful to the people who depend on it, and better connected to the goals of the organization or program around it.</p></div></div></section><section className="paper-section values-section"><div className="site-width"><p className="eyebrow"><span />Our core values</p><div className="values-grid"><article><span>01</span><h3>Passionate</h3><p>We bring energy and care to the work of helping organizations move forward.</p></article><article><span>02</span><h3>Respectful</h3><p>We communicate with consideration for clients, colleagues, users, and the realities around the work.</p></article><article><span>03</span><h3>Ownership</h3><p>We take responsibility for our role, our decisions, and the quality of the delivery we support.</p></article><article><span>04</span><h3>Unified</h3><p>We work as one team across disciplines, partners, and program requirements.</p></article></div></div></section><section className="paper-section team-profile-section"><MotionReveal className="site-width"><div className="team-profile-intro"><div><p className="eyebrow"><span />How we organize delivery</p><h2>Direction, delivery, and specialized practice.</h2></div><p>EMFOI brings the appropriate roles together around the work: clear direction, attentive delivery coordination, and the focused capability the program needs.</p></div><p className="team-profile-visual-note">Illustrative role portraits — individual EMFOI biographies are added only with approved information.</p><div className="team-profile-grid">{teamProfileSlots.map((profile) => <article className="team-profile-card" key={profile.number}><figure className="team-profile-portrait"><img src={profile.image} alt={profile.alt} loading="lazy" /></figure><div className="team-profile-mark"><UsersRound size={18} /><span>{profile.number}</span></div><p>{profile.type}</p><h3>{profile.title}</h3><p>{profile.text}</p><span className="team-profile-status">Engagement role</span></article>)}</div></MotionReveal></section><section className="ink-cta-section"><div className="site-width ink-cta-grid"><div><p className="eyebrow eyebrow-light"><span />Build with us</p><h2>Bring expertise to the work that matters.</h2></div><p>Explore career opportunities or begin a conversation with the EMFOI team.</p><Link href="/careers" className="button button-light">Explore careers <ArrowRight size={16} /></Link></div></section></PageLayout>;
+}
+
+function WhyUsPage() {
+  const reasons = [
+    { number: "01", title: "Client-oriented", text: "We begin with the people, workflow, and operating context behind the request, not a generic package of services." },
+    { number: "02", title: "Independent", text: "We can help clarify the need and shape a practical path without forcing the work toward a predetermined platform." },
+    { number: "03", title: "Competent", text: "Our delivery model brings software, AI governance, IT consulting, staffing, and healthcare context into one conversation." },
+    { number: "04", title: "Results-driven", text: "We keep the engagement pointed toward a useful next step, a clearer system, or a stronger delivery position." },
+    { number: "05", title: "Problem-solving", text: "We make the condition around the work visible so the response addresses the real constraint rather than only its symptom." },
+    { number: "06", title: "Transparent", text: "We are clear about scope, ownership, assumptions, and what is known before the work moves forward." },
+  ];
+  const model = [
+    { number: "01", title: "People", text: "Put the users, operators, program stakeholders, and delivery team in view." },
+    { number: "02", title: "Purpose", text: "Connect technology decisions to the mission, product, or operational outcome they need to support." },
+    { number: "03", title: "Process", text: "Create a practical rhythm for discovery, delivery, communication, and accountable handoff." },
+  ];
+  return <PageLayout><PageHero variant="record" eyebrow="Why EMFOI" title="A partner that stays close to the work." intro="EMFOI combines personal service with practical technology capability, bringing the right people and operating context into the delivery conversation." /><section className="paper-section why-us-section"><div className="site-width"><div className="why-us-intro"><div><p className="eyebrow"><span />Why us</p><h2>Personal enough to listen. Capable enough to contribute.</h2></div><p>Organizations choose a technology partner for more than a list of services. They need clear communication, thoughtful problem-solving, and a delivery posture that respects the work already underway.</p></div><div className="why-us-grid">{reasons.map((reason) => <article key={reason.number}><span>{reason.number}</span><h3>{reason.title}</h3><p>{reason.text}</p></article>)}</div></div></section><section className="site-width people-purpose-section"><div className="people-purpose-heading"><div><p className="eyebrow"><span />How we work</p><h2>People, purpose, and process.</h2></div><p>A simple framework for keeping technical decisions connected to the people and outcomes around them.</p></div><div className="people-purpose-grid">{model.map((item) => <article key={item.number}><span>{item.number}</span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div></section><section className="ink-cta-section"><div className="site-width ink-cta-grid"><div><p className="eyebrow eyebrow-light"><span />Start a conversation</p><h2>See whether the fit is right.</h2></div><p>Share the work in front of you and we will start with the context, capability, and next step that make sense.</p><Link href="/contact" className="button button-light">Contact EMFOI <ArrowRight size={16} /></Link></div></section></PageLayout>;
+}
+
+function TermsConditionsPage() {
+  return <PageLayout><PageHero variant="statement" eyebrow="Terms & Conditions" title="Clear information for using this website." intro="EMFOI’s current Terms & Conditions are available at the official company website. Please review the current source before relying on website-use or legal information." ><a className="button button-primary" href="https://www.emfoi.com/terms-conditions/" target="_blank" rel="noreferrer">Open current Terms &amp; Conditions <ExternalLink size={16} /></a></PageHero><section className="site-width legal-reference-section"><div className="legal-reference-card"><ShieldCheck size={28} /><div><p className="eyebrow"><span />Legal reference</p><h2>Use the current source for the current language.</h2><p>The legacy page is maintained by EMFOI at <a href="https://www.emfoi.com/terms-conditions/" target="_blank" rel="noreferrer">emfoi.com/terms-conditions</a>. This redesign preserves the route and makes the source easy to reach without presenting unverified boilerplate as a newly approved EMFOI agreement.</p><p>For privacy questions or requests related to this website, contact <a href="mailto:info@emfoi.com">info@emfoi.com</a>. You can also review the redesign’s <Link href="/privacy">Privacy Notice</Link> and manage optional analytics preferences from the footer.</p></div></div></section></PageLayout>;
 }
 
 function DoFilingPage() {
@@ -163,7 +348,15 @@ export default function InfoPage() {
     : location === "/industries" ? <IndustriesPage />
     : location === "/industries/financial-services-insurance" || location === "/industries/financial-services" ? <IndustryDetailPage detail={industryDetails.financial} />
     : location === "/industries/manufacturing" ? <IndustryDetailPage detail={industryDetails.manufacturing} />
+    : location === "/industries/food" ? <IndustryDetailPage detail={industryDetails.food} />
+    : location === "/industries/startups" ? <IndustryDetailPage detail={industryDetails.startups} />
+    : location === "/industries/consulting-providers" ? <IndustryDetailPage detail={industryDetails.consulting} />
+    : location === "/industries/non-profit" ? <IndustryDetailPage detail={industryDetails["non-profit"]} />
+    : location === "/industries/ai" ? <IndustryDetailPage detail={industryDetails.ai} />
+    : location === "/industries/other" ? <IndustryDetailPage detail={industryDetails.other} />
     : location === "/about" ? <AboutPage />
+    : location === "/why-us" ? <WhyUsPage />
+    : location === "/terms-conditions" ? <TermsConditionsPage />
     : location === "/dofiling" ? <DoFilingPage />
     : location === "/carehigh" ? <CareHighPage />
     : location === "/careers" ? <CareersPage />

@@ -33,6 +33,8 @@ function Router() {
     <Route path="/industries/:slug" component={InfoPage} />
     <Route path="/industries" component={InfoPage} />
     <Route path="/about" component={InfoPage} />
+    <Route path="/why-us" component={InfoPage} />
+    <Route path="/terms-conditions" component={InfoPage} />
     <Route path="/dofiling" component={InfoPage} />
     <Route path="/carehigh" component={InfoPage} />
     <Route path="/careers" component={InfoPage} />
