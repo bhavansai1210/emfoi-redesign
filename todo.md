@@ -8,6 +8,16 @@
 
 ## Responsive Photo-Fit Correction
 
+## Generated Visual Evidence and Team Presentation
+
+- [x] Audit Capabilities, Industries, About, and Insights to identify high-value image placements and narrative gaps.
+- [x] Generate Civic Precision visual-evidence imagery for the content-led routes.
+- [x] Generate clearly non-identifying editorial portraits for the existing delivery-role team framework.
+- [x] Preserve generated source assets in the external backup collection and use managed URLs in the website.
+- [x] Integrate the imagery, enhance the team section without invented employee details, and validate desktop/mobile presentation.
+
+Validation findings: Capabilities now reads as a practice dossier with a clear fieldwork image; Industries has an operating-context image that is fully contained in its route panel; Insights has a field-notes evidence panel; and About presents three illustrative role portraits on desktop and mobile with an explicit non-biographical disclaimer. The visual system remains warm-paper, document-led, and responsive across the reviewed routes.
+
 - [x] Audit all image-backed cards, hero panels, and evidence sections at desktop and mobile sizes.
 - [x] Correct image container ratios, `object-fit` behavior, and focal-point positioning where photos crop poorly.
 - [x] Validate representative pages and publish the responsive image-fit correction.
