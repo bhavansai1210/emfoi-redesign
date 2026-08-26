@@ -458,3 +458,9 @@ Final refinement findings: The website now features a compact mobile header, enh
 - [x] Verify the 3–30–3 user journey on desktop and mobile, ensuring all tests, TypeScript, and production build pass.
 
 The website now follows a clear 3–30–3 messaging hierarchy: the hero delivers instant identity (3s), the trust strip and audience kickers provide rapid context (30s), and the About summary strip and detailed evidence panels support a deeper 3-minute review. Full-page renders, Vitest, and production build checks pass.
+
+
+## About Summary Refinement
+
+- [x] Replace the artificial "3-MINUTE REVIEW" label on the About page with natural "Company overview" language.
+- [x] Verify the responsive layout and scan-path after the label correction.
