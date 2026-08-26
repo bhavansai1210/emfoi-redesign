@@ -14,6 +14,19 @@ This manifest records the complete set of **21 images and logos currently refere
 | SHA-256 | `cdd93aaf517817333be97d70bfc10cfa69c7e9df8237a1628ed6e8a91c2ac2a3` |
 | Live delivery | Existing `/manus-storage/` URLs remain unchanged |
 
+## Live-site logo backup
+
+The nine logo files currently loaded by the published EMFOI website are also preserved separately at `/home/ubuntu/webdev-static-assets/emfoi-live-logos-2026-08-26/`. This smaller bundle contains the active EMFOI signal mark, CareHigh and DoFiling logos, and the six approved client logos, together with a source-URL ledger and individual SHA-256 checksums.
+
+| Item | Verified value |
+|---|---|
+| Downloadable repository release | [EMFOI live logo backup — 2026-08-26](https://github.com/bhavansai1210/emfoi-redesign/releases/tag/live-logo-backup-2026-08-26) |
+| Release asset | `emfoi-live-logos-2026-08-26.zip` |
+| Active logo count | 9 |
+| Archive size | 154,377 bytes |
+| Archive SHA-256 | `d6e3c4372ab0c359c71af94a1171b33f6b8a7711ce63b7c01bf6f8c7a109eb26` |
+| Integrity records | `SOURCE_URLS.txt` and `SHA256SUMS.txt` inside the ZIP |
+
 ## Verified inventory
 
 | Asset group | Files preserved |

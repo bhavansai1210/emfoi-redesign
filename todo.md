@@ -4,6 +4,15 @@
 
 ## Missing Logo Remediation
 
+## Live Logo Backup and GitHub Delivery
+
+- [x] Download every logo currently served by the live EMFOI site into an external local backup folder.
+- [x] Verify the downloaded files against the live logo URLs and create a compact archive.
+- [x] Push the downloadable logo archive to the connected GitHub repository.
+- [x] Record the repository delivery location in the public asset manifest and validate it.
+
+The live-logo backup is available as the private repository release `live-logo-backup-2026-08-26`, containing nine active logo files, `SOURCE_URLS.txt`, and `SHA256SUMS.txt`.
+
 - [x] Audit source code, public backup folders, and repository history for logo assets not included in the latest archive.
 - [x] Add every omitted logo to the deployment-safe managed backup collection.
 - [x] Refresh the archive and public manifest with the corrected logo inventory.
