@@ -1,7 +1,7 @@
 /**
  * CIVIC PRECISION — capability content is structured as evidence-led, readable service narratives.
  */
-import { ArrowRight, Check, ChevronRight } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, Download } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { PageHero, PageLayout } from "@/components/SiteChrome";
 import { PageSEO } from "@/components/PageSEO";
@@ -100,8 +100,8 @@ const serviceCards = cards.filter((card) => card.group === "service");
 
 function CapabilityIndex() {
   return (
-    <><PageSEO title="Capabilities | Software, AI, IT Consulting & Technology Services | EMFOI" description="Explore EMFOI capabilities in custom software and UX, AI development and governance, IT consulting, staffing, cyber security, managed services, cloud, network connectivity, ERP, and IT modernization." canonicalPath="/capabilities" breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }]} /><PageLayout>
-      <PageHero variant="practice" eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices and six connected service lines, designed to work independently or together when your program calls for expertise across technology, governance, operations, and people." />
+    <><PageSEO title="EMFOI Capabilities | Software, AI & Staffing for Government and Healthcare" description="Explore EMFOI capabilities in custom software and UX, AI development and governance, IT consulting, staffing, cyber security, managed services, cloud, network connectivity, ERP, and IT modernization." canonicalPath="/capabilities" breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }]} /><PageLayout>
+      <PageHero variant="practice" eyebrow="Capabilities" title="Capability built for high-consequence work." intro="Four focused practices and six connected service lines, designed to work independently or together when your program calls for expertise across technology, governance, operations, and people." ><Link href="/capability-statement" className="button button-primary">Download capability statement <Download size={16} /></Link></PageHero>
       <section className="paper-section capabilities-index-section">
         <div className="site-width capability-list">
           <div className="capability-dossier-rail" aria-label="Capability practice dossier">
@@ -121,9 +121,9 @@ function CapabilityIndex() {
 
 function CapabilityDetail({ data, slug }: { data: (typeof capabilityData)[Slug]; slug: Slug }) {
   return (
-    <><PageSEO title={`${data.title} | EMFOI`} description={data.intro} canonicalPath={`/capabilities/${slug}`} breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }, { name: data.title, path: `/capabilities/${slug}` }]} /><PageLayout>
+    <><PageSEO title={data.title === "AI Development & Governance" ? "AI Development & Governance Consulting | EMFOI" : `${data.title} | EMFOI`} description={data.intro} canonicalPath={`/capabilities/${slug}`} breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }, { name: data.title, path: `/capabilities/${slug}` }]} /><PageLayout>
       <section className="capability-detail-hero">
-        <div className="site-width capability-detail-grid"><div><p className="eyebrow"><span />{data.eyebrow}</p><p className="capability-detail-number">{data.number}</p><h1>{data.titleLead}</h1><p className="hero-supporting-copy">{data.intro}</p><Link href="/contact" className="button button-primary">Discuss your needs <ArrowRight size={16} /></Link></div><figure className="capability-image-wrap"><img src={data.image} alt={data.imageAlt} /><figcaption>{data.title}</figcaption></figure></div>
+        <div className="site-width capability-detail-grid"><div><p className="eyebrow"><span />{data.eyebrow}</p><p className="capability-detail-number">{data.number}</p><h1>{data.titleLead}</h1><p className="hero-supporting-copy">{data.intro}</p><Link href="/contact" className="button button-primary">Discuss your needs <ArrowRight size={16} /></Link><Link href="/capability-statement" className="button button-secondary">Download capability statement <Download size={16} /></Link></div><figure className="capability-image-wrap"><img src={data.image} alt={data.imageAlt} /><figcaption>{data.title}</figcaption></figure></div>
       </section>
       <section className="paper-section detail-copy-section"><div className="site-width detail-copy-grid"><div><p className="eyebrow"><span />What we do</p><h2>{data.title}</h2></div><div><p className="large-copy">{data.detail}</p><ul className="check-list">{data.focus.map((item) => <li key={item}><Check size={17} />{item}</li>)}</ul></div></div></section>
       {data.title === "IT Consulting & Staff Augmentation" && <section className="site-width naics-panel"><div><p className="eyebrow"><span />Buyer reference</p><h3>Relevant NAICS codes</h3></div><p>541511 · 541512 · 541519 · 541611 · 561320 · 561311 · 561312</p></section>}

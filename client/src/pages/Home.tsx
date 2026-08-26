@@ -21,10 +21,10 @@ const scrollItem: Variants = {
 };
 
 const capabilityCards = [
-  { number: "01", discipline: "Experience systems", title: "Custom Software & UX", text: "Human-centered design, accessible interfaces, architecture, build, and deployment.", href: "/capabilities/custom-software-ux", image: "/manus-storage/emfoi-software-delivery-studio_b4045e43.jpg" },
-  { number: "02", discipline: "Responsible intelligence", title: "AI Development & Governance", text: "Practical AI delivery with responsible governance for regulated environments.", href: "/capabilities/ai-development-governance", image: "/manus-storage/emfoi-ai-governance-review_e4514e20.jpg" },
-  { number: "03", discipline: "Program capacity", title: "IT Consulting & Staff Augmentation", text: "Experienced IT talent and advisory capacity where programs need it most.", href: "/capabilities/it-consulting-staffing", image: "/manus-storage/emfoi-it-consulting-delivery_6d1fbfcc.jpg" },
-  { number: "04", discipline: "Care delivery", title: "Healthcare Staffing", text: "Qualified healthcare and healthcare-IT professionals for programs that serve care.", href: "/capabilities/healthcare-staffing", image: "/manus-storage/emfoi-healthcare-care-coordination_5bc96e0c.jpg" },
+  { number: "01", discipline: "Experience systems", title: "Custom Software & UX", text: "Human-centered design, accessible interfaces, architecture, development, and production deployment.", href: "/capabilities/custom-software-ux", image: "/manus-storage/emfoi-software-delivery-studio_b4045e43.jpg" },
+  { number: "02", discipline: "Responsible intelligence", title: "AI Development & Governance", text: "Practical AI and machine-learning solutions paired with responsible governance for regulated environments.", href: "/capabilities/ai-development-governance", image: "/manus-storage/emfoi-ai-governance-review_e4514e20.jpg" },
+  { number: "03", discipline: "Program capacity", title: "IT Consulting & Staff Augmentation", text: "Experienced IT professionals and advisors for staff augmentation, contingent labor, or advisory engagements.", href: "/capabilities/it-consulting-staffing", image: "/manus-storage/emfoi-it-consulting-delivery_6d1fbfcc.jpg" },
+  { number: "04", discipline: "Care delivery", title: "Healthcare Staffing", text: "Qualified healthcare and healthcare-IT professionals for health systems and government health programs.", href: "/capabilities/healthcare-staffing", image: "/manus-storage/emfoi-healthcare-care-coordination_5bc96e0c.jpg" },
 ];
 
 const audiences = [
@@ -58,15 +58,15 @@ export default function Home() {
   const heroImageScrollRotate = useTransform(scrollY, [0, 720], [0, 1.2]);
   const heroImageScrollScale = useTransform(scrollY, [0, 720], [1, 1.055]);
   return (
-    <><PageSEO title="EMFOI | Software, AI & Staffing for Government and Healthcare" description="EMFOI delivers custom software, AI development and governance, IT consulting, and healthcare staffing for government, healthcare, and complex enterprise organizations." canonicalPath="/" /><PageLayout>
+    <><PageSEO title="EMFOI | Software, AI & Staffing for Government and Healthcare" description="EMFOI is a Delaware-incorporated (2013) IT and staffing firm delivering custom software, AI development and governance, IT consulting, and healthcare staffing to federal agencies, state governments, and enterprises." canonicalPath="/" /><PageLayout>
       <section className="home-hero">
         <div className="site-width home-hero-grid">
           <motion.div className="hero-copy" style={reducedMotion ? undefined : { y: heroCopyScrollY, opacity: heroCopyScrollOpacity }} initial={reducedMotion ? false : { opacity: 0, x: -48 }} animate={reducedMotion ? undefined : { opacity: 1, x: 0 }} transition={{ duration: 0.82, ease: heroEase }}>
             <p className="eyebrow"><span />EMFOI, INC. · HERNDON, VIRGINIA</p>
             <h1>Software, AI, and staffing partners for <em>government</em> and healthcare.</h1>
-            <p className="hero-supporting-copy">EMFOI is a Delaware-incorporated IT and staffing firm delivering custom software, AI development and governance, IT consulting, and healthcare staffing to public-sector, healthcare, and enterprise organizations.</p>
+            <p className="hero-supporting-copy">EMFOI is a Delaware-incorporated (2013) IT and staffing firm delivering custom software, AI development and governance, IT consulting, and healthcare staffing to federal agencies, state governments, and enterprises — as a prime, subcontractor, or teaming partner.</p>
             <ul className="hero-fact-list" aria-label="EMFOI service areas"><li><strong>01</strong><span>Software & UX</span></li><li><strong>02</strong><span>AI & governance</span></li><li><strong>03</strong><span>Staffing & delivery</span></li></ul>
-            <div className="hero-actions"><Link href="/contact" className="button button-primary">Plan a briefing <ArrowRight size={17} /></Link><Link href="/capability-statement" className="button button-secondary">Review capability statement <Download size={16} /></Link></div>
+            <div className="hero-actions"><Link href="/contact" className="button button-primary">Request a capability briefing <ArrowRight size={17} /></Link><Link href="/capability-statement" className="button button-secondary">Download capability statement <Download size={16} /></Link></div>
           </motion.div>
           <motion.div className="hero-visual" style={reducedMotion ? undefined : { y: heroImageScrollY, rotate: heroImageScrollRotate, scale: heroImageScrollScale }} initial={reducedMotion ? false : { opacity: 0, x: 58, scale: 0.97 }} animate={reducedMotion ? undefined : { opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.9, delay: 0.12, ease: heroEase }}><div className="hero-image-frame"><div className="hero-system-quadrant" aria-hidden="true"><i /><i /><i /><i /></div><img className="hero-image-motion" src="/manus-storage/emfoi-civic-fieldwork-hero_b35b1028.jpg" alt="Civic program planning materials and architectural models on a warm paper workspace" /></div><div className="hero-visual-label"><span className="signal-dot" />Software · AI · Staffing</div><div className="hero-visual-index"><span>Capability field guide</span><strong>01</strong></div><div className="hero-corner-note"><span>Scroll to explore</span><ArrowDownRight size={18} /></div></motion.div>
         </div>

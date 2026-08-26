@@ -421,3 +421,16 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Audit all image-bearing routes and shared image classes for incorrect cropping, stretching, focal points, and mobile sizing.
 - [x] Correct image object-fit, object-position, aspect-ratio, and responsive media treatment without changing the source assets.
 - [x] Verify representative desktop and mobile pages plus tests, TypeScript, and production build after the image-fit corrections.
+
+
+## Part A Content Alignment
+
+- [x] Audit the attached Part A EMFOI instructions and identify missing approved content, presence details, and required corrections.
+- [x] Update the homepage hero, subhead, capability descriptions, and CTAs to exactly match the Part A pillar drafts and requirements.
+- [x] Update the Government page with the required experience framing, teaming CTA, and company profile data.
+- [x] Update the About page with the verified story, leadership bio placeholder, and institutional facts.
+- [x] Implement the required Organization and LocalBusiness structured data in the global SEO component.
+- [x] Update page metadata and contact details (including the 1-business-day auto-reply mention) per the Part A instructions.
+- [x] Verify the Part A-aligned content across desktop and mobile, ensuring no unverified claims are added.
+
+The redesign now follows the Part A instructions: the homepage hero, subheads, and capability cards match the required pillar drafts; the Government page includes the specific experience framework and teaming CTA; the About page reflects the corporate story and leadership profile; global SEO includes Organization and LocalBusiness structured data; and contact details include the Herndon office and auto-reply confirmation.

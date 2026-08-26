@@ -63,13 +63,39 @@ export function PageSEO({ title, description, canonicalPath, breadcrumbs = [], n
     setCanonical(url);
 
     const trail = [{ name: "Home", path: "/" }, ...breadcrumbs];
-    const graph: Record<string, unknown>[] = [{
-      "@type": "WebPage",
-      name: title,
-      description,
-      url,
-      isPartOf: { "@type": "WebSite", name: "EMFOI", url: SITE_URL },
-    }];
+    const graph: Record<string, unknown>[] = [
+      {
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        name: "EMFOI, Inc.",
+        url: SITE_URL,
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/manus-storage/emfoi-signal-mark-source_93d8e7a2.png` },
+        sameAs: ["https://www.linkedin.com/company/emfoi"],
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": `${SITE_URL}/#localbusiness`,
+        name: "EMFOI, Inc.",
+        url: SITE_URL,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "205 Van Buren Street, Suite 120",
+          addressLocality: "Herndon",
+          addressRegion: "VA",
+          postalCode: "20170",
+          addressCountry: "US",
+        },
+        telephone: "+1-800-356-8933",
+        email: "info@emfoi.com",
+      },
+      {
+        "@type": "WebPage",
+        name: title,
+        description,
+        url,
+        isPartOf: { "@type": "WebSite", name: "EMFOI", url: SITE_URL },
+      },
+    ];
 
     if (trail.length > 1) {
       graph.push({
