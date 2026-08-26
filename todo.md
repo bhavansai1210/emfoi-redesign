@@ -388,3 +388,11 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Correct the sync destination or command behavior so assets are visible after setup.
 - [x] Verify the visible local files, local image loading, and production-safe ignore rules.
 
+
+## Complete Image and Logo ZIP Backup
+
+- [x] Inventory every current EMFOI image and logo source, including generated visual evidence and role portraits.
+- [x] Assemble one complete ZIP backup with a source URL ledger and checksums.
+- [x] Publish the ZIP as a downloadable private GitHub release asset and keep the deployable project lightweight.
+- [x] Document the restore command and verify the archive contents and checksum.
+

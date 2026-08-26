@@ -62,3 +62,19 @@ The small `optimized/` copies in this folder remain available for inspection. Th
 ## Local repository development
 
 If the repository is cloned to a local machine, run `pnpm assets:sync` from the project root. The command downloads all 27 current managed-storage assets into the visible `client/public/asset-backup/local/` folder and writes `SOURCE_URLS.json` beside them. That local cache is intentionally ignored by Git and is not included in production checkpoints; production continues to use the existing `/manus-storage/` URLs. For an external cache instead, run `pnpm assets:sync:external`.
+
+## Complete image and logo ZIP backup
+
+A single complete backup containing all current active images and logos is preserved outside the deployable project and published as a downloadable private GitHub release asset.
+
+| Item | Verified value |
+|---|---|
+| Downloadable release | [Complete EMFOI asset backup — 2026-08-26](https://github.com/bhavansai1210/emfoi-redesign/releases/tag/complete-asset-backup-2026-08-26) |
+| Archive | `emfoi-complete-asset-backup-2026-08-26.zip` |
+| Contents | 29 image/logo files, `README.txt`, and `SHA256SUMS.txt` |
+| SHA-256 | `cabf290316c5963e50d5dc31bd36b60d1f1e5b13a85c0c1016ec37cf868878e7` |
+| Local source | `/home/ubuntu/webdev-static-assets/emfoi-complete-asset-backup-2026-08-26.zip` |
+| Restore for local development | Run `pnpm assets:sync` to populate `client/public/asset-backup/local/` with the current 27 managed assets; use the release ZIP when the two original signal-mark sources are also required. |
+
+The ZIP is intentionally maintained as a backup/release asset rather than shipped inside the deployable project, preserving production deployment reliability while keeping a complete project-adjacent copy available.
+
