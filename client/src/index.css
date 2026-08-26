@@ -796,3 +796,45 @@ body,button,input,textarea,select,.button,.nav-link { font-family:var(--emfoi-fo
   .team-profile-portrait { aspect-ratio: 4 / 5; }
   .contact-office-map { max-height: none; }
 }
+
+/* 3–30–3 Messaging Hierarchy: Summary Strips */
+.about-summary-strip {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4rem;
+}
+
+.about-summary-strip div {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.about-summary-strip span {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--signal-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.about-summary-strip p {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+  max-width: 42rem;
+}
+
+@media (max-width: 768px) {
+  .about-summary-strip div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .about-summary-strip {
+    margin-bottom: 2.5rem;
+  }
+}

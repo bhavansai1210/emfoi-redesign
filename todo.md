@@ -447,3 +447,14 @@ The redesign now follows the Part A instructions: the homepage hero, subheads, a
 - [x] Verify the refined EMFOI website across desktop and mobile, ensuring all tests, TypeScript, and production build pass.
 
 Final refinement findings: The website now features a compact mobile header, enhanced interactive states for capability and industry cards, and a more integrated About leadership presentation. Accessibility was improved for the cookie modal, and SEO surfaces were optimized with a complete sitemap and structured data. Visual checks passed at desktop and mobile sizes; Vitest, TypeScript, and the production build also passed.
+
+
+## 3–30–3 Messaging Hierarchy Refinement
+
+- [x] Audit the current first-screen and scan-path messaging against the 3–30–3 framework (3s: Identity/Value; 30s: Capability/Context; 3m: Proof/Detail).
+- [x] Refine homepage hero, subheads, and section kickers for instant 3-second comprehension.
+- [x] Enhance 30-second scanability with stronger capability grouping, audience routing, and product proof.
+- [x] Build 3-minute depth through integrated case-study structures, leadership bios, and clear process/contact pathways.
+- [x] Verify the 3–30–3 user journey on desktop and mobile, ensuring all tests, TypeScript, and production build pass.
+
+The website now follows a clear 3–30–3 messaging hierarchy: the hero delivers instant identity (3s), the trust strip and audience kickers provide rapid context (30s), and the About summary strip and detailed evidence panels support a deeper 3-minute review. Full-page renders, Vitest, and production build checks pass.
