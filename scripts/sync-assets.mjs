@@ -5,9 +5,9 @@ import { fileURLToPath } from "node:url";
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const liveOrigin = "https://emfoi-redes-dahzjzgz.manus.space";
 const defaultTarget = "/home/ubuntu/webdev-static-assets/emfoi-local-assets";
-const target = process.argv.includes("--public")
-  ? path.join(projectRoot, "client", "public", "asset-backup", "local")
-  : defaultTarget;
+const publicTarget = path.join(projectRoot, "client", "public", "asset-backup", "local");
+const useExternalCache = process.argv.includes("--external");
+const target = useExternalCache ? defaultTarget : publicTarget;
 
 const assets = [
   ["emfoi-civic-fieldwork-hero_b35b1028.jpg", "/manus-storage/emfoi-civic-fieldwork-hero_b35b1028.jpg"],
@@ -51,4 +51,8 @@ for (const [filename, sourcePath] of assets) {
 }
 await writeFile(path.join(target, "SOURCE_URLS.json"), `${JSON.stringify({ generatedAt: new Date().toISOString(), target, assets: ledger }, null, 2)}\n`);
 console.log(`\nSaved ${ledger.length} assets to ${target}`);
-console.log("Use --public only for a local public-folder cache; production continues using managed storage.");
+console.log(
+  useExternalCache
+    ? "Saved to the external development cache; production continues using managed storage."
+    : "Saved to the visible local public-folder cache. This cache is git-ignored; production continues using managed storage.",
+);

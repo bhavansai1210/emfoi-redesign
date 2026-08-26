@@ -381,3 +381,10 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 - [x] Keep synced binaries outside the deployable project by default and document the optional local public-folder target.
 - [x] Verify local asset availability while production continues using managed-storage URLs.
 
+
+## Local Asset Visibility Bug
+
+- [x] Inspect why the documented local asset path does not show downloaded files.
+- [x] Correct the sync destination or command behavior so assets are visible after setup.
+- [x] Verify the visible local files, local image loading, and production-safe ignore rules.
+

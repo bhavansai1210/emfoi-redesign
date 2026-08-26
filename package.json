@@ -9,6 +9,7 @@
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "assets:sync": "node scripts/sync-assets.mjs",
+    "assets:sync:external": "node scripts/sync-assets.mjs --external",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
   },
