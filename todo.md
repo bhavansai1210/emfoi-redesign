@@ -370,9 +370,9 @@ Approved asset: `https://res.cloudinary.com/djixmsbqd/image/upload/v1786770746/D
 
 - [x] Audit all shared and page-specific font-family, size, weight, line-height, and letter-spacing treatments.
 - [x] Standardize inconsistent typography through shared Civic Precision type rules.
-- [ ] Reframe public case-study and team sections as finished capability structures without approval-state language.
-- [ ] Differentiate Capabilities, Industries, About, and Contact openings with purpose-specific field-guide framing.
-- [ ] Validate desktop/mobile hierarchy and save the corrected typography system.
+- [x] Reframe public case-study and team sections as finished capability structures without approval-state language.
+- [x] Differentiate Capabilities, Industries, About, and Contact openings with purpose-specific field-guide framing.
+- [x] Validate desktop/mobile hierarchy and save the corrected typography system.
 
 ## Local-Run Asset Synchronization
 
