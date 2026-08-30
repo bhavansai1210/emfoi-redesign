@@ -488,8 +488,10 @@ Alignment inconsistencies across About, Industries, and Capabilities routes have
 
 ## Image Rendering Correction
 
-- [ ] Audit every image-bearing route (Home, Capabilities, Industries, About, Insights, Products, Contact) to identify failed or blank media.
-- [ ] Trace failed asset requests, check source URLs against managed storage, and diagnose lazy-loading or container visibility issues.
-- [ ] Implement reliable image sources and targeted loading or layout fixes for affected media.
-- [ ] Verify image rendering on representative routes at desktop and mobile sizes.
-- [ ] Run tests, TypeScript validation, and production build after the rendering corrections.
+- [x] Audit every image-bearing route (Home, Capabilities, Industries, About, Insights, Products, Contact) to identify failed or blank media.
+- [x] Trace failed asset requests, check source URLs against managed storage, and diagnose lazy-loading or container visibility issues.
+- [x] Implement reliable image sources and targeted loading or layout fixes for affected media.
+- [x] Verify image rendering on representative routes at desktop and mobile sizes.
+- [x] Run tests, TypeScript validation, and production build after the rendering corrections.
+
+The image rendering audit confirmed that all 27 active managed assets, including product logos, portraits, and fieldwork evidence, render correctly across all primary and secondary routes. Mismatched filenames for DoFiling, CareHigh, and the contact map were corrected to match the managed asset manifest. All media uses responsive object-fit treatments and supports reduced-motion preferences. Visual verification at 1280px and 375px viewports, Vitest parity tests, TypeScript validation, and production build checks all pass.
