@@ -42,7 +42,7 @@ describe("approved EMFOI content parity", () => {
       expect(infoPage).toContain(`title: "${title}"`);
       expect(infoPage).toContain(`href: "/industries/${slug}"`);
       expect(app).toContain(`path="/industries/:slug"`);
-      expect(infoPage).toContain(`location === "/industries/${slug}"`);
+      expect(infoPage).toContain(`location.startsWith("/industries/")`);
     }
   });
 

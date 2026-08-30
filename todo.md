@@ -484,3 +484,12 @@ The homepage and primary routes now feature purposeful GSAP and AOS interactions
 - [x] Verify the corrected alignment across all routes with visual checks, tests, and production build.
 
 Alignment inconsistencies across About, Industries, and Capabilities routes have been corrected using a normalized editorial grid. Footer columns and mobile spacing have been repaired for consistent visual rhythm. All visual, unit-test, and production build checks pass.
+
+
+## Image Rendering Correction
+
+- [ ] Audit every image-bearing route (Home, Capabilities, Industries, About, Insights, Products, Contact) to identify failed or blank media.
+- [ ] Trace failed asset requests, check source URLs against managed storage, and diagnose lazy-loading or container visibility issues.
+- [ ] Implement reliable image sources and targeted loading or layout fixes for affected media.
+- [ ] Verify image rendering on representative routes at desktop and mobile sizes.
+- [ ] Run tests, TypeScript validation, and production build after the rendering corrections.
