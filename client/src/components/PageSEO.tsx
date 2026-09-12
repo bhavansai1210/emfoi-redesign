@@ -14,6 +14,7 @@ type PageSEOProps = {
 };
 
 const SITE_URL = "https://www.emfoi.com";
+const BRAND_MARK_URL = "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png";
 
 function absoluteUrl(path: string) {
   return `${SITE_URL}${path === "/" ? "/" : path}`;
@@ -69,7 +70,7 @@ export function PageSEO({ title, description, canonicalPath, breadcrumbs = [], n
         "@id": `${SITE_URL}/#organization`,
         name: "EMFOI, Inc.",
         url: SITE_URL,
-        logo: { "@type": "ImageObject", url: `${SITE_URL}/manus-storage/emfoi-signal-mark-source_93d8e7a2.png` },
+        logo: { "@type": "ImageObject", url: BRAND_MARK_URL },
         sameAs: ["https://www.linkedin.com/company/emfoi"],
       },
       {

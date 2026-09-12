@@ -35,6 +35,68 @@ const industryData = [
   { number: "10", title: "Other", text: "A focused starting point for software and IT needs that do not fit a single industry category.", href: "/industries/other", signal: "Defined need" },
 ];
 
+const industryDetailProfiles: Record<string, { question: string; context: string; focus: string[]; fit: string }> = {
+  "/industries/financial-services-insurance": {
+    question: "How do we make regulated operational work easier to run?",
+    context: "Financial-services and insurance teams work across sensitive information, structured approvals, customer-facing workflows, and systems that cannot afford avoidable ambiguity.",
+    focus: ["Workflow and system-dependency mapping", "Accessible software and usable operational interfaces", "AI governance, documentation, and monitoring considerations", "Technical capacity for delivery, support, or modernization"],
+    fit: "EMFOI brings software, governance, consulting, and staffing into one practical conversation without assuming a single technology path.",
+  },
+  "/industries/manufacturing": {
+    question: "How do we keep people, systems, and operations moving together?",
+    context: "Manufacturing environments depend on connected workflows, reliable operational information, specialized technology capacity, and clear handoffs between the floor, systems, and leadership.",
+    focus: ["Operational workflow and dependency mapping", "ERP, integration, and modernization support", "IT consulting and specialized technical capacity", "Documentation and user-centered change support"],
+    fit: "EMFOI helps teams frame the operating reality first, then connect technology decisions to the people and processes responsible for keeping work moving.",
+  },
+  "/industries/food": {
+    question: "How do we support production and fulfillment when timing matters?",
+    context: "Food organizations coordinate production, inventory, fulfillment, delivery, and customer expectations across workflows where availability and timing are visible every day.",
+    focus: ["Production and fulfillment workflow mapping", "Operational software and integration planning", "IT support for teams with limited internal capacity", "Clear reporting, documentation, and handoffs"],
+    fit: "EMFOI starts with the real path of work and helps define focused technology or staffing support around the moments where friction is most costly.",
+  },
+  "/industries/startups": {
+    question: "What capability does the product and operating model need next?",
+    context: "Startup teams often need to make product, architecture, user experience, and delivery decisions while their operating model is still taking shape.",
+    focus: ["Product discovery and user-centered UX", "Web and mobile software delivery", "Architecture and integration decisions", "Flexible technical and advisory capacity"],
+    fit: "EMFOI can provide a focused delivery partner or fill a specific capability gap without forcing a larger transformation program than the moment requires.",
+  },
+  "/industries/consulting-providers": {
+    question: "Where can dependable technology capacity strengthen client delivery?",
+    context: "Consulting providers need internal systems, connectivity, and delivery capacity that support their client commitments without creating another layer of operational friction.",
+    focus: ["Client-delivery workflow and systems support", "Consultant and IT staff augmentation", "Cloud, connectivity, and modernization needs", "Accessible tools and practical documentation"],
+    fit: "EMFOI works as a focused technology and capacity partner around the delivery model already in place.",
+  },
+  "/industries/non-profit": {
+    question: "How do we make limited technology capacity go further?",
+    context: "Mission-focused organizations need technology that is understandable, maintainable, and proportionate to the resources and workflows available to the team.",
+    focus: ["Right-sized software and workflow improvements", "Accessible interfaces for varied audiences", "Practical IT consulting and support", "Clear handoffs, documentation, and training"],
+    fit: "EMFOI keeps the starting point defined and useful, helping teams improve the work in front of them without unnecessary complexity.",
+  },
+  "/industries/ai": {
+    question: "Where can AI be useful, and how will we govern it?",
+    context: "Organizations exploring AI need more than a prototype: they need a defined use case, understandable risk framing, documentation, oversight, and a plan for responsible operation.",
+    focus: ["Use-case definition and workflow fit", "AI and machine-learning development", "Risk, bias, documentation, and oversight", "Monitoring and operational handoff"],
+    fit: "EMFOI pairs practical AI implementation with a governance posture that keeps people, decisions, and accountability visible.",
+  },
+  "/industries/other": {
+    question: "What is the clearest starting point for the need in front of us?",
+    context: "Not every technology need fits a standard industry category. The useful first step is to understand the users, workflow, systems, and delivery constraint that define the request.",
+    focus: ["Discovery and operating-context mapping", "Custom software and UX", "IT consulting, staffing, and delivery support", "A practical path toward the next decision"],
+    fit: "EMFOI helps turn an undefined request into a focused conversation with a clear next step.",
+  },
+};
+
+const industryFocusDescriptions: Record<string, string[]> = {
+  "/industries/financial-services-insurance": ["Trace approvals, sensitive information, and customer-facing handoffs across the operating model.", "Build clearer tools around regulated work without hiding the decisions people need to review.", "Give governance teams practical documentation for evaluating AI use, risk, and accountability.", "Add delivery capacity where modernization or ongoing platform work needs dependable ownership."],
+  "/industries/manufacturing": ["Connect floor-level work, planning, inventory, and leadership visibility around the actual production flow.", "Prioritize integrations and system changes that reduce avoidable friction between operations and IT.", "Use documentation and change support so new tools work for the people closest to the process.", "Strengthen technical capacity around the systems that keep production and service work moving."],
+  "/industries/food": ["Map the path from production through inventory, fulfillment, delivery, and customer expectation.", "Focus technology investment on availability, timing, and the handoffs that affect service quality.", "Give teams simple operational visibility instead of adding another disconnected reporting layer.", "Support the people and systems responsible for keeping daily fulfillment dependable."],
+  "/industries/startups": ["Turn an early product idea into a clear set of user, workflow, and technical decisions.", "Choose an architecture and delivery path that can evolve with the product rather than overbuilding too soon.", "Keep the interface understandable while the team learns what users and the operating model actually need.", "Add focused capability for the next milestone without taking ownership away from the founding team."],
+  "/industries/consulting-providers": ["Make the internal and client-delivery systems behind a consulting practice easier to coordinate.", "Provide technical capacity that strengthens an existing engagement model instead of competing with it.", "Support dependable connectivity, tools, and handoffs across distributed delivery teams.", "Document the work so client commitments remain clear as teams and programs change."],
+  "/industries/non-profit": ["Start with the mission workflow and the people using it, then define the smallest useful improvement.", "Favor maintainable systems and accessible experiences over complexity that the team cannot sustain.", "Make ownership, training, and day-to-day support part of the technology decision.", "Create documentation and handoffs that protect continuity when resources and roles shift."],
+  "/industries/ai": ["Define the user, decision, and measurable outcome before selecting an AI approach.", "Build an application that fits the surrounding workflow and makes human review explicit.", "Document data, limitations, risk, and oversight so accountability does not disappear into the model.", "Plan monitoring and operational ownership before an experiment becomes a relied-on system."],
+  "/industries/other": ["Clarify the people, workflow, systems, and constraint behind a request that does not fit a standard category.", "Shape a practical software or IT path around the defined need rather than a generic package.", "Bring the right mix of consulting, staffing, and delivery support to the immediate decision.", "Leave the conversation with a sequenced next step and a clear definition of useful progress."],
+};
+
 const pageSeo = {
   "/government": { title: "Government IT & Staffing Contractor in Virginia | EMFOI", description: "EMFOI supports federal, state, and local programs with custom software, responsible AI, IT consulting, and healthcare staffing for teaming and delivery needs.", canonicalPath: "/government", breadcrumbs: [{ name: "Government", path: "/government" }] },
   "/capability-statement": { title: "Capability Statement | EMFOI", description: "Review EMFOI’s current capabilities in custom software, AI governance, IT consulting, staff augmentation, and healthcare staffing for government and enterprise buyers.", canonicalPath: "/capability-statement", breadcrumbs: [{ name: "Capability Statement", path: "/capability-statement" }] },
@@ -197,19 +259,19 @@ function CapabilityStatementPage() {
 
 function AboutPage() {
   const teamProfileSlots = [
-    { number: "01", type: "Leadership", title: "Sai Chaitanya Nandigam", text: "President & Founder. Directing strategic growth and delivery posture since 2013.", image: "/manus-storage/emfoi-role-portrait-leadership_1778d07b.jpg", alt: "Sai Chaitanya Nandigam, President & Founder of EMFOI" },
-    { number: "02", type: "Delivery", title: "Program Principal", text: "Coordinating complex delivery across people, systems, and program requirements.", image: "/manus-storage/emfoi-role-portrait-delivery_54b0d31c.jpg", alt: "Editorial portrait representing an EMFOI program-delivery engagement role" },
-    { number: "03", type: "Advisory", title: "Technical Lead", text: "Directing software architecture, AI governance, and specialized capability development.", image: "/manus-storage/emfoi-role-portrait-practice_d8301bce.jpg", alt: "Editorial portrait representing an EMFOI focused-capability engagement role" },
+    { number: "01", type: "Leadership", title: "Sai Chaitanya Nandigam", text: "President & Founder. Directing strategic growth and delivery posture since 2013.", image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195156/emfoi-role-portrait-leadership_1778d07b_gujtin.webp", alt: "Sai Chaitanya Nandigam, President & Founder of EMFOI" },
+    { number: "02", type: "Delivery", title: "Program Principal", text: "Coordinating complex delivery across people, systems, and program requirements.", image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195155/emfoi-role-portrait-delivery_54b0d31c_xppcvv.webp", alt: "Editorial portrait representing an EMFOI program-delivery engagement role" },
+    { number: "03", type: "Advisory", title: "Technical Lead", text: "Directing software architecture, AI governance, and specialized capability development.", image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195157/emfoi-role-portrait-practice_d8301bce_yuxz6n.webp", alt: "Editorial portrait representing an EMFOI focused-capability engagement role" },
   ];
 
   return (
     <PageLayout>
-      <PageHero 
-        variant="record" 
-        eyebrow="About EMFOI" 
-        title="A focused partner for work that needs to hold up." 
-        intro="EMFOI, Inc. is a Delaware corporation established in 2013 and headquartered in Herndon, Virginia. We deliver custom software, AI development and governance, IT consulting and staffing, and healthcare staffing to government and enterprise clients." 
-      />
+      <section className="about-hero-section" aria-labelledby="about-hero-title">
+        <div className="about-hero-frame">
+          <img src="/assets/emfoi-about-hero.jpg" alt="Senior consulting team collaborating over plans in a modern office" />
+          <div className="site-width about-hero-copy"><p className="eyebrow"><span />About EMFOI</p><h1 id="about-hero-title">A focused partner for work that needs to hold up.</h1><p>EMFOI brings personal service and practical technology to government and enterprise delivery.</p></div>
+        </div>
+      </section>
       
       <section className="site-width about-summary-strip editorial-grid">
         <div />
@@ -449,14 +511,16 @@ function PrivacyNoticePage() {
 function InsightsPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Insights" title="Operational knowledge and delivery perspectives." intro="EMFOI is preparing approved insights on accessible design, responsible AI, government delivery, healthcare staffing, and technology operations." />
+      <section className="insights-hero-section" aria-labelledby="insights-hero-title">
+        <div className="insights-hero-frame">
+          <img src="/assets/emfoi-insights-hero.jpg" alt="Senior technology and operations professionals reviewing plans around a conference table" />
+          <div className="site-width insights-hero-copy"><p className="eyebrow"><span />Insights</p><h1 id="insights-hero-title">Operational knowledge for work that needs to hold up.</h1><p>Perspectives on accessible design, responsible AI, government delivery, healthcare staffing, and technology operations.</p></div>
+        </div>
+      </section>
       <section className="site-width insights-placeholder-section">
         <div className="editorial-grid">
-          <div />
-          <div className="py-20 border-t border-ink-navy/10">
-            <p className="large-copy">Verified insights and case-study summaries are currently being prepared for publication.</p>
-            <p className="mt-4 text-ink-navy/60">Check back for perspectives on high-consequence technology delivery.</p>
-          </div>
+          <div><p className="eyebrow"><span />Field notes</p><h2>Useful perspective, grounded in the work.</h2></div>
+          <div className="insights-placeholder-copy"><p className="large-copy">Verified insights and case-study summaries are currently being prepared for publication.</p><p>Check back for perspectives on high-consequence technology delivery.</p></div>
         </div>
       </section>
     </PageLayout>
@@ -487,7 +551,12 @@ function CareersPage() {
 function ContactPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Contact" title="Begin the conversation." intro="Contact EMFOI in Herndon, Virginia to discuss custom software, AI governance, IT staffing, healthcare staffing, or public-sector teaming." />
+      <section className="contact-hero-section" aria-labelledby="contact-hero-title">
+        <div className="contact-hero-frame">
+          <img src="/assets/emfoi-headquarters.jpg" alt="Contemporary professional office headquarters with glass, stone, and landscaped grounds" />
+          <div className="site-width contact-hero-copy"><p className="eyebrow"><span />Contact EMFOI</p><h1 id="contact-hero-title">Start with the place and the program.</h1><p>Our Herndon headquarters is a steady point of contact for software, AI governance, staffing, and public-sector delivery conversations.</p></div>
+        </div>
+      </section>
       <section className="site-width contact-section editorial-grid">
         <div className="contact-info-block">
           <div className="contact-method">
@@ -501,7 +570,7 @@ function ContactPage() {
             <FileText size={24} className="text-signal-blue" />
             <div>
               <h3>Direct contact</h3>
-              <p>1-800-555-8933</p>
+              <p>1-800-356-8933</p>
               <p className="text-sm text-ink-navy/60 mt-1">Local 703 line pending confirmation.</p>
             </div>
           </div>
@@ -517,14 +586,10 @@ function ContactPage() {
           <ContactForm />
         </div>
       </section>
-      <section className="site-width map-section" data-aos="fade-up">
-        <div className="map-container rounded-sm overflow-hidden border border-ink-navy/10 grayscale hover:grayscale-0 transition-all duration-700">
-          <img 
-            src="/manus-storage/emfoi-signal-mark_95fe1ace.png" 
-            alt="EMFOI Headquarters in Herndon, Virginia" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="site-width contact-route-panel" aria-label="EMFOI office route" data-aos="fade-up">
+        <div className="contact-route-mark" aria-hidden="true"><i /><i /><i /><i /></div>
+        <div className="contact-route-copy"><span>OFFICE ROUTE</span><h2>Start with the place and the program.</h2><p>Our headquarters is in Herndon, Virginia. Share the context around your work and we will route the conversation to the right EMFOI team.</p></div>
+        <a className="contact-route-link" href="https://www.google.com/maps/search/?api=1&query=205+Van+Buren+Street+Suite+120+Herndon+VA+20170" target="_blank" rel="noreferrer">Open office location <ExternalLink size={15} /></a>
       </section>
     </PageLayout>
   );
@@ -532,23 +597,21 @@ function ContactPage() {
 
 function IndustryDetailPage({ path }: { path: string }) {
   const dossier = industryData.find(d => d.href === path) || industryData[ industryData.length - 1 ];
+  const profile = industryDetailProfiles[path] || industryDetailProfiles["/industries/other"];
+  const focusDescriptions = industryFocusDescriptions[path] || industryFocusDescriptions["/industries/other"];
   return (
     <PageLayout>
       <PageHero eyebrow="Industry" title={dossier.title} intro={dossier.text} />
-      <section className="site-width industry-dossier-section editorial-grid">
-        <div className="industry-dossier-aside">
-          <div className="industry-dossier-mark" aria-hidden="true"><i /><i /><i /><i /></div>
-          <span>OPERATING CONTEXT</span>
-          <p>{dossier.signal}</p>
-        </div>
-        <div className="industry-dossier-content">
-          <p className="large-copy">EMFOI supports organizations operating in {dossier.title.toLowerCase()}, providing technically sound and practically usable delivery.</p>
-          <div className="mt-12 p-8 bg-paper-canvas border border-ink-navy/10 rounded-sm">
-            <h3 className="text-xl font-medium mb-4">Evidence ready</h3>
-            <p className="text-ink-navy/80">Case-study summaries for {dossier.title.toLowerCase()} are currently being prepared for publication.</p>
-            <Link href="/contact" className="button button-primary mt-6 w-fit">Discuss your needs <ArrowRight size={16} /></Link>
-          </div>
-        </div>
+      <section className="site-width industry-detail-intro editorial-grid" data-aos="fade-up">
+        <div><p className="eyebrow"><span />Operating context</p><h2>{profile.question}</h2></div>
+        <div><p className="large-copy">{profile.context}</p><p className="industry-detail-signal"><strong>Signal</strong>{dossier.signal}</p></div>
+      </section>
+      <section className="industry-detail-focus-section" data-aos="fade-up">
+        <div className="site-width"><div className="industry-detail-section-heading"><div><p className="eyebrow"><span />Delivery focus</p><h2>Useful capability, shaped around the work.</h2></div><p>{profile.fit}</p></div><div className="industry-detail-focus-grid">{profile.focus.map((item, index) => <article key={item}><span>0{index + 1}</span><h3>{item}</h3><p>{focusDescriptions[index]}</p></article>)}</div></div>
+      </section>
+      <section className="site-width industry-detail-next editorial-grid" data-aos="fade-up">
+        <div><p className="eyebrow"><span />Next step</p><h2>Make the operating need specific.</h2></div>
+        <div><p className="large-copy">Bring us the workflow, program, or delivery constraint you are working through. We will start with the context and identify the right combination of software, governance, consulting, or staffing support.</p><Link href="/contact" className="button button-primary">Discuss your needs <ArrowRight size={16} /></Link></div>
       </section>
     </PageLayout>
   );
@@ -557,17 +620,22 @@ function IndustryDetailPage({ path }: { path: string }) {
 function IndustriesIndexPage() {
   return (
     <PageLayout>
-      <PageHero eyebrow="Industries" title="Capability that respects the context around it." intro="EMFOI supports organizations operating in healthcare, public sector, and complex enterprise environments where delivery must be both technically sound and practically usable." />
+      <section className="industries-hero-section" aria-labelledby="industries-hero-title">
+        <div className="industries-hero-frame">
+          <img src="/assets/emfoi-industries-hero.jpg" alt="Multidisciplinary consulting team collaborating around plans in a modern enterprise workspace" />
+          <div className="site-width industries-hero-copy"><p className="eyebrow"><span />Industries</p><h1 id="industries-hero-title">Capability that respects the context around it.</h1><p>We support healthcare, public sector, and complex enterprise environments where delivery must be technically sound and practically usable.</p></div>
+        </div>
+      </section>
       <section className="site-width industries-grid-section" data-aos="fade-up">
-        <div className="industries-list">
+        <div className="industry-list">
           {industryData.map((item) => (
-            <Link key={item.number} href={item.href} className="industry-row group">
+            <Link key={item.number} href={item.href} className="industry-list-row group">
               <span className="industry-number">{item.number}</span>
               <div className="industry-info">
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
-              <div className="industry-arrow">
+              <div className="industry-row-arrow">
                 <ChevronRight size={24} />
               </div>
             </Link>
@@ -612,7 +680,7 @@ function DoFilingPage() {
       <section className="site-width product-dossier-section editorial-grid">
         <div className="product-visual">
           <div className="product-logo-frame bg-[#f8f9fa] p-12 rounded-sm border border-ink-navy/10">
-            <img src="/manus-storage/dofiling-logo-approved_9637c5b5.png" alt="DoFiling Logo" className="w-full h-auto object-contain" />
+            <img src="https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/dofiling-logo-approved_9637c5b5_bgekbx.png" alt="DoFiling Logo" className="w-full h-auto object-contain" />
           </div>
         </div>
         <div className="product-details">
@@ -639,7 +707,7 @@ function CareHighPage() {
       <section className="site-width product-dossier-section editorial-grid">
         <div className="product-visual">
           <div className="product-logo-frame bg-[#fff9f0] p-12 rounded-sm border border-ink-navy/10">
-            <img src="/manus-storage/carehigh-logo_381d8353.svg" alt="CareHigh Logo" className="w-full h-auto object-contain" />
+            <img src="https://res.cloudinary.com/djixmsbqd/image/upload/v1789195145/carehigh-logo_381d8353_xkfvue.svg" alt="CareHigh Logo" className="w-full h-auto object-contain" />
           </div>
         </div>
         <div className="product-details">

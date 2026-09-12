@@ -9,7 +9,7 @@ import { Link, useLocation } from "wouter";
 import { CookiePreferences } from "@/components/ClientEnhancements";
 import { MotionReveal } from "@/components/MotionReveal";
 
-const brandMark = "/manus-storage/emfoi-signal-mark_95fe1ace.png";
+const brandMark = "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png";
 
 const navItems = [
   { label: "Capabilities", href: "/capabilities" },
