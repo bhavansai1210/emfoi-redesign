@@ -13,21 +13,21 @@ const capabilityData = {
   "custom-software-ux": {
     group: "practice", number: "01", eyebrow: "Capability 01", title: "Custom Software & UX", titleLead: "Design usable systems around the people who depend on them.",
     intro: "EMFOI designs, builds, and deploys custom software end to end — with human-centered design, accessible interfaces, sound architecture, and production-ready engineering.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195158/emfoi-software-ux_277c53ba_qzlapw.webp", imageAlt: "Illustrative software and user-experience planning materials",
+    image: "/assets/emfoi-software-technology.jpg", imageAlt: "Illustrative UX engineer reviewing desktop and mobile application prototypes",
     focus: ["Human-centered research, UI/UX, and interaction design", "Accessible experiences informed by Section 508 and WCAG", "Software architecture, application development, and integration", "Web and mobile development for defined business and program needs", "Deployment planning and continuous improvement"],
     detail: "Our design practice puts real users and operational realities at the center of delivery. We move from discovery through architecture, build, and deployment with an emphasis on outcomes that are usable, maintainable, and ready for the environments where work actually happens. This practice includes the web and mobile development capability described on the legacy EMFOI site.",
   },
   "ai-development-governance": {
     group: "practice", number: "02", eyebrow: "Capability 02", title: "AI Development & Governance", titleLead: "Put practical intelligence to work — with accountability built in.",
     intro: "EMFOI helps organizations develop AI and machine-learning solutions while establishing the governance needed for responsible, regulated deployment.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance_8c4ea3e7_sjyfvq.webp", imageAlt: "Illustrative AI governance and delivery review",
+    image: "/assets/emfoi-ai-technology.jpg", imageAlt: "Illustrative data scientists evaluating model performance and governance checks",
     focus: ["AI and machine-learning solution development", "Model risk and bias evaluation", "Documentation, oversight, and monitoring practices", "HIPAA-aligned practices for regulated and healthcare environments"],
     detail: "AI delivery does not end at a prototype. Our approach pairs implementation with a practical governance posture: evaluating risk and bias, documenting how systems work, and preparing teams to monitor their use. That is especially important for healthcare and other regulated environments.",
   },
   "it-consulting-staffing": {
     group: "practice", number: "03", eyebrow: "Capability 03", title: "IT Consulting & Staff Augmentation", titleLead: "Bring specialized capability where your program needs it most.",
     intro: "EMFOI supports organizations with experienced IT professionals and advisors through staff augmentation, contingent labor, and advisory engagements.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp", imageAlt: "Illustrative civic systems delivery workspace",
+    image: "/assets/emfoi-staffing-technology.jpg", imageAlt: "Illustrative IT consultant onboarding a colleague with code and task-management tools",
     focus: ["IT staff augmentation and contingent labor", "Program and technical advisory support", "Federal program staffing through prime contractors", "Enterprise consultant delivery through prime vendors"],
     detail: "We help organizations fill critical capability gaps directly and as a subcontractor to prime vendors. EMFOI has staffed teams on federal programs and delivered IT consultants to enterprise clients through primes. Specific client or prime names are shared only where permission has been confirmed.",
   },
@@ -41,28 +41,28 @@ const capabilityData = {
   "cyber-security": {
     group: "service", number: "05", eyebrow: "Service line 05", title: "Cyber Security", titleLead: "Protect the systems and information the work depends on.",
     intro: "EMFOI’s cyber security service line supports organizations that need security considerations brought into technology planning, implementation, and ongoing operations.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance_8c4ea3e7_sjyfvq.webp", imageAlt: "Illustrative security and governance review workspace",
+    image: "/assets/emfoi-security-technology.jpg", imageAlt: "Illustrative security analyst reviewing access events and incident monitoring",
     focus: ["Security-aware technology planning", "Risk, access, and control considerations", "Security practices for cloud and application environments", "Documentation and operational handoff"],
     detail: "Cyber security belongs in the delivery conversation from the beginning. EMFOI frames security around the systems, users, information, and operating conditions that shape the actual risk, then connects advisory, implementation, and documentation to the work in front of the team.",
   },
   "managed-services": {
     group: "service", number: "06", eyebrow: "Service line 06", title: "Managed Services", titleLead: "Keep technology support steady after the initial delivery.",
     intro: "EMFOI’s managed-services service line is designed for organizations that need reliable technology support, monitoring, and practical guidance around day-to-day operations.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp", imageAlt: "Illustrative technology operations briefing",
+    image: "/assets/emfoi-managed-technology.jpg", imageAlt: "Illustrative IT support professional reviewing service tickets and availability",
     focus: ["Ongoing technology support and service coordination", "Monitoring and issue triage around operational systems", "Practical IT guidance for evolving business needs", "Clear handoffs, documentation, and service communication"],
     detail: "A useful technology partner stays engaged after launch. Managed services bring support, communication, and operational context together so teams can address issues, maintain continuity, and make informed decisions as their systems and needs change.",
   },
   "cloud-services": {
     group: "service", number: "07", eyebrow: "Service line 07", title: "Cloud Services", titleLead: "Use cloud technology with the operating model in view.",
     intro: "EMFOI helps organizations plan and support cloud-enabled systems with attention to architecture, security, integration, cost, and the people responsible for operating them.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp", imageAlt: "Illustrative cloud systems planning workspace",
+    image: "/assets/emfoi-cloud-technology.jpg", imageAlt: "Illustrative cloud engineer monitoring deployments and infrastructure resources",
     focus: ["Cloud architecture and application planning", "Migration and integration considerations", "Security, access, and operational readiness", "Cloud support aligned to the team’s delivery model"],
     detail: "Cloud adoption is a delivery decision as much as a technology decision. EMFOI connects the target architecture to the organization’s security posture, integrations, operational capacity, and user needs so cloud services remain understandable and supportable.",
   },
   "network-connectivity": {
     group: "service", number: "08", eyebrow: "Service line 08", title: "Network Connectivity", titleLead: "Make the connections behind the work more dependable.",
     intro: "EMFOI’s network-connectivity service line addresses the infrastructure and communication conditions that help people, systems, and information stay connected.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp", imageAlt: "Illustrative network and systems coordination workspace",
+    image: "/assets/emfoi-network-technology.jpg", imageAlt: "Illustrative network engineer inspecting switches and connectivity",
     focus: ["Network planning and connectivity assessment", "Infrastructure and systems handoff mapping", "Reliability and issue-resolution coordination", "Documentation for operational teams and stakeholders"],
     detail: "When connectivity is unstable, the effects show up everywhere: delayed work, interrupted transactions, and avoidable operational friction. EMFOI starts with the actual communication path, then helps teams understand the infrastructure, dependencies, and support model around it.",
   },
@@ -76,7 +76,7 @@ const capabilityData = {
   "it-modernization": {
     group: "service", number: "10", eyebrow: "Service line 10", title: "IT Modernization", titleLead: "Move legacy systems forward without losing the thread.",
     intro: "EMFOI helps organizations assess legacy technology, understand modernization risk, and plan practical improvements for systems and data that support important work.",
-    image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp", imageAlt: "Illustrative technology modernization planning workspace",
+    image: "/assets/emfoi-modernization-technology.jpg", imageAlt: "Illustrative engineer migrating a legacy application to a modern deployment pipeline",
     focus: ["Legacy-system and dependency assessment", "Modernization sequencing and risk framing", "Application, data, and integration planning", "Transition support and operational handoff"],
     detail: "Modernization is not simply a replacement exercise. EMFOI starts by understanding what the legacy environment does, where the risks sit, and how people depend on it, then helps define a robust path toward systems that are easier to support and ready for the future.",
   },
@@ -126,7 +126,7 @@ function CapabilityIndex() {
     <><PageSEO title="EMFOI Capabilities | Software, AI & Staffing for Government and Healthcare" description="Explore EMFOI capabilities in custom software and UX, AI development and governance, IT consulting, staffing, cyber security, managed services, cloud, network connectivity, ERP, and IT modernization." canonicalPath="/capabilities" breadcrumbs={[{ name: "Capabilities", path: "/capabilities" }]} /><PageLayout>
       <section className="capabilities-hero-section" aria-labelledby="capabilities-hero-title">
         <div className="capabilities-hero-frame">
-          <img src="/assets/emfoi-capabilities-hero.jpg" alt="Multidisciplinary technology delivery team reviewing plans around a planning table" />
+          <img src="/assets/emfoi-capabilities-software-hero.jpg" alt="Illustrative technology team demonstrating enterprise software alongside a development workstation" />
           <div className="site-width capabilities-hero-copy"><p className="eyebrow"><span />Capabilities</p><h1 id="capabilities-hero-title">Capability built for high-consequence work.</h1><p>Four focused practices and six connected service lines, designed to work across technology, governance, operations, and people.</p><Link href="/capability-statement" className="button button-primary">Download capability statement <Download size={16} /></Link></div>
         </div>
       </section>
@@ -136,7 +136,7 @@ function CapabilityIndex() {
             <div className="capability-dossier-key"><span className="field-guide-quadrant" aria-hidden="true"><i /><i /><i /><i /></span><div><span>Practice dossier</span><strong>Ten coordinates for a connected delivery model.</strong></div></div>
             <div className="capability-dossier-map">{cards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="dossier-map-item"><span>{card.number}</span><b>{card.title.replace(" & ", " / ")}</b></Link>)}</div>
           </div>
-          <figure className="practice-evidence-panel" data-aos="fade-up"><img src="https://res.cloudinary.com/djixmsbqd/image/upload/v1789195148/emfoi-capabilities-practice-dossier_b750dabc_qdbms4.webp" alt="Illustrative delivery team reviewing a program dossier" loading="lazy" /><figcaption><span>Practice fieldwork</span><p>Delivery decisions are strongest when technology, governance, operations, and people are considered together.</p></figcaption></figure>
+          <figure className="practice-evidence-panel" data-aos="fade-up"><img src="/assets/emfoi-delivery-technology.jpg" alt="Illustrative software delivery team reviewing an application demonstration and release checks" loading="lazy" /><figcaption><span>Practice fieldwork</span><p>Delivery decisions are strongest when technology, governance, operations, and people are considered together.</p></figcaption></figure>
           <div className="capability-index-group" data-aos="fade-up"><div className="capability-index-group-heading editorial-grid"><div><p className="eyebrow"><span />Core practices</p><h2>Start with the primary delivery need.</h2></div><p>These four practices describe the center of EMFOI’s current software, AI, consulting, and staffing work.</p></div><div className="capability-card-grid">{practiceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">{card.group === "practice" ? "Practice" : "Service line"}</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ChevronRight size={21} /></span></Link>)}</div></div>
           <div className="capability-index-group" data-aos="fade-up"><div className="capability-index-group-heading editorial-grid"><div><p className="eyebrow"><span />Connected service lines</p><h2>Bring the surrounding systems into view.</h2></div><p>The broader EMFOI service taxonomy is presented here as focused modules for security, operations, infrastructure, enterprise systems, and modernization.</p></div><div className="capability-card-grid">{serviceCards.map((card) => <Link key={card.slug} href={`/capabilities/${card.slug}`} className="capability-list-card"><span className="capability-number">{card.number}</span><div><span className="capability-list-kicker">Service line</span><h2>{card.title}</h2><p>{card.short}</p></div><span className="circle-arrow"><ChevronRight size={21} /></span></Link>)}</div></div>
         </div>

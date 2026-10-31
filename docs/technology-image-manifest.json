@@ -1,0 +1,83 @@
+{
+  "mode": "Built-in image generation",
+  "images": [
+    {
+      "name": "about",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-93a36e1f-5d6d-4594-8d6d-e50dadd5ec5e.png",
+      "destination": "client/public/assets/emfoi-about-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Wide 16:9 hero. Left 45% quiet ivory wall for headline overlay. Right side: diverse software team having a relaxed standing conversation beside workstations, one seated engineer with visible code editor and another colleague showing a tablet application. Natural candid team culture, no conference table, faces and screens clustered right."
+    },
+    {
+      "name": "industries",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-d91c4d6f-30d2-4e35-b4b6-49aef8505291.png",
+      "destination": "client/public/assets/emfoi-industries-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Wide 16:9 hero. Left 45% quiet softly lit wall for headline overlay. On right a healthcare technology specialist in navy scrubs and an IT analyst reviewing a large monitor displaying a credible care-operations application with patient-free scheduling rows and service workflow panels. Modern enterprise healthcare operations office, no patients, no personal data. Technology screen is prominent."
+    },
+    {
+      "name": "insights",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-982475a3-a26a-4013-9e8c-c450d4d15fad.png",
+      "destination": "client/public/assets/emfoi-insights-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Wide 16:9 hero. Left 45% empty ivory wall and soft light for headline overlay. Right side an experienced technology researcher at a desk studying a large screen with software performance charts, model evaluation plots and a small notebook. Side view with screen visible. Quiet focused editorial research scene rather than team meeting."
+    },
+    {
+      "name": "software",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-bef0e0fe-4f4a-4484-803e-6eb66feae6e5.png",
+      "destination": "client/public/assets/emfoi-software-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2 close view of a UX engineer working at a monitor showing a polished web app prototype with multiple desktop and mobile interface artboards, a smartphone on stand displaying matching interface. Software screen central and prominent, person's hands at keyboard, clean minimal desk. No paper drawings. Suitable for small card crop and service detail."
+    },
+    {
+      "name": "ai",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-b724f3a7-6d54-4fcb-b790-37f58e6fbe84.png",
+      "destination": "client/public/assets/emfoi-ai-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2. Two data scientists examining a large monitor with credible model evaluation dashboard: confusion matrix, precision/recall plots, model comparison table and audit status panel, an adjacent laptop with a Python notebook. Eye-level side view, screens central and legible in structure, calm responsible AI evaluation. No personal data."
+    },
+    {
+      "name": "staffing",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-1b716e32-f700-4fcf-bc5a-262790401fd9.png",
+      "destination": "client/public/assets/emfoi-staffing-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2. An experienced IT consultant onboarding a colleague at a workstation, both seated with laptops, one showing an issue tracker with tasks and a visible code editor on external monitor. Natural collaborative mentoring, screens and faces central, no handshake pose, no paper plans."
+    },
+    {
+      "name": "government",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-f059e28d-5f1b-498e-be5c-a70d9ff02ff7.png",
+      "destination": "client/public/assets/emfoi-government-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2. Public-sector digital service demonstration in a restrained government office: business-clothed specialist shows an accessible citizen-service web portal on large monitor to two program managers. Monitor central with clear application forms and workflow status, subtle civic office context, no seals, no flags or famous buildings, no architectural models."
+    },
+    {
+      "name": "security",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-40acedd2-a814-4e94-a55c-e33d29e9423c.png",
+      "destination": "client/public/assets/emfoi-security-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2, cybersecurity analyst in a bright secure operations workspace examining two monitors showing identity access audit logs, incident triage list and a restrained network alert dashboard. Screens central, analyst side profile, realistic enterprise security operations. No hoodies, padlock graphics, glowing code, or dramatic red warning overload."
+    },
+    {
+      "name": "managed",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-551423d9-4f46-4c57-9b0f-b0870e44a870.png",
+      "destination": "client/public/assets/emfoi-managed-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2, IT support professional wearing a discreet headset at a tidy service desk, monitor with ticket queue and service availability status, another small screen with remote support session. Focus on approachable support and operational monitoring, screens and professional central."
+    },
+    {
+      "name": "cloud",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-56e3657b-eeb5-4e8f-b818-3141f1766646.png",
+      "destination": "client/public/assets/emfoi-cloud-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2 close three-quarter view of cloud engineer's laptop showing a clean cloud infrastructure console with deployment environments, resource usage and service status, blurred server racks behind glass in background. Engineer seated at right, display prominent central, restrained realistic technology photography."
+    },
+    {
+      "name": "network",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-cdfe22e6-16fb-487f-990d-8aa91d99c15c.png",
+      "destination": "client/public/assets/emfoi-network-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2, network engineer in navy shirt inspecting a neat rack of ethernet switches and organized patch cables, holding a tablet displaying a simple connectivity topology. Bright contemporary equipment room, warm neutral light, natural candid action, tactile realistic hardware and cables, central composition."
+    },
+    {
+      "name": "modernization",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-f74483bd-9b04-44bd-899e-49d285c0f578.png",
+      "destination": "client/public/assets/emfoi-modernization-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2, a senior South Asian woman software engineer reviewing application migration on two monitors: left a legacy terminal and database table, right a modern web interface and deployment pipeline. Side angle, screens central, hands naturally on keyboard, authentic application modernization work, no paper plans."
+    },
+    {
+      "name": "delivery",
+      "source": "/Users/bhavansai/.codex/generated_images/01a149db-faa1-7102-a27d-38c895220dc8/exec-ba09a72c-655d-417f-8a34-a58fd322e667.png",
+      "destination": "client/public/assets/emfoi-delivery-technology.jpg",
+      "prompt": "Photorealistic premium editorial photography for an enterprise IT consultancy website. Warm ivory, muted navy and natural oak palette, soft daylight, credible modern workplace, realistic anatomy and screen perspective. No logos, watermark, promotional text, architectural models, blueprints, floor plans, construction materials, holograms or robots. Landscape 3:2, diverse software delivery team of four in a sprint demonstration, a Black woman engineering lead beside a large screen with a working business application, test results panel and release checklist. Colleagues with open laptops in foreground, active discussion, software screen and people center/right. Warm studio, no drawings or models, not an executive boardroom."
+    }
+  ]
+}

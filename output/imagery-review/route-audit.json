@@ -1,0 +1,860 @@
+[
+  {
+    "route": "/",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative software team reviewing an application dashboard and code on desktop monitors",
+        "lazy": false,
+        "loaded": true,
+        "src": "/assets/emfoi-software-team-hero.jpg"
+      },
+      {
+        "alt": "Intel Technology Provider logo",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195159/intel-technology-provider_96843177_nevdfq.png"
+      },
+      {
+        "alt": "Capital One logo",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195144/capital-one_90dc3726_nzjhze.png"
+      },
+      {
+        "alt": "Accenture logo",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195144/accenture_c1aaa1d5_csa9wk.png"
+      },
+      {
+        "alt": "Universal Service Administrative Company logo",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195160/universal-service-administrative-company_204e487f_zjfu0d.png"
+      },
+      {
+        "alt": "Caterpillar logo",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/caterpillar_4bc0fca9_x2truk.png"
+      },
+      {
+        "alt": "Oportun logo",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195160/oportun_3c9a9fde_r6qs0y.png"
+      },
+      {
+        "alt": "",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195158/emfoi-software-delivery-studio_b4045e43_lw2uis.webp"
+      },
+      {
+        "alt": "",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance-review_e4514e20_kbb7i9.webp"
+      },
+      {
+        "alt": "",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195154/emfoi-it-consulting-delivery_6d1fbfcc_ngchay.webp"
+      },
+      {
+        "alt": "",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195151/emfoi-healthcare-care-coordination_5bc96e0c_d2rqg1.webp"
+      },
+      {
+        "alt": "",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195150/emfoi-government-program-briefing_78ee7de8_fj3a3y.webp"
+      },
+      {
+        "alt": "",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195151/emfoi-healthcare-care-coordination_5bc96e0c_d2rqg1.webp"
+      },
+      {
+        "alt": "Operational documents arranged for a case-management workflow",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195150/emfoi-financial-operations-evidence_03eaace5_somgqt.webp"
+      },
+      {
+        "alt": "DoFiling logo",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/dofiling-logo-approved_9637c5b5_bgekbx.png"
+      },
+      {
+        "alt": "Care coordination team working through a healthcare workflow",
+        "lazy": true,
+        "loaded": false,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195151/emfoi-healthcare-care-coordination_5bc96e0c_d2rqg1.webp"
+      },
+      {
+        "alt": "CareHigh logo",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195145/carehigh-logo_381d8353_xkfvue.svg"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Software, AI, and staffing partners for government and healthcare."
+  },
+  {
+    "route": "/capabilities",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative technology team demonstrating enterprise software alongside a development workstation",
+        "lazy": false,
+        "loaded": true,
+        "src": "/assets/emfoi-capabilities-software-hero.jpg"
+      },
+      {
+        "alt": "Illustrative delivery team reviewing a program dossier",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195148/emfoi-capabilities-practice-dossier_b750dabc_qdbms4.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Capability built for high-consequence work."
+  },
+  {
+    "route": "/capabilities/custom-software-ux",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative software and user-experience planning materials",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195158/emfoi-software-ux_277c53ba_qzlapw.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Custom Software & UX"
+  },
+  {
+    "route": "/capabilities/ai-development-governance",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative AI governance and delivery review",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance_8c4ea3e7_sjyfvq.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "AI Development & Governance"
+  },
+  {
+    "route": "/capabilities/it-consulting-staffing",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative civic systems delivery workspace",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "IT Consulting & Staff Augmentation"
+  },
+  {
+    "route": "/capabilities/healthcare-staffing",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative healthcare staffing and delivery workspace",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195151/emfoi-healthcare-staffing_5413be2a_hzuqrb.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Healthcare Staffing"
+  },
+  {
+    "route": "/capabilities/cyber-security",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative security and governance review workspace",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance_8c4ea3e7_sjyfvq.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Cyber Security"
+  },
+  {
+    "route": "/capabilities/managed-services",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative technology operations briefing",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Managed Services"
+  },
+  {
+    "route": "/capabilities/cloud-services",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative cloud systems planning workspace",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Cloud Services"
+  },
+  {
+    "route": "/capabilities/network-connectivity",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative network and systems coordination workspace",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Network Connectivity"
+  },
+  {
+    "route": "/capabilities/erp-solutions",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative operations team working with enterprise systems",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195154/emfoi-manufacturing-operations-evidence_29b1da20_rajl1m.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "ERP Solutions"
+  },
+  {
+    "route": "/capabilities/it-modernization",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Illustrative technology modernization planning workspace",
+        "lazy": true,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "IT Modernization"
+  },
+  {
+    "route": "/government",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Ready to support the public work that cannot pause."
+  },
+  {
+    "route": "/healthcare",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Technology and staffing for the care mission."
+  },
+  {
+    "route": "/industries",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Multidisciplinary consulting team collaborating around plans in a modern enterprise workspace",
+        "lazy": false,
+        "loaded": true,
+        "src": "/assets/emfoi-industries-hero.jpg"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Capability that respects the context around it."
+  },
+  {
+    "route": "/industries/financial-services-insurance",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Financial Services & Insurance"
+  },
+  {
+    "route": "/industries/manufacturing",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Manufacturing"
+  },
+  {
+    "route": "/industries/food",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Food"
+  },
+  {
+    "route": "/industries/startups",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Startups"
+  },
+  {
+    "route": "/industries/consulting-providers",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Consulting Providers"
+  },
+  {
+    "route": "/industries/non-profit",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Non-Profit"
+  },
+  {
+    "route": "/industries/ai",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "AI"
+  },
+  {
+    "route": "/industries/other",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Other"
+  },
+  {
+    "route": "/about",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Senior consulting team collaborating over plans in a modern office",
+        "lazy": false,
+        "loaded": true,
+        "src": "/assets/emfoi-about-hero.jpg"
+      },
+      {
+        "alt": "Sai Chaitanya Nandigam, President & Founder of EMFOI",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195156/emfoi-role-portrait-leadership_1778d07b_gujtin.webp"
+      },
+      {
+        "alt": "Editorial portrait representing an EMFOI program-delivery engagement role",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195155/emfoi-role-portrait-delivery_54b0d31c_xppcvv.webp"
+      },
+      {
+        "alt": "Editorial portrait representing an EMFOI focused-capability engagement role",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195157/emfoi-role-portrait-practice_d8301bce_yuxz6n.webp"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "A focused partner for work that needs to hold up."
+  },
+  {
+    "route": "/why-us",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "A delivery posture built on partnership and precision."
+  },
+  {
+    "route": "/insights",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Senior technology and operations professionals reviewing plans around a conference table",
+        "lazy": false,
+        "loaded": true,
+        "src": "/assets/emfoi-insights-hero.jpg"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Operational knowledge for work that needs to hold up."
+  },
+  {
+    "route": "/contact",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "Contemporary professional office headquarters with glass, stone, and landscaped grounds",
+        "lazy": false,
+        "loaded": true,
+        "src": "/assets/emfoi-headquarters.jpg"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Start with the place and the program."
+  },
+  {
+    "route": "/dofiling",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "DoFiling Logo",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/dofiling-logo-approved_9637c5b5_bgekbx.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "DoFiling"
+  },
+  {
+    "route": "/carehigh",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "CareHigh Logo",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195145/carehigh-logo_381d8353_xkfvue.svg"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "CareHigh"
+  },
+  {
+    "route": "/careers",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Join the work that needs to hold up."
+  },
+  {
+    "route": "/privacy",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Privacy Notice"
+  },
+  {
+    "route": "/terms-conditions",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "Terms & Conditions"
+  },
+  {
+    "route": "/capability-statement",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "A concise view of EMFOI for primes and buyers."
+  },
+  {
+    "route": "/capabilities-statement",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "A concise view of EMFOI for primes and buyers."
+  },
+  {
+    "route": "/404",
+    "images": [
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      },
+      {
+        "alt": "",
+        "lazy": false,
+        "loaded": true,
+        "src": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png"
+      }
+    ],
+    "title": "This route is not on the current field guide."
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/emfoi-signal-mark-source_rvhlpe.png",
+    "name": "emfoi-signal-mark-source_rvhlpe.png",
+    "files": [
+      "client/src/components/PageSEO.tsx",
+      "client/src/components/SiteChrome.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195156/emfoi-role-portrait-leadership_1778d07b_gujtin.webp",
+    "name": "emfoi-role-portrait-leadership_1778d07b_gujtin.webp",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195155/emfoi-role-portrait-delivery_54b0d31c_xppcvv.webp",
+    "name": "emfoi-role-portrait-delivery_54b0d31c_xppcvv.webp",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195157/emfoi-role-portrait-practice_d8301bce_yuxz6n.webp",
+    "name": "emfoi-role-portrait-practice_d8301bce_yuxz6n.webp",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "/assets/emfoi-about-hero.jpg",
+    "name": "emfoi-about-hero.jpg",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "/assets/emfoi-insights-hero.jpg",
+    "name": "emfoi-insights-hero.jpg",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "/assets/emfoi-headquarters.jpg",
+    "name": "emfoi-headquarters.jpg",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "/assets/emfoi-industries-hero.jpg",
+    "name": "emfoi-industries-hero.jpg",
+    "files": [
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/dofiling-logo-approved_9637c5b5_bgekbx.png",
+    "name": "dofiling-logo-approved_9637c5b5_bgekbx.png",
+    "files": [
+      "client/src/pages/Home.tsx",
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195145/carehigh-logo_381d8353_xkfvue.svg",
+    "name": "carehigh-logo_381d8353_xkfvue.svg",
+    "files": [
+      "client/src/pages/Home.tsx",
+      "client/src/pages/InfoPage.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195158/emfoi-software-delivery-studio_b4045e43_lw2uis.webp",
+    "name": "emfoi-software-delivery-studio_b4045e43_lw2uis.webp",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance-review_e4514e20_kbb7i9.webp",
+    "name": "emfoi-ai-governance-review_e4514e20_kbb7i9.webp",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195154/emfoi-it-consulting-delivery_6d1fbfcc_ngchay.webp",
+    "name": "emfoi-it-consulting-delivery_6d1fbfcc_ngchay.webp",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195151/emfoi-healthcare-care-coordination_5bc96e0c_d2rqg1.webp",
+    "name": "emfoi-healthcare-care-coordination_5bc96e0c_d2rqg1.webp",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195159/intel-technology-provider_96843177_nevdfq.png",
+    "name": "intel-technology-provider_96843177_nevdfq.png",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195144/capital-one_90dc3726_nzjhze.png",
+    "name": "capital-one_90dc3726_nzjhze.png",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195144/accenture_c1aaa1d5_csa9wk.png",
+    "name": "accenture_c1aaa1d5_csa9wk.png",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195160/universal-service-administrative-company_204e487f_zjfu0d.png",
+    "name": "universal-service-administrative-company_204e487f_zjfu0d.png",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195146/caterpillar_4bc0fca9_x2truk.png",
+    "name": "caterpillar_4bc0fca9_x2truk.png",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195160/oportun_3c9a9fde_r6qs0y.png",
+    "name": "oportun_3c9a9fde_r6qs0y.png",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "/assets/emfoi-software-team-hero.jpg",
+    "name": "emfoi-software-team-hero.jpg",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195150/emfoi-government-program-briefing_78ee7de8_fj3a3y.webp",
+    "name": "emfoi-government-program-briefing_78ee7de8_fj3a3y.webp",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195150/emfoi-financial-operations-evidence_03eaace5_somgqt.webp",
+    "name": "emfoi-financial-operations-evidence_03eaace5_somgqt.webp",
+    "files": [
+      "client/src/pages/Home.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195158/emfoi-software-ux_277c53ba_qzlapw.webp",
+    "name": "emfoi-software-ux_277c53ba_qzlapw.webp",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195147/emfoi-ai-governance_8c4ea3e7_sjyfvq.webp",
+    "name": "emfoi-ai-governance_8c4ea3e7_sjyfvq.webp",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195152/emfoi-hero-civic-systems_d308c3fa_ctztyn.webp",
+    "name": "emfoi-hero-civic-systems_d308c3fa_ctztyn.webp",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195151/emfoi-healthcare-staffing_5413be2a_hzuqrb.webp",
+    "name": "emfoi-healthcare-staffing_5413be2a_hzuqrb.webp",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195154/emfoi-manufacturing-operations-evidence_29b1da20_rajl1m.webp",
+    "name": "emfoi-manufacturing-operations-evidence_29b1da20_rajl1m.webp",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  },
+  {
+    "url": "/assets/emfoi-capabilities-software-hero.jpg",
+    "name": "emfoi-capabilities-software-hero.jpg",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  },
+  {
+    "url": "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195148/emfoi-capabilities-practice-dossier_b750dabc_qdbms4.webp",
+    "name": "emfoi-capabilities-practice-dossier_b750dabc_qdbms4.webp",
+    "files": [
+      "client/src/pages/Capabilities.tsx"
+    ]
+  }
+]

@@ -259,16 +259,16 @@ function CapabilityStatementPage() {
 
 function AboutPage() {
   const teamProfileSlots = [
-    { number: "01", type: "Leadership", title: "Sai Chaitanya Nandigam", text: "President & Founder. Directing strategic growth and delivery posture since 2013.", image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195156/emfoi-role-portrait-leadership_1778d07b_gujtin.webp", alt: "Sai Chaitanya Nandigam, President & Founder of EMFOI" },
-    { number: "02", type: "Delivery", title: "Program Principal", text: "Coordinating complex delivery across people, systems, and program requirements.", image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195155/emfoi-role-portrait-delivery_54b0d31c_xppcvv.webp", alt: "Editorial portrait representing an EMFOI program-delivery engagement role" },
-    { number: "03", type: "Advisory", title: "Technical Lead", text: "Directing software architecture, AI governance, and specialized capability development.", image: "https://res.cloudinary.com/djixmsbqd/image/upload/v1789195157/emfoi-role-portrait-practice_d8301bce_yuxz6n.webp", alt: "Editorial portrait representing an EMFOI focused-capability engagement role" },
+    { number: "01", type: "Leadership", title: "Sai Chaitanya Nandigam", text: "President & Founder. Directing strategic growth and delivery posture since 2013." },
+    { number: "02", type: "Delivery", title: "Program Principal", text: "Coordinating complex delivery across people, systems, and program requirements." },
+    { number: "03", type: "Advisory", title: "Technical Lead", text: "Directing software architecture, AI governance, and specialized capability development." },
   ];
 
   return (
     <PageLayout>
       <section className="about-hero-section" aria-labelledby="about-hero-title">
         <div className="about-hero-frame">
-          <img src="/assets/emfoi-about-hero.jpg" alt="Senior consulting team collaborating over plans in a modern office" />
+          <img src="/assets/emfoi-about-technology.jpg" alt="Illustrative software team collaborating beside development workstations" />
           <div className="site-width about-hero-copy"><p className="eyebrow"><span />About EMFOI</p><h1 id="about-hero-title">A focused partner for work that needs to hold up.</h1><p>EMFOI brings personal service and practical technology to government and enterprise delivery.</p></div>
         </div>
       </section>
@@ -343,15 +343,9 @@ function AboutPage() {
               attentive delivery coordination, and the focused capability the program needs.
             </p>
           </div>
-          <p className="team-profile-visual-note">
-            Illustrative role portraits — individual EMFOI biographies are added only with approved information.
-          </p>
           <div className="team-profile-grid">
             {teamProfileSlots.map((profile) => (
               <article className="team-profile-card" key={profile.number}>
-                <figure className="team-profile-portrait">
-                  <img src={profile.image} alt={profile.alt} loading="eager" />
-                </figure>
                 <div className="team-profile-mark">
                   <UsersRound size={18} />
                   <span>{profile.number}</span>
@@ -359,7 +353,7 @@ function AboutPage() {
                 <p>{profile.type}</p>
                 <h3>{profile.title}</h3>
                 <p>{profile.text}</p>
-                <span className="team-profile-status">Engagement role</span>
+                <span className="team-profile-status">{profile.type === "Leadership" ? "Company leadership" : "Engagement role"}</span>
               </article>
             ))}
           </div>
@@ -513,7 +507,7 @@ function InsightsPage() {
     <PageLayout>
       <section className="insights-hero-section" aria-labelledby="insights-hero-title">
         <div className="insights-hero-frame">
-          <img src="/assets/emfoi-insights-hero.jpg" alt="Senior technology and operations professionals reviewing plans around a conference table" />
+          <img src="/assets/emfoi-insights-technology.jpg" alt="Illustrative technology researcher reviewing software performance and model evaluation charts" />
           <div className="site-width insights-hero-copy"><p className="eyebrow"><span />Insights</p><h1 id="insights-hero-title">Operational knowledge for work that needs to hold up.</h1><p>Perspectives on accessible design, responsible AI, government delivery, healthcare staffing, and technology operations.</p></div>
         </div>
       </section>
@@ -553,7 +547,7 @@ function ContactPage() {
     <PageLayout>
       <section className="contact-hero-section" aria-labelledby="contact-hero-title">
         <div className="contact-hero-frame">
-          <img src="/assets/emfoi-headquarters.jpg" alt="Contemporary professional office headquarters with glass, stone, and landscaped grounds" />
+          <img src="/assets/emfoi-software-team-hero.jpg" alt="Illustrative software team reviewing an application at a workstation" />
           <div className="site-width contact-hero-copy"><p className="eyebrow"><span />Contact EMFOI</p><h1 id="contact-hero-title">Start with the place and the program.</h1><p>Our Herndon headquarters is a steady point of contact for software, AI governance, staffing, and public-sector delivery conversations.</p></div>
         </div>
       </section>
@@ -622,7 +616,7 @@ function IndustriesIndexPage() {
     <PageLayout>
       <section className="industries-hero-section" aria-labelledby="industries-hero-title">
         <div className="industries-hero-frame">
-          <img src="/assets/emfoi-industries-hero.jpg" alt="Multidisciplinary consulting team collaborating around plans in a modern enterprise workspace" />
+          <img src="/assets/emfoi-industries-technology.jpg" alt="Illustrative healthcare and IT specialists reviewing a digital care-operations workflow" />
           <div className="site-width industries-hero-copy"><p className="eyebrow"><span />Industries</p><h1 id="industries-hero-title">Capability that respects the context around it.</h1><p>We support healthcare, public sector, and complex enterprise environments where delivery must be technically sound and practically usable.</p></div>
         </div>
       </section>
@@ -709,6 +703,7 @@ function CareHighPage() {
           <div className="product-logo-frame bg-[#fff9f0] p-12 rounded-sm border border-ink-navy/10">
             <img src="https://res.cloudinary.com/djixmsbqd/image/upload/v1789195145/carehigh-logo_381d8353_xkfvue.svg" alt="CareHigh Logo" className="w-full h-auto object-contain" />
           </div>
+          <img src="/assets/carehigh-official-illustration.png" alt="CareHigh illustration of a dental clinic reception" className="w-full h-auto mt-6" loading="lazy" />
         </div>
         <div className="product-details">
           <p className="large-copy">CareHigh helps dental teams track referrals, support follow-up, and keep care workflows visible.</p>
@@ -717,7 +712,8 @@ function CareHighPage() {
             <li className="flex gap-3"><Check size={20} className="text-signal-blue shrink-0" /> <span>Patient follow-up reminders</span></li>
             <li className="flex gap-3"><Check size={20} className="text-signal-blue shrink-0" /> <span>Multi-office visibility</span></li>
           </ul>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href="https://www.carehigh.com/" target="_blank" rel="noopener noreferrer" className="button button-secondary">Visit CareHigh <ExternalLink size={16} /></a>
             <Link href="/contact" className="button button-primary">Request information <ArrowRight size={16} /></Link>
           </div>
         </div>
